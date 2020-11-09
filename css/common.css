@@ -35,7 +35,7 @@ div, header, nav, footer, section, article, ul, li {margin: 0; padding: 0; box-s
 
   @font-face {
     font-family: 'Body-Font';
-    src:url(../font/OpenSans-Regular-webfont.woff) format('woff2');
+    src: url(../font/gt-america-standard-regular-webfont.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
