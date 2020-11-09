@@ -1,0 +1,225 @@
+/* RESET CSS */
+
+* {margin: 0; padding: 0; box-sizing: content-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  ul, li {list-style: none;}
+  
+  a {text-decoration: none;}
+  
+  div, header, nav, footer, section, article, ul, li {margin: 0; padding: 0; box-sizing: border-box;} 
+  
+  
+  
+  
+  /* 폰트 공통 */
+  
+
+
+  @font-face {
+    font-family:'Body-Font-Medium';
+    /* Body-Font-Medium */
+    src:url(../font/gt-america-expanded-medium-webfont.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+
+        /* fallback에 대한 설명 아래 링크에서 확인
+    https://d2.naver.com/helloworld/4969726 */
+    }
+
+  @font-face {
+    font-family: 'Title-Font';
+    src:url(../font/Noe-Display-Regular.woff) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+    }
+
+
+  @font-face {
+    font-family:'Body-Font';
+    /* font-family: "Body-Font" ; */
+    src:url(../font/OpenSans-Regular-webfont.woff) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+    }
+
+
+
+
+
+
+
+  
+  body {
+    font-family: 'Body-Font', serif;
+    line-height: 1.15;
+    width: 100%;
+  }
+  
+  .body_font_medium {
+    font-family:'Body-Font-Medium';
+    /* font-stretch: expanded; */
+    font-size: 11px;
+    line-height: 1.27em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-family: 'Title-Font';
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: 400;
+
+    }
+  h4{
+    font-family:'Body-Font-Medium';
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+  }
+  
+  
+  
+  
+  /* BUTTON: 수정 필요; 모양만 잡았어요 */
+  .next_btn_wrap {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      padding: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 100%;
+  }
+  .next_button {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      bottom: -3px;
+      right: -3px;
+      left: -3px;
+      top: -3px;
+
+  }
+  .next_arrow svg{
+      padding : 0 7px;
+  }
+  .next_button span {
+    display: block;
+  }
+  .next_button svg {
+      fill: transparent;
+  }
+  .red_circle {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      stroke-dasharray: 1360;
+      stroke-dashoffset: 1360;
+
+  }
+
+  @keyframes dash {
+
+    to{
+        stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes dashout {
+      0% {
+        stroke-dashoffset: 2720;
+      }
+    100%{
+        stroke-dashoffset: 1360;
+    }
+
+  }
+.subscribe_container{
+    width: 100%;
+    margin: 35px 24px 0;
+}
+.subscribe_container a {
+    color: white;
+    height: 100%;
+}
+.subscribe_text{
+    margin-right: 8px;
+    
+}
+
+
+/* header */
+#header {
+    width: 100%;
+    position: fixed;
+}
+.header_wrap {
+    font-family: 'Body-Font-Medium';
+    width: 100%;
+    height: 24px;
+    margin: 24px 0 ;
+    display: flex;
+    align-items: flex-start;
+    z-index: 10;
+}
+.header_wrap::after{
+    width: 100%;
+    height: calc(100% + 20px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8));
+}
+
+.header_conts {
+    width: 100%;
+    list-style: none;
+}
+.header_conts ul {
+    display: flex;
+}
+.header_item {
+    margin: 0 24px ;
+    
+}
+.header_logo_wrap {
+    height: 24px;
+    font-size: 8px;
+}
+.header_logo_wrap svg {
+    max-width: 132px;
+    height: 24px;
+    color: white;
+}
+ .header_button {
+    font-family:'Body-Font-Medium';
+     border: none;
+     background-color: rgba(0, 0, 0, 0);
+     padding: 5px 0;
+     color: white;
+     /* color: white; */
+
+     font-weight : 500;
+     font-stretch: expanded;
+     line-height: 1.27em;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+  }
+  .Header__endcol__jBBfXtuB {
+      flex: 1 1 100%;
+  }
