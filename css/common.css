@@ -1,12 +1,112 @@
-* {
-    margin: 0;
-}
+/* RESET CSS */
 
-h1 {
+* {margin: 0; padding: 0; box-sizing: content-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  ul, li {list-style: none;}
+  
+  a {text-decoration: none;}
+  
+  div, header, nav, footer, section, article, ul, li {margin: 0; padding: 0; box-sizing: border-box;} 
+  
+  
+  
+  
+  /* 폰트 공통 */
+  
 
-}
 
-h2 {
+  @font-face {
+    font-family:'Body-Font-Medium';
+    /* Body-Font-Medium */
+    src:url(../font/gt-america-expanded-medium-webfont.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+
+        /* fallback에 대한 설명 아래 링크에서 확인
+    https://d2.naver.com/helloworld/4969726 */
+    }
+
+  @font-face {
+    font-family: 'Title-Font';
+    src:url(../font/Noe-Display-Regular.woff) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+    }
+
+
+  @font-face {
+    font-family:'Body-Font';
+    /* font-family: "Body-Font" ; */
+    src:url(../font/OpenSans-Regular-webfont.woff) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    -webkit-font-smoothing:antialiased;
+    }
+
+
+
+
+
+
+
+  
+  body {
+    font-family: 'Body-Font', serif;
+    line-height: 1.15;
+    width: 100%;
+  }
+  
+  .body_font_medium {
+    font-family:'Body-Font-Medium';
+    /* font-stretch: expanded; */
+    font-size: 11px;
+    line-height: 1.27em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-family: 'Title-Font';
     font-size: 44px;
-    line-height: 1.2em;
-}
+    line-height: 52.8px;
+    font-weight: 400;
+
+    }
+  h4{
+    font-family:'Body-Font-Medium';
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  
+  
+  
+  
+  /* BUTTON: 수정 필요; 모양만 잡았어요 */
+  
+  .next_button {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    background: rgb(48, 48, 48);
+    border: 2px solid rgba(255, 255, 255, 0.4)
+  }
+  
+  .next_button span {
+    display: block;
+  }
+  
+  
