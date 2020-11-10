@@ -13,7 +13,7 @@
 
     <header id="header">
 
-        <div class="header_wrap">
+        <div id="header_wrap" class="header_wrap">
             <div class="header_conts">
                 <ul>
                     <li class="header_item"> <button class="header_button">
@@ -61,6 +61,46 @@
                           <span class="subscribe_text body_font_medium ">Discover more</span>
                           <span class="next_btn_wrap">
                               <span class="next_button">
+                                <svg id="red_circle" class="red_circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" stroke="#da291c" stroke-width="1px"></circle></svg>
+                             </span>
+
+                             <span class="next_arrow">
+                                <svg  viewBox="0 0 8 16" class="icon" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;" fill="#fff" ><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+                                 
+                             </span>
+
+                          </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="main_banner">
+            <div class="Theme_warp">
+                <div class="cover_theme_wrap"> 
+                    <video id="video" controls autoplay muted width="100%">
+                    <source  type="application/x-mpegURL" src="https://ferrari-cdn.thron.com/ios/AIE4RN_STORE-Video_Gateway_Desktop_VXWIA3.mp4/AIE4RN_STORE-Video_Gateway_Desktop-4500.m3u8?v=15" />
+                    </video>
+
+                </div>
+
+                <div class="main_conts">
+                    <h4>Auto</h4>
+                    <h2>
+                        <span style="opacity: 1; transform:matrix(1,0, 0, 1, 0, 0);">START &nbsp;</span>
+                        <span style="opacity: 1; transform:matrix(1,0, 0, 1, 0, 0);">YOUR &nbsp;</span>
+                        <span style="opacity: 1; transform:matrix(1,0, 0, 1, 0, 0);">ENGINE</span>
+                    </h2>
+
+                    <div onmouseover="hover()" onmouseout="out()" class="subscribe_container">
+                        <a href="#">
+                          <span class="subscribe_text body_font_medium ">Discover more</span>
+                          <span class="next_btn_wrap">
+                              <span class="next_button">
                                 <svg id="red_circle" class="red_circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11.5" stroke="#da291c" stroke-width="1px"></circle></svg>
                              </span>
 
@@ -73,9 +113,9 @@
                         </a>
                     </div>
 
-            </div>
-            </div>
+                </div>
 
+            </div>
 
         </section>
 
@@ -94,6 +134,56 @@
             document.getElementById('red_circle').style="animation: dashout 3s ease forwards;";
         }
     </script>
-    
+
+    <script>
+
+    var prewScrollPos = 0;
+    var currentScrollPos = 0;
+    window.onscroll = function(){
+
+
+        prewScrollPos = currentScrollPos;
+        currentScrollPos = window.pageYOffset;
+
+        scrollMove = currentScrollPos - prewScrollPos;
+
+        console.log(scrollMove);
+
+
+        if(scrollMove > 0) {
+            console.log("아랫방향");
+
+
+            if (window.pageYOffset > 1){
+                document.getElementById('header').style="top:-72px; transition: 0.4s;";
+                
+            }
+
+
+           
+        }
+        
+        else {
+            console.log("윗방향");
+             document.getElementById('header').style="top:0px; transition: 0.4s;";
+             document.getElementById('header_wrap').style="  height: calc(100% + 20px); background-color: rgba(0,0,0,1);"
+
+     
+            // if(window.pageYOffset = 0) {
+            //     document.getElementById('header_wrap').style="  height: calc(100% + 20px); background-color: none;"
+            // }
+        }
+             
+    } 
+    // console.log(window.pageYOffset);
+    //   if (currentScrollPos = 0){
+    //             document.getElementById('header').style="display:none;";
+                
+
+                
+    //         }
+
+    </script>
+
 </body>
 </html>
