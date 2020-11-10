@@ -99,7 +99,7 @@
       height: 20px;
       padding: 8px;
       border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 100%;
+      border-radius: 100%;      display: inline-flex;
   }
   .next_button {
       position: absolute;
@@ -124,11 +124,11 @@
       width: 42px;
       height: 42px;
       position: absolute;
-      left: 1px;
+      left: 0px;
       top: 1px;
       stroke-dasharray: 1360;
       stroke-dashoffset: 1360;
-
+      transform: rotate(-90deg);
   }
 
   @keyframes dash {
@@ -170,7 +170,8 @@
     font-family: 'Body-Font-Medium';
     width: 100%;
     height: 24px;
-    margin: 24px 0 ;
+    padding: 24px 0 ;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     z-index: 10;
@@ -188,13 +189,14 @@
 
 .header_conts {
     width: 100%;
+    padding-left: 12px;
     list-style: none;
 }
 .header_conts ul {
     display: flex;
 }
 .header_item {
-    margin: 0 24px ;
+    margin: 0 12px ;
     
 }
 .header_logo_wrap {
@@ -213,7 +215,7 @@
      padding: 5px 0;
      color: white;
      /* color: white; */
-
+     font-size: 11px;
      font-weight : 500;
      font-stretch: expanded;
      line-height: 1.27em;
