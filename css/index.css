@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
 }
 .main_wrap{width: 100%;
-height: 100vh;}
+height: 100vh; position: relative;}
 .main_wrap::before{
     z-index: -1;
     width: 100%;
@@ -32,4 +32,24 @@ height: 100vh;}
 .main_conts {
     text-align: center;
     z-index: 1000;
+}
+
+.Theme_warp{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+.cover_theme_wrap{
+    width: 100%;
+
+    bottom: 0;
+    left: 0;
+}
+
+.cover_theme_conts {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
