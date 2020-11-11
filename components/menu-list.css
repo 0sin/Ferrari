@@ -1,13 +1,30 @@
-.menu_list {
+#menu_list {
+  width: 452px;
+  height: 800px;
   padding: 0 96px;
+  list-style-type: disc;
+  overflow-x: hidden;
+  overflow-y: hidden scroll;
 }
 
-.menu_list li {
+.menu_list_wrap li {
   font-family: "Noe Display Regular";
 }
 
 .auto_menu_list {
   font-size: 32px;
+}
+
+.auto_menu_list li,
+.auto_menu_list_sub li {
+  padding: 16px 0;
+  color: #8f8f8f;
+}
+
+.auto_menu_list li:hover,
+.auto_menu_list_sub li:hover {
+  color: #000;
+  cursor: pointer;
 }
 
 .auto_menu_list_sub {
