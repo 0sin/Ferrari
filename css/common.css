@@ -1,6 +1,6 @@
 /* RESET CSS */
 
-* {margin: 0; padding: 0; box-sizing: content-box;
+* {margin: 0; padding: 0; box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -82,23 +82,41 @@ h4{
 
 
 
-/* BUTTON: 수정 필요; 모양만 잡았어요 */
+/* RED WHEEL BUTTON */
 
-.next_button {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  cursor: pointer;
-  position: relative;
-  background: rgb(48, 48, 48);
-  border: 2px solid rgba(255, 255, 255, 0.4)
+.red_wheel_button {display: inline-flex;}
+
+.icon_border_gray {
+  height: 40px; width: 40px;
+  padding: 8px; border-radius: 100%; font-size: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+  border: 2px solid rgb(143, 143, 143);
 }
 
-.next_button span {
-  display: block;
+.icon_over_circle {
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+}
+
+.icon_over_circle svg {
+  position: absolute;
+  top: 50%; left: 50%; width: 100%; height: 100%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.icon_over_circle circle {
+  stroke: rgb(218, 41, 28); stroke-width: 1px; fill: none;
+  stroke-dasharray: 70; stroke-dashoffset: 70;      
+}
+
+.red_wheel_button:hover .icon_over_circle circle {
+  animation: dash 0.3s ease forwards;
+}
+    
+@keyframes dash {
+  from {stroke-dashoffset: 70;}
+  to {stroke-dashoffset: 0;}
 }
 
 
@@ -137,6 +155,7 @@ h4{
 #footer_subscribe {
   background: rgb(48, 48, 48);
   width: 100%;
+  text-align: left;
 }
 
 .subscribe_container {
@@ -150,10 +169,13 @@ h4{
 
 .subscribe_container a {
   color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.subscribe_text {
-  margin: 0 8px 0 0;
+.subscribe_container a:hover .icon_over_circle circle {
+  animation: dash 0.3s ease forwards;
 }
 
 
@@ -189,7 +211,7 @@ h4{
 
 .footer_nav_ul {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   padding: 0 15px 10px;
 }
 
@@ -218,18 +240,29 @@ h4{
 }
 
 .footer_social_title {
+  height: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer_social_title figure {
-  width: 16px;
-  height: 16px;
-  padding: 20px 0;
+.social_m_name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer_social_title figure img {width: 100%;}
+.footer_social_title figure {
+  padding: 20px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer_social_title figure img {
+  width: 100%;
+  width: 16px;
+  height: 16px;
+}
 
 
 
@@ -325,6 +358,157 @@ h4{
   margin: 0 10px;
 }
 
+
+
+
+
+
+/* FOOTER BREAK POINT 960 */
+
+.footer_nav_title_m_icon {display: none;}
+.social_m_name span {display: none;}
+
+
+@media screen and (max-width: 960px) {
+  
+  /* FOOTER CONTENT */
+  .footer_content_container {
+    flex-flow: column;
+  }
+  
+  .footer_nav_section {
+    min-width: 100%;
+  }
+
+  .footer_nav_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer_nav_title a {
+    justify-content: flex-start;
+  }
+
+  .footer_nav_title_m_icon {
+    display: block;
+    padding: 10px;
+    font-size: 0;
+    line-height: 0;
+    transition: transform 300ms;
+  }
+
+  .footer_nav_title_m_icon svg {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .footer_nav_column {
+    display: flex;
+    flex-flow: column wrap;
+   
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0px;
+  }
+  
+  .footer_nav_ul {
+    text-align: left;
+    min-width: 50%;
+    padding: 0 10px 10px 0;
+  }
+
+
+
+  /* FOOTER SOCIAL */
+
+  .footer_social_container {
+    flex-flow: column;
+  }
+  
+  .footer_social_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social_m_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social_m_name span {
+    display: inline-flex;
+    margin: 0 0 0 16px;
+  }
+  
+  .footer_social_title figure {
+    width: 16px;
+    height: 16px;
+    padding: 20px 0;
+  }
+  
+  .footer_social_title figure img {width: 100%;}
+
+
+
+
+  /* FOOTER RIGHTS */
+
+  .footer_rights_container figure img {
+    max-width: 32px;
+    max-height: 52px;
+    margin: 0 0 10px;
+  }
+
+
+
+
+  /* FOOTER SERVICE */
+
+  .footer_service_container {
+    font-size: 11px;
+    padding: 20px 0;
+    flex-flow: column-reverse wrap;
+  }
+  
+  
+  .footer_service_ul {
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 16px;
+  }
+  
+  .footer_service_ul li {
+    min-width: 33%;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .footer_service_country {
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 24px 0 0;
+  }
+  
+  .footer_service_country a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer_service_country svg {
+    margin: 0 0 0 10px;
+  }
+
+  
+
+  
+
+ 
+}
 
 
 
