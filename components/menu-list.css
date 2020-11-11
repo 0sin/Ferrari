@@ -9,16 +9,12 @@
 
 .menu_list_wrap li {
   font-family: "Noe Display Regular";
-}
-
-.auto_menu_list {
-  font-size: 32px;
-}
-
-.auto_menu_list li,
-.auto_menu_list_sub li {
   padding: 16px 0;
   color: #8f8f8f;
+}
+
+.menu_list_big_font {
+  font-size: 32px;
 }
 
 .auto_menu_list li:hover,
@@ -29,4 +25,24 @@
 
 .auto_menu_list_sub {
   font-size: 24px;
+}
+
+.menu_list_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_list_box li:hover {
+  color: #000;
+  cursor: default;
+}
+
+/* Racing Menu Styles */
+
+/* Universe Menu Styles */
+
+.universe_menu_list li:hover {
+  color: #000;
+  cursor: pointer;
 }

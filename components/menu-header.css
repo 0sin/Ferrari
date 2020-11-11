@@ -74,13 +74,13 @@
   }
 }
 
-.auto_menu_title {
+.menu_title {
   height: 41px;
   width: 60px;
   border-bottom: 1px solid #eeeded;
 }
 
-.auto_menu_title h2 {
+.menu_title h2 {
   font-family: "GT America Regular";
   color: #8f8f8f;
 }
