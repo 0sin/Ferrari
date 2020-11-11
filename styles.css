@@ -7,6 +7,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: flex;
+  background-attachment: scroll;
+  position: fixed;
 }
 
 /* Font Face */

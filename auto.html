@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferrari | Auto</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.0.min.js"
+    ></script>
+    <!-- <script type="text/javascript">
+      $(function () {
+        var myimage = $(".media_image");
+        myimage.hover(function () {
+          myimage.attr("src", "/img/Auto img/collect (1).gif");
+        });
+      });
+    </script> -->
   </head>
 
   <header>
@@ -21,63 +33,80 @@
     </div>
   </header>
   <body>
-    <section class="menu_wrap">
-      <div class="menu_floating">
-        <div class="menu_close_button_wrap">
-          <span class="menu_close_button">
-            <span>
-              <svg viewBox="0 0 24 24" style="height: 42px; width: 42px">
-                <circle cx="12" cy="12" r="11" stroke="1"></circle>
-              </svg>
+    <section id="menu_section">
+      <div class="menu_wrap">
+        <div class="menu_floating">
+          <div class="red_wheel_button_wrap">
+            <span class="red_wheel_button">
+              <span class="icon_border_gray">
+                <span class="icon_over_circle">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="11" stroke="1"></circle>
+                  </svg>
+                </span>
+                <!-- 아래는 화살표 svg-->
+                <svg
+                  viewBox="0 0 12 12"
+                  class="icon"
+                  style="height: 12px; width: 12px"
+                >
+                  <path
+                    d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"
+                  ></path>
+                </svg>
+              </span>
             </span>
-            <svg
-              viewBox="0 0 12 12"
-              class="icon"
-              style="height: 12px; width: 12px"
-            >
-              <path
-                d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"
-              ></path>
-            </svg>
-          </span>
-        </div>
-        <div class="auto_menu_title">
-          <h2>Auto</h2>
+          </div>
+          <div class="auto_menu_title">
+            <h2>Auto</h2>
+          </div>
         </div>
       </div>
-      <div class="menu_list">
-        <ul class="auto_menu_list">
-          <a><li>812 Superfast</li></a>
-          <a><li>812 GTS</li></a>
-          <a><li>SF90 Stradale</li></a>
-          <a><li>F8 Tributo</li></a>
-          <a><li>F8 Spider</li></a>
-          <a><li>Ferrari 488 Pista</li></a>
-          <a><li>Ferrari 488 Pista Spider</li></a>
-          <a><li>GTC4Lusso</li></a>
-          <a><li>Ferrari Roma</li></a>
-          <a><li>GTC4Lusso T</li></a>
-          <a><li>Ferrari Portofino M</li></a>
-          <a><li>Ferrari Monza SP1</li></a>
-          <a><li>Ferrari Monza SP2</li></a>
-        </ul>
-      </div>
-      <div class="menu_list">
-        <ul class="auto_menu_list_sub">
-          <a><li>Line Up</li></a>
-          <a><li>MyFerrari</li></a>
-          <a><li>Configurator</li></a>
-          <a><li>GT Racing</li></a>
-          <a><li>Past Models</li></a>
-          <a><li>Personalisation</li></a>
-          <a><li>Car services</li></a>
-          <a><li>Officine Classiche</li></a>
-          <a><li>Driving Courses</li></a>
-          <a><li>Pre-Owned</li></a>
-          <a><li>Dealer</li></a>
-        </ul>
+      <div id="padding-test">
+        <div id="menu_list">
+          <div class="menu_list_wrap">
+            <ul class="auto_menu_list">
+              <a><li>812 Superfast</li></a>
+              <a><li>812 GTS</li></a>
+              <a><li>SF90 Stradale</li></a>
+              <a><li>F8 Tributo</li></a>
+              <a><li>F8 Spider</li></a>
+              <a><li>Ferrari 488 Pista</li></a>
+              <a><li>Ferrari 488 Pista Spider</li></a>
+              <a><li>GTC4Lusso</li></a>
+              <a><li>Ferrari Roma</li></a>
+              <a><li>GTC4Lusso T</li></a>
+              <a><li>Ferrari Portofino M</li></a>
+              <a><li>Ferrari Monza SP1</li></a>
+              <a><li>Ferrari Monza SP2</li></a>
+            </ul>
+          </div>
+          <div class="menu_list_wrap">
+            <ul class="auto_menu_list_sub">
+              <a><li>Line Up</li></a>
+              <a><li>MyFerrari</li></a>
+              <a><li>Configurator</li></a>
+              <a><li>GT Racing</li></a>
+              <a><li>Past Models</li></a>
+              <a><li>Personalisation</li></a>
+              <a><li>Car services</li></a>
+              <a><li>Officine Classiche</li></a>
+              <a><li>Driving Courses</li></a>
+              <a><li>Pre-Owned</li></a>
+              <a><li>Dealer</li></a>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-    <section></section>
+    <section id="media_section">
+      <div>
+        <img
+          class="media_image"
+          src="img/Auto img/5f6dffd341830b5e8d2c8d27-ferrari-corporate-equal-salary-2020-home-p.jpg"
+          alt=""
+        />
+      </div>
+    </section>
   </body>
 </html>
