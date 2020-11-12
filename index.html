@@ -408,6 +408,28 @@
 </footer>
 
 
+<script>
+  var footerOpen = document.getElementsByClassName("footer_nav_title");
+  var i;
+
+  for (i = 0; i < footerOpen.length; i++) {
+    footerOpen[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var footer_nav_column = this.nextElementSibling;
+    
+      if (footer_nav_column.style.maxHeight) {
+        footer_nav_column.style.maxHeight = null;
+      } else {
+        footer_nav_column.style.maxHeight = footer_nav_column.scrollHeight + "px";
+      } 
+    }
+    );
+  }
+
+</script>
+
+
 
 
     
