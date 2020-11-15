@@ -1,0 +1,560 @@
+/* SUPER FAST */
+/* 공통 클래스 */
+
+.headline {
+  width: 100%;
+  padding: 100px 48px 0; 
+  margin: 0 auto;
+}
+
+.headline_wrap {
+  min-width: 270px;
+  display: inline-block;
+  position: relative;
+}
+
+.headline_chapter {
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(218, 41, 28);
+  white-space: nowrap;
+  margin: 0 0 30px;
+  display: flex; align-items: center;
+}
+
+.chapter_line {
+  min-width: 10px; width: 70%;
+  max-width: 100px; height: 1px;
+  margin: 10px;
+  display: flex; align-items: center;
+}
+
+.chapter_line i {
+  width: 100%;  height: 100%;
+  display: inline-block;
+  background: rgb(218, 41, 28);
+}
+
+
+.headline_title {
+  font-family: "Title-Font";
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-size: 32px;
+  line-height: 1.23em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  max-width: 450px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.headline_wrap p {
+  font-family: "Body-Font";
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  max-width: 500px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+main {
+  width: 100%;
+  background: rgb(50, 6, 7);
+}
+
+
+
+
+/* PLAY BUTTON */
+
+.play_video_button {
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* 희경 시작 ~ 2 AERODYNAMICS 까지 */
+
+
+
+
+/* 영신 3 DYNAMICS ~ 끝 까지 */
+
+
+/* AERODYNAMICS */
+#arodynamics {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dynamics_video_container {
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.dynamics_video_wrap {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0 48px 48px;
+  display: flex; justify-content: space-between;
+  flex-flow: wrap;
+  overflow: hidden;
+}
+
+.dynamics_video {
+  width: calc(50% - 65px);
+  position: relative;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.dynamics_video img {width: 100%;}
+
+.dynamics_video .play_video_button {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.editorial_text {
+  width: calc(50% - 65px);
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.editorial_title h2 {
+  margin: 0 0 30px;
+  font-family: "Title-Font";
+  font-size: 32px;
+  line-height: 1.23em;
+  text-transform: uppercase;
+}
+
+.editorial_desc {
+  margin: 0 0 30px;
+  font-family: "Body-Font";
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+
+
+
+
+
+/* DYNAMICS */
+#dynamics {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dynamics_car_container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.dynamics_background {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0;  left: 0;
+  background: url(../superfast/img/dynamics_car_1728.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* DESIGN */
+#design {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.design_car_container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.design_background {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0;  left: 0;
+  background: url(../superfast/img/design_car_1728.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+/* INTERIOR */
+#interior {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.interior_container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.interior_background {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0;  left: 0;
+  background: url(../superfast/img/interior_background_1920.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+/* TECH SPECS */
+#tech_specs {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tech_container {
+  width: 100%;
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 128px 48px 40px;
+}
+
+.tech_container .headline_wrap {
+  width: 100%;
+  padding: 0 48px 0;
+  position: absolute;
+  top: 82px; left: 0;
+}
+
+.tech_specs_wrap {
+  width: 100%;
+  margin: 5vh 0 2vh 0;
+  display: flex;  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.tech_specs_wrap li {width: 25%; margin-bottom: 5vh;}
+
+.specs_value {
+  font-family: "Title-Font";
+  font-size: 56px;
+  line-height: 1.16em;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: rgb(255, 255, 255);
+}
+
+.specs_value span {font-size: 32px;}
+
+
+.specs_label {
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(143, 143, 143);
+}
+
+
+
+/* TECH DETAIL CONTAINER */
+.tech_detail_container {
+  background: rgb(60, 11, 13);
+}
+
+.tech_detail_wrap {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 128px 48px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+
+/* TECH BUTTON */
+.tech_block_button {
+  position: absolute;
+  top: 35px;  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  transition: all 300ms;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tech_block_button_border {
+  width: 40px; height: 40px;
+  padding: 8px;
+  border-radius: 100%;
+  font-size: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 2px solid rgb(143, 143, 143);
+}
+
+.tech_block_button_border svg {
+  transform: rotate(90deg) translateZ(0);
+  transform-origin: 50%;
+  transition: transform .4s ease;
+  fill: rgb(255, 255, 255);
+}
+
+
+/* TECH DETAIL TITLE */
+.tech_detail_list {display: block;}
+
+
+.tech_detail_title {
+border-top: 1px solid rgb(255, 255, 255);
+}
+
+.tech_detail_title div {
+  margin: 0 0 20px;
+  padding: 20px 20px 0 0;
+  display: flex;  justify-content: space-between;
+  align-items: center;
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.accordion_open_button {transform: rotate(-45deg);}
+
+.detail_accordion {
+  padding: 16px 0 32px;
+  line-height: 1.5em;
+}
+
+.detail_accordion li {
+  padding: 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid rgb(143, 143, 143);
+}
+
+.detail_accordion li:last-child {border-bottom: none;}
+
+.detail_accordion li strong {
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(143, 143, 143);
+}
+
+
+
+
+
+/* MEDIA GALLERY */
+#media_gallery {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.media_gallery_container {
+  width: 100%;
+  position: relative;
+}
+
+.media_gallery_container .headline_wrap {
+  width: 100%;
+  padding: 48px;
+  position: absolute;
+  top: 82px; left: 0;
+}
+
+.media_gallery_container .headline_wrap .headline_chapter {margin: 0;}
+
+
+.gallery_wrap {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 128px 48px;
+}
+
+.gallery_header {
+  display: flex; align-items: center; justify-content: flex-end;
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(143, 143, 143);
+  position: relative;
+  z-index: 2;
+}
+
+.gallery_header li {
+  padding: 5px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gallery_header li:first-child {
+  padding: 5px 30px;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(218, 41, 28);
+  border-bottom: 2px solid rgb(218, 41, 28);
+}
+
+.gallery_slider_wrap {
+  width: 100%;
+  margin: 40px 0 0;
+  overflow-x: hidden;
+}
+
+.gallery_slider_video {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.video_img {
+  width: calc(33.33% - 20px);
+  margin: 0 30px 0 0;
+  position: relative;
+}
+
+.video_img img {
+  /* width: 100%; */
+  display: block;
+}
+
+.video_img span {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+/* FIND A DEALER */
+
+.dealer_container {
+  width: 100%;
+}
+
+.dealer_container a {
+  width: 100%; height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.dealer_text {
+  flex: 0 0 50%;
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dealer_text_wrap {
+  max-width: 400px;
+}
+
+.dealer_text_wrap h5 {
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  margin: 0 0 16px;
+}
+
+.dealer_title {
+  font-family: "Title-Font";
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-size: 44px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.dealer_media {
+  width: 50%;
+  overflow: hidden;
+}
+
+.dealer_media img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.dealer_container a:hover .dealer_media img {
+  transform: scale(1.1);
+  transition: transform 3s ease-in;
+}
+
+
+
+
+
+
+/* PARTNERS */
+
+.partners_container {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 128px 48px;
+}
+
+.partners_list {
+  margin: 5vh 0 0;
+  display: flex;
+  flex-flow: wrap;
+  color: rgb(255, 255, 255);
+}
+
+.partners_list li {
+  width: 16%;  min-width: 180px;
+  font-family: "Body-Font-Medium";
+  font-weight: 500;
+  font-stretch: expanded;
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 15px 3vh 0;
+}
