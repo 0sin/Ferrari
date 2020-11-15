@@ -1,0 +1,330 @@
+/* SUPER FAST */
+
+/* 희경 시작 ~ 2 AERODYNAMICS 까지 */
+.sf_main_header { 
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+}
+
+.sf_main_header ul {
+    display: flex;
+    width: 100%;
+}
+
+
+.sf_header_underline::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.car_header {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 40px;
+    left: 0;
+    padding: 20px ;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.7));
+}
+.car_header_logo_wrap {
+    padding: 0 24px;
+}
+.car_header_logo_wrap img{
+    height: 40px;
+}
+.car_header_right{
+    display: flex;
+}
+.car_header_nav{
+    width: 250px;
+    padding-right: 5px;
+    display: flex;
+}
+.car_header_nav li {
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:'Body-Font-Medium';
+
+}
+.car_header_nav li a{
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    font-weight: 500;
+    font-stretch: 125%;
+    color: white;
+}
+.car_header_share_wrap {
+    position: relative;
+}
+.car_header_btn {
+    width: 40px;
+    height: 40px;
+    border: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+.icon_circle, .icon_share{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.main_bg {
+    z-index: -2;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/5f60fa28966ae519cbd62911-ferrari-portofino-m-launch-gateway-desktop.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#sf_main
+
+.sf_main_wrap{width: 100%;
+    height: 100vh; position: relative;}
+
+.sf_main_conts {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px 48px 144.5px;
+    box-sizing: border-box;
+}
+.sf_main_conts {
+    text-align: center;
+    z-index: 2;
+}
+.intro_img_container{
+
+    position: relative;
+}
+.intro_container{
+    position: relative;
+}
+.intro_img_container::before{
+    width: 100%;
+    height: 641px;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 30%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 30%);
+}
+.intro_img_container img{
+    width: 100%;
+}
+
+
+.intro_conts_wrap {
+    width: 100%;
+    height: 632px;
+    padding: 100px 48px 128px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(0deg, #320607 60%, rgba(50, 6, 7, 0));
+}
+
+.intro_conts_wrap h3{
+    width: 100%;
+    max-width: 1000px;
+    font-family: 'Title-Font';
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: 400;
+}
+.intro_conts_wrap p{
+    width: 100%;
+    max-width: 1000px;
+    font-family: 'Body-Font';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.scroll_indecator_wrap {
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+.scroll_indecator {
+    width: 1px;
+    height: 96px;
+    background-color: rgb(48, 48, 48);
+    position: relative;
+}
+
+.scroll_indecator::before{
+    position: absolute;
+    content: "";
+    background-color: #eeeded;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    animation: ScrollIndicator 1.5s ease-out 1s infinite;
+}
+
+@keyframes ScrollIndicator{
+    0% {
+      height: 0;
+      transform: translateY(0); }
+    30% {
+      height: 100%;
+      transform: translateY(0); }
+    60% {
+      height: 100%;
+      transform: translateY(-100%); }
+    100% {
+      height: 100%;
+      transform: translateY(-100%); } }
+
+.editorial_container{
+    width: 100%;
+    padding: 100px 0 ;
+    background-color: rgb(50, 6, 7);
+    color: white;
+}
+.editorial_conts {
+    width: 100%;
+    max-width: 1264px;
+    padding: 0  48px 48px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.editorial_group{
+    width: calc(50% - 65px);
+    display: flex;
+    justify-content: space-between;
+}
+.editorial_group_group{
+    /* width: calc(50% - 25px); */
+    flex: 1 1 50%;
+    display: block;
+}
+.editorial_group_group:nth-child(2){
+    margin-left: 25px;
+}
+.editorial_group_group_conts li {
+    font-family:'Body-Font-Medium';
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    font-weight: 500;
+    font-stretch: 125%;
+    margin-top: 20px;
+}
+
+.editorial_group_group_conts .editorial_group_title{
+    font-size: 16px;
+    color: rgb(143, 143, 143);
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+
+.editorial_text_wrap{
+    width: calc(50% - 65px);
+}
+.editorial_text{
+    margin-bottom: 50px;
+}
+.editorial_text p{
+    font-family: 'Body-Font';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.editorial_btn{
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid rgba(225, 225, 225, 0.4);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Body-Font-Medium';
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    font-weight: 500;
+    font-stretch: 125%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.editorial_btn:hover{
+    border-color: rgba(225, 225, 225, 1);
+    transition: 0.25s;
+}
+
+
+
+
+
+/*  추가 */
+
+
+
+.specs_list{
+    width: 100%;
+    max-width: 519px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specs_list li {
+    width: 50%;
+}
+.specs_list h2{
+    font-size: 56px;
+    line-height: 65px;
+}
+.specs_list li h4{
+    color: #8f8f8f;
+    margin: 0;
+}
+
+.specs_unit {
+    font-size: 32px;
+    line-height: 1.23em;
+}
+
+/* 영신 3 DYNAMICS ~ 끝 까지 */
