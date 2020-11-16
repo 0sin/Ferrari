@@ -1,10 +1,40 @@
 #menu_list {
+  position: relative;
   width: 452px;
   height: 800px;
-  padding: 0 96px;
+  padding-left: 96px;
+  margin-right: 96px;
   list-style-type: disc;
   overflow-x: hidden;
   overflow-y: hidden scroll;
+}
+
+#menu_list::-webkit-scrollbar {
+  width: 1px;
+}
+
+#menu_list::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+#menu_list::-webkit-scrollbar-track {
+  background-color: #eeeded;
+}
+
+#menu_list:hover::-webkit-scrollbar {
+  width: 6px;
+  transition: 0.2 ease-in-out;
+}
+
+#menu_list::after,
+#menu_list::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  transform: translateX(-50%);
 }
 
 .menu_list_wrap li {
@@ -25,6 +55,13 @@
 
 .auto_menu_list_sub {
   font-size: 24px;
+}
+
+.menu_list_wrap_divider {
+  display: block;
+  width: 70px;
+  border-top: 2px solid #8f8f8f;
+  margin: 30px 0;
 }
 
 .menu_list_box {
