@@ -2,6 +2,7 @@
 
 @import "components/menu-header.css";
 @import "components/menu-list.css";
+@import "components/media-section.css";
 
 * {
   margin: 0;
