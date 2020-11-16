@@ -9,6 +9,17 @@
   }
 } */
 
+@keyframes translateAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 #menu_list {
   position: relative;
   width: 452px;
@@ -24,17 +35,16 @@
   width: 1px;
 }
 
+#menu_list:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
 #menu_list::-webkit-scrollbar-thumb {
   background-color: black;
 }
 
 #menu_list::-webkit-scrollbar-track {
   background-color: #eeeded;
-}
-
-#menu_list:hover::-webkit-scrollbar {
-  width: 6px;
-  transition: 0.2 ease-in-out;
 }
 
 #menu_list::after,
@@ -90,18 +100,47 @@
   cursor: default;
 }
 
-.li-1,
-.li-2,
-.li-3,
-.li-4,
-.li-5,
-.li-6,
-.li-7,
-.li-8,
-.li-9,
-.li-10,
+.li-1 {
+  animation: translateAnimation 0.2s ease-in;
+}
+.li-2 {
+  animation: translateAnimation 0.4s ease-in;
+}
+
+.li-3 {
+  animation: translateAnimation 0.6s ease-in;
+}
+
+.li-4 {
+  animation: translateAnimation 0.8s ease-in;
+}
+
+.li-5 {
+  animation: translateAnimation 1s ease-in;
+}
+
+.li-6 {
+  animation: translateAnimation 1.2s ease-in;
+}
+
+.li-7 {
+  animation: translateAnimation 1.4s ease-in;
+}
+
+.li-8 {
+  animation: translateAnimation 1.6s ease-in;
+}
+
+.li-9 {
+  animation: translateAnimation 1.8s ease-in;
+}
+
+.li-10 {
+  animation: translateAnimation 2s ease-in;
+}
+
 .li-11 {
-  opacity: 0;
+  animation: translateAnimation 2.2s ease-in;
 }
 
 /* Racing Menu Styles */
