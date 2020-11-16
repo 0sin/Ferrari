@@ -1,3 +1,14 @@
+/* Keyframes */
+/* 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
 #menu_list {
   position: relative;
   width: 452px;
@@ -37,6 +48,10 @@
   transform: translateX(-50%);
 }
 
+.menu_list_wrap {
+  animation: fadeIn 1s ease-in;
+}
+
 .menu_list_wrap li {
   font-family: "Noe Display Regular";
   padding: 16px 0;
@@ -73,6 +88,20 @@
 .menu_list_box li:hover {
   color: #000;
   cursor: default;
+}
+
+.li-1,
+.li-2,
+.li-3,
+.li-4,
+.li-5,
+.li-6,
+.li-7,
+.li-8,
+.li-9,
+.li-10,
+.li-11 {
+  opacity: 0;
 }
 
 /* Racing Menu Styles */
