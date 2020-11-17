@@ -59,19 +59,115 @@
       <div id="menu_list">
         <div class="menu_list_wrap">
           <ul class="auto_menu_list menu_list_big_font">
-            <a onclick="mediaChange(i)"><li class="li-1">812 Superfast</li></a>
-            <a><li class="li-2">812 GTS</li></a>
-            <a><li class="li-3">SF90 Stradale</li></a>
-            <a><li class="li-4">F8 Tributo</li></a>
-            <a><li class="li-5">F8 Spider</li></a>
-            <a><li class="li-6">Ferrari 488 Pista</li></a>
-            <a><li class="li-7">Ferrari 488 Pista Spider</li></a>
-            <a><li class="li-8">GTC4Lusso</li></a>
-            <a><li class="li-9">Ferrari Roma</li></a>
-            <a><li class="li-10">GTC4Lusso T</li></a>
-            <a><li class="li-11">Ferrari Portofino M</li></a>
-            <a><li>Ferrari Monza SP1</li></a>
-            <a><li>Ferrari Monza SP2</li></a>
+            <a
+              ><li
+                onmouseover="mediaChange(0)"
+                class="matrix"
+                style="animation-delay: 0.05s"
+              >
+                812 Superfast
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(1)"
+                class="matrix"
+                style="animation-delay: 0.1s"
+              >
+                812 GTS
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(2)"
+                class="matrix"
+                style="animation-delay: 0.15s"
+              >
+                SF90 Stradale
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(3)"
+                class="matrix"
+                style="animation-delay: 0.2s"
+              >
+                F8 Tributo
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(4)"
+                class="matrix"
+                style="animation-delay: 0.25s"
+              >
+                F8 Spider
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(5)"
+                class="matrix"
+                style="animation-delay: 0.3s"
+              >
+                Ferrari 488 Pista
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(6)"
+                class="matrix"
+                style="animation-delay: 0.35s"
+              >
+                Ferrari 488 Pista Spider
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(7)"
+                class="matrix"
+                style="animation-delay: 0.4s"
+              >
+                GTC4Lusso
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(8)"
+                class="matrix"
+                style="animation-delay: 0.45s"
+              >
+                Ferrari Roma
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(9)"
+                class="matrix"
+                style="animation-delay: 0.5s"
+              >
+                GTC4Lusso T
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(10)"
+                class="matrix"
+                style="animation-delay: 0.55s"
+              >
+                Ferrari Portofino M
+              </li></a
+            >
+            <a
+              ><li
+                onmouseover="mediaChange(11)"
+                class="matrix"
+                style="animation-delay: 0.6s"
+              >
+                Ferrari Monza SP1
+              </li></a
+            >
+            <a><li onmouseover="mediaChange(12)">Ferrari Monza SP2</li></a>
           </ul>
         </div>
         <span class="menu_list_wrap_divider"></span>
@@ -93,16 +189,22 @@
       </div>
     </section>
     <section id="media_section">
-      <div class="media_wrap">
-        <article id="video_1" onclick="mediaChange(0)">
+      <div>
+        <article>
           <div>
-            <video autoplay muted loop>
-              <source src="video/auto/mp4/812_Superfast.mp4" type="video/mp4" />
+            <video id="video_1" autoplay muted loop></video>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <video id="video_2" autoplay muted loop>
+              <source src="" type="video/mp4" />
             </video>
           </div>
         </article>
 
-        <article id="video_2" onmouseover="mediaChange(1)">
+        <article id="video_3">
           <div>
             <video autoplay muted loop>
               <source src="" type="video/mp4" />
@@ -110,39 +212,31 @@
           </div>
         </article>
 
-        <article id="video_3" onmouseover="mediaChange(2)">
-          <div>
-            <video autoplay muted loop>
-              <source src="" type="video/mp4" />
-            </video>
-          </div>
-        </article>
-
-        <article id="video_4" onmouseover="mediaChange(3)">
+        <article id="video_4">
           <div>
             <figure></figure>
           </div>
         </article>
 
-        <article id="video_5" onmouseover="mediaChange(4)">
+        <article id="video_5">
           <div>
             <figure></figure>
           </div>
         </article>
 
-        <article id="video_6" onmouseover="mediaChange(5)">
+        <article id="video_6">
           <div>
             <figure></figure>
           </div>
         </article>
 
-        <article id="video_7" onmouseover="mediaChange(6)">
+        <article id="video_7">
           <div>
             <figure></figure>
           </div>
         </article>
 
-        <article id="video_8" onmouseover="mediaChange(7)">
+        <article id="video_8">
           <div>
             <figure></figure>
           </div>
@@ -191,8 +285,26 @@
       </div>
     </section>
     <script>
+      // mouse following script
+      function mouseFollow(x) {
+        var positionLeft = x.clientX;
+        var positionTop = x.clientY;
+        document.getElementById("mouseImage").style.left =
+          positionLeft - 30 + "px";
+        document.getElementById("mouseImage").style.top =
+          positionTop - 30 + "px";
+      }
+
+      if (document.addEventListener) {
+        document.addEventListener("mousemove", mouseFollow);
+      } else if (document.attachEvent) {
+        document.attachEvent("onmousemove", mouseFollow);
+      }
+
       function mediaChange(i) {
-        document.getElementById("video_1").src = mediaChange(0);
+        document.getElementById("video_1").src =
+          "videos/video/auto_page/mp4/812_Superfast.mp4";
+        document.getElementById();
       }
     </script>
   </body>
