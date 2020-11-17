@@ -1,0 +1,24 @@
+.media_wrap {
+  position: relative;
+}
+
+.media_wrap video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.media_title_wrap {
+  position: absolute;
+  top: 820px;
+  left: 60px;
+}
+
+.media_title_wrap img {
+  margin-bottom: 13px;
+}
+
+.media_title_wrap h3 {
+  color: #fff;
+  font-weight: 400;
+}
