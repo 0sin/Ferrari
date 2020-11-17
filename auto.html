@@ -10,14 +10,6 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <!-- <script type="text/javascript">
-      $(function () {
-        var myimage = $(".media_image");
-        myimage.hover(function () {
-          myimage.attr("src", "/img/Auto img/collect (1).gif");
-        });
-      });
-    </script> -->
   </head>
 
   <header>
@@ -67,7 +59,7 @@
       <div id="menu_list">
         <div class="menu_list_wrap">
           <ul class="auto_menu_list menu_list_big_font">
-            <a><li class="li-1">812 Superfast</li></a>
+            <a onclick="mediaChange(i)"><li class="li-1">812 Superfast</li></a>
             <a><li class="li-2">812 GTS</li></a>
             <a><li class="li-3">SF90 Stradale</li></a>
             <a><li class="li-4">F8 Tributo</li></a>
@@ -101,102 +93,107 @@
       </div>
     </section>
     <section id="media_section">
-      <div class="videos">
-        <video src="video/auto/mp4/812_Superfast.mp4" autoplay loop></video>
+      <div class="media_wrap">
+        <article id="video_1" onclick="mediaChange(0)">
+          <div>
+            <video autoplay muted loop>
+              <source src="video/auto/mp4/812_Superfast.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <article id="video_2" onmouseover="mediaChange(1)">
+          <div>
+            <video autoplay muted loop>
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <article id="video_3" onmouseover="mediaChange(2)">
+          <div>
+            <video autoplay muted loop>
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+        </article>
+
+        <article id="video_4" onmouseover="mediaChange(3)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_5" onmouseover="mediaChange(4)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_6" onmouseover="mediaChange(5)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_7" onmouseover="mediaChange(6)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_8" onmouseover="mediaChange(7)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_9" onmouseover="mediaChange(8)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_10" onmouseover="mediaChange(9)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_11" onmouseover="mediaChange(10)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_12" onmouseover="mediaChange(11)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_13" onmouseover="mediaChange(12)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <article id="video_14" onmouseover="mediaChange(13)">
+          <div>
+            <figure></figure>
+          </div>
+        </article>
+
+        <div class="media_title_wrap">
+          <img src="img/Auto img/5cae0d709732770a7a808294-812.png" alt="" />
+          <h3>Live for the moment</h3>
+        </div>
       </div>
     </section>
     <script>
-      // List Opacity Delay
-
-      // $(document).ready(function () {
-      //   var liFadeIn = 120;
-      //   $(".li-1").animate(
-      //     {
-      //       opacity: "1",
-      //     },
-      //     liFadeIn,
-      //     function () {
-      //       $(".li-2").animate(
-      //         {
-      //           opacity: "1",
-      //         },
-      //         liFadeIn,
-      //         function () {
-      //           $(".li-3").animate(
-      //             {
-      //               opacity: "1",
-      //             },
-      //             liFadeIn,
-      //             function () {
-      //               $(".li-4").animate(
-      //                 {
-      //                   opacity: "1",
-      //                 },
-      //                 liFadeIn,
-      //                 function () {
-      //                   $(".li-5").animate(
-      //                     {
-      //                       opacity: "1",
-      //                     },
-      //                     liFadeIn,
-      //                     function () {
-      //                       $(".li-6").animate(
-      //                         {
-      //                           opacity: "1",
-      //                         },
-      //                         liFadeIn,
-      //                         function () {
-      //                           $(".li-7").animate(
-      //                             {
-      //                               opacity: "1",
-      //                             },
-      //                             liFadeIn,
-      //                             function () {
-      //                               $(".li-8").animate(
-      //                                 {
-      //                                   opacity: "1",
-      //                                 },
-      //                                 liFadeIn,
-      //                                 function () {
-      //                                   $(".li-9").animate(
-      //                                     {
-      //                                       opacity: "1",
-      //                                     },
-      //                                     liFadeIn,
-      //                                     function () {
-      //                                       $(".li-10").animate(
-      //                                         {
-      //                                           opacity: "1",
-      //                                         },
-      //                                         liFadeIn,
-      //                                         function () {
-      //                                           $(".li-11").animate(
-      //                                             {
-      //                                               opacity: "1",
-      //                                             },
-      //                                             liFadeIn
-      //                                           );
-      //                                         }
-      //                                       );
-      //                                     }
-      //                                   );
-      //                                 }
-      //                               );
-      //                             }
-      //                           );
-      //                         }
-      //                       );
-      //                     }
-      //                   );
-      //                 }
-      //               );
-      //             }
-      //           );
-      //         }
-      //       );
-      //     }
-      //   );
-      // });
+      function mediaChange(i) {
+        document.getElementById("video_1").src = mediaChange(0);
+      }
     </script>
   </body>
 </html>
