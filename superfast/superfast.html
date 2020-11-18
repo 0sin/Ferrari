@@ -49,13 +49,13 @@
         </ul>
         <div class="car_header_share_wrap">
           <button url="" target="_self" class="car_header_btn">
-            <!-- 원 효과 줘야함 -->
-            <span class="">
+
+            <span class=" icon_wrap">
               <span class="icon_circle">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" stroke="1" ></circle></svg>
+               
               </span>
               <span class="icon_share">
-                <svg viewBox="0 0 12 14" class="icon" width="12" height="14" style="height: 14px; width: 12px;"><path d="M3.37 8.457a2 2 0 1 1-.124-3.022l4.783-2.761a2 2 0 1 1 .652 1.163l-4.728 2.73a2.007 2.007 0 0 1 .029.704L8.81 10.06a2 2 0 1 1-.747 1.108L3.37 8.457z"></path></svg>
+                <svg viewBox="0 0 12 14" class="icon" width="20" height="20" style="height: 14px; width: 12px;"><path d="M3.37 8.457a2 2 0 1 1-.124-3.022l4.783-2.761a2 2 0 1 1 .652 1.163l-4.728 2.73a2.007 2.007 0 0 1 .029.704L8.81 10.06a2 2 0 1 1-.747 1.108L3.37 8.457z"></path></svg>
               </span>
             </span>
           </button>
@@ -70,9 +70,17 @@
   <section id="sf_main">
     <div class="sf_main_wrap">
       <div class="main_bg">
+        <div class="bg_cover"></div>
+        <div class="cover_theme_wrap"> 
+          <video class="landing_video " autoplay muted loop>
+                  <source src="../video/812 Superfast.mp4" type="video/mp4">
+                      '당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.'   
+          </video>
+
+      </div>
             
       </div>
-      <div class="sf_main_conts" style="color: black;">
+      <div class="sf_main_conts">
           <h2>
               <span style="opacity: 1; transform:matrix(1,0, 0, 1, 0, 0);">SHIFT &nbsp;</span>
               <span style="opacity: 1; transform:matrix(1,0, 0, 1, 0, 0);">TO &nbsp;</span>
@@ -85,16 +93,35 @@
         <div class="scroll_indecator"></div>
       </div>
     </div>
+
+    <div id="mouseImage">
+      <div class="circle">
+        <svg
+          viewBox="0 0 8 16"
+          class="icon"
+          width="8"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 16px; width: 8px"
+        >
+          <path
+            d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"
+          ></path>
+        </svg>
+      </div>
+      <span class="text">Play video</span>
+    </div>
   </section>
 
   <section id="intro">
     <div class="intro_container">
       <div class="intro_img_container">
-        <img src="../img/5d36cd517e98e13abbbed074-ferrari_812superfast_2017_intro_d.jpg">
       </div>
+      
+
       <div class="intro_conts_wrap">
-        <div>
-          <h3>
+        <div class="intro_conts_title">
+          <h2>
             <span>THE&nbsp;</span>
             <span>FASTEST&nbsp;</span>
             <span>AND&nbsp;</span>
@@ -102,13 +129,13 @@
             <span>POWERFUL&nbsp;</span>
             <span>FERRARI&nbsp;</span>
             <span>YET</span>
-          </h3>
+          </h2>
           <div class="intro_text">
             <p>The first and most difficult challenge Ferrari always faces when it decides to develop a new model is to push the boundaries of its own achievements yet again. This challenge is made all the tougher when the task at hand involves designing a new 12-cylinder engine, the power unit that hailed the start of the glorious Prancing Horse story 70 years ago in 1947. On this occasion, intensive research and development focused on exploiting Ferrari’s wealth of track-derived engineering know-how has produced the 812 Superfast, designed to offer its drivers both benchmark performance across the board and the most riveting and rewarding driving experience possible. With its output boosted to 800 cv, 60 more than the F12berlinetta, the 812 Superfast is the most powerful and fastest road-going Ferrari ever built (with the exception, of course, of the rear-engined special limited-series 12-cylinders). The 812 Superfast thus ushers in a new era in Ferrari 12-cylinder history, and, in doing so, builds on the invaluable legacies of the F12berlinetta and F12tdf. To make full use of that huge power and to guarantee perfect weight distribution, the car exploits a highly evolved transaxle architecture that couples a front-mounted engine with a rear-mounted transmission. It is also the first Ferrari equipped with EPS (Electric Power Steering).</p>
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
 
@@ -154,6 +181,42 @@
 
 
 <!-- 못한부분 추가 -->
+<section id="aerodynamics">
+  <div class="aerodynamics_container">
+  
+    <div class="headline">
+      <div class="headline_wrap">
+        <div class="headline_chapter">
+          <strong class="chapter_number">1</strong>
+          <span class="chapter_line">
+            <i></i>
+          </span>
+          <strong class="chapter_title">Engine</strong>
+        </div>
+        <h3 class="headline_title">
+          <span>Exceptionally</span>
+          <span>POWER</span>
+          <span>OUTPUT&nbsp;</span>
+          <span>OF</span>
+          <span>800&nbsp;</span>
+          <span>CV &nbsp;</span>
+          <span>AT&nbsp;</span>
+          <span>8,500&nbsp;</span>
+          <span>RPM</span>
+        </h3>
+        <p>At the development stage, Ferrari’s engineers set themselves the goal of exceeding the speciﬁc power output of the F12berlinetta’s V12.</p>
+      </div>
+    </div>
+    <div class="aerodynamics_background">
+      <img src="../img">
+    </div>
+    <div class="hotspot_point point_1">
+      <div class="inner_spot"></div>
+      <div class="outer_spot"></div>
+    </div>
+  </div>
+</section>
+
 
   <section id="editorial">
     <div class="editorial_container">
@@ -179,9 +242,113 @@
       </div>
     </div>
   </section>
+  <section id="aerodynamics">
+    <div class="aerodynamics_container">
+    
+      <div class="headline">
+        <div class="headline_wrap">
+          <div class="headline_chapter">
+            <strong class="chapter_number">3</strong>
+            <span class="chapter_line">
+              <i></i>
+            </span>
+            <strong class="chapter_title">Aerodynamics</strong>
+          </div>
+          <h3 class="headline_title">
+            <span>Exceptionally</span>
+            <span>High</span>
+            <span>Aerodynamic</span>
+            <span>Efficiency</span>
+          </h3>
+        </div>
+      </div>
+      <div class="aerodynamics_background">
+        <img src="../img">
+      </div>
+      <div class="hotspot_point point_1">
+        <div class="inner_spot"></div>
+        <div class="outer_spot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="text/javascript">
+    window.onload = function(){
+        var canvas = document.getElementById("canvas_car");
+
+            var ctx = canvas.getContext("2d");
+            var img = new Image();
+
+            function initalize () {
+              window.addEventListener('resize', resizeCanvas, false);
+              resizeCanvas
+            }
 
 
 
+            // img.addEventListener('load', function () {
+            //   ctx.drawImage(this, 0, 0, w, h);
+            //   });
+            img.onload = function redraw(){
+              
+            ctx.canvas.width = window.innerWidth ;
+            ctx.canvas.height = window.innerHeight;
+
+            var w = 3500;
+            var h = 2188;
+
+            var i = 4;
+                //이미지의 원하는 부분만 잘라서 그리기
+                //drawImage(이미지객체, 
+                //        이미지의 왼위 부분x, 이미지의 왼위 부분y, 이미지의 원하는 가로크기, 이미지의 원하는 세로크기,
+                //        사각형 부분x, 사각형 부분y, 가로크기, 세로크기)
+                //draw.drawImage(img, 100,100, 300,300, 50,50, 250,300);
+                
+                //전체 이미지 그리기
+                //drawImage(이미지객체, 사각형 왼위 x, 사각형 왼위 y, 가로크기, 세로크기)
+                ctx.drawImage(img, (ctx.canvas.width / 2) - (w/8) ,(ctx.canvas.height / 2) - (h/8), w/i , h/i);
+            }
+                        img.src = "../img/5d36d0161d95730996e64b6a-ferrari_812superfast_2017_aerodynamics_d.png";
+
+            function resizeCanvas() {
+              ctx.canvas.width = window.innerWidth;
+              ctx.canvas.height = window.innerHeight;
+            redraw();
+        }
+        }
+        
+//https://stackoverflow.com/questions/36257809/display-the-full-image-size-100-width-height-inside-a-html5-canvas-of-a-certa
+//https://bugsdb.com/_ko/debug/01183d9e4958782423913635ffcaaf4f 사이즈 맞추기 
+    </script>
+
+<script>
+  var divHi = document.getElementById('sf_main');
+function mouseFollow(x) {
+var positionLeft = x.clientX;
+var positionTop = x.clientY;
+document.getElementById("mouseImage").style.left =
+ positionLeft - 30 + "px";
+document.getElementById("mouseImage").style.top =
+ positionTop - 30 + "px";
+}
+
+divHi.addEventListener('mousemove', mouseFollow );
+
+</script>
+
+<script>
+   window.onscroll = function(){
+     currentY = window.pageYOffset;
+
+     if ( currentY > 40 ) {
+        document.getElementsByClassName('car_header')[0].style="position:fixed; top:0;"
+     } else {
+      document.getElementsByClassName('car_header')[0].style="position: absolute; top: 40px;"
+     }
+
+   }
+</script>
 
 </body>
 </html>
