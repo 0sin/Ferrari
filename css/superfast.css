@@ -1,37 +1,33 @@
 /* SUPER FAST */
 /* 공통 클래스 */
+body {overflow-x: hidden;}
+main {width: 100%;  background: rgb(50, 6, 7);}
+strong {font-weight: 500;}
 
+/* HEADLINE */
 .headline {
-  width: 100%;
-  padding: 100px 48px 0; 
+  width: 100%;  padding: 100px 48px 0; 
   margin: 0 auto;
 }
 
 .headline_wrap {
-  min-width: 270px;
-  display: inline-block;
+  min-width: 270px;  display: inline-block;
   position: relative;
 }
 
 .headline_chapter {
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 11px;
-  line-height: 1.27em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgb(218, 41, 28);
-  white-space: nowrap;
-  margin: 0 0 30px;
-  display: flex; align-items: center;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 11px;  line-height: 1.27em;
+  letter-spacing: 1.5px;  text-transform: uppercase;
+  color: rgb(218, 41, 28);  white-space: nowrap;
+  margin: 0 0 30px;  display: flex; align-items: center;
 }
 
 .chapter_line {
   min-width: 10px; width: 70%;
   max-width: 100px; height: 1px;
-  margin: 10px;
-  display: flex; align-items: center;
+  margin: 10px;  display: flex; align-items: center;
 }
 
 .chapter_line i {
@@ -40,45 +36,27 @@
   background: rgb(218, 41, 28);
 }
 
-
 .headline_title {
   font-family: "Title-Font";
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  font-size: 32px;
-  line-height: 1.23em;
-  text-transform: uppercase;
-  margin: 0 0 10px;
-  max-width: 450px;
-  color: rgb(255, 255, 255);
-  opacity: 1;
+  font-weight: normal;  font-stretch: normal;
+  letter-spacing: normal;  font-size: 32px;
+  line-height: 1.23em;  text-transform: uppercase;
+  margin: 0 0 10px;  max-width: 450px;
+  color: rgb(255, 255, 255);  opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .headline_wrap p {
-  font-family: "Body-Font";
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  font-size: 16px;
-  line-height: 1.5em;
-  max-width: 500px;
-  color: rgb(255, 255, 255);
-}
-
-
-
-main {
-  width: 100%;
-  background: rgb(50, 6, 7);
+  font-family: "Body-Font";  font-weight: normal;
+  font-stretch: normal;  letter-spacing: normal;
+  font-size: 16px;  line-height: 1.5em;
+  max-width: 500px;  color: rgb(255, 255, 255);
 }
 
 
 
 
 /* PLAY BUTTON */
-
 .play_video_button {
   color: rgb(255, 255, 255);
   display: inline-flex;
@@ -86,24 +64,22 @@ main {
 }
 
 
+
+
+
+
 /* 희경 시작 ~ 2 AERODYNAMICS 까지 */
 
 
 
 
-/* 영신 3 DYNAMICS ~ 끝 까지 */
-
 
 /* AERODYNAMICS */
-#arodynamics {
-  width: 100%;
-  margin: 0 auto;
-}
+#arodynamics {width: 100%;  margin: 0 auto;}
 
 .dynamics_video_container {
-  width: 100%;
+  width: 100%;  padding: 100px 0;
   position: relative;
-  padding: 100px 0;
 }
 
 .dynamics_video_wrap {
@@ -111,8 +87,7 @@ main {
   margin: 0 auto;
   padding: 0 48px 48px;
   display: flex; justify-content: space-between;
-  flex-flow: wrap;
-  overflow: hidden;
+  flex-flow: wrap; overflow: hidden;
 }
 
 .dynamics_video {
@@ -134,16 +109,13 @@ main {
 .editorial_text {
   width: calc(50% - 65px);
   color: rgb(255, 255, 255);
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
+  font-weight: normal;  font-stretch: normal;letter-spacing: normal;
 }
 
 .editorial_title h2 {
   margin: 0 0 30px;
   font-family: "Title-Font";
-  font-size: 32px;
-  line-height: 1.23em;
+  font-size: 32px;  line-height: 1.23em;
   text-transform: uppercase;
 }
 
@@ -157,17 +129,11 @@ main {
 
 
 
-
-
 /* DYNAMICS */
-#dynamics {
-  width: 100%;
-  margin: 0 auto;
-}
+#dynamics {width: 100%; margin: 0 auto;}
 
 .dynamics_car_container {
-  width: 100%;
-  min-height: 100vh;
+  width: 100%;  min-height: 100vh;
   position: relative;
 }
 
@@ -179,11 +145,10 @@ main {
   background-size: cover;
 }
 
+
+
 /* DESIGN */
-#design {
-  width: 100%;
-  margin: 0 auto;
-}
+#design {width: 100%;  margin: 0 auto;}
 
 .design_car_container {
   width: 100%;
@@ -203,14 +168,10 @@ main {
 
 
 /* INTERIOR */
-#interior {
-  width: 100%;
-  margin: 0 auto;
-}
+#interior {width: 100%; margin: 0 auto;}
 
 .interior_container {
-  width: 100%;
-  min-height: 100vh;
+  width: 100%;  min-height: 100vh;
   position: relative;
 }
 
@@ -227,28 +188,23 @@ main {
 
 /* TECH SPECS */
 #tech_specs {
-  width: 100%;
-  margin: 0 auto;
+  width: 100%;  margin: 0 auto;
   position: relative;
 }
 
 .tech_container {
-  width: 100%;
-  max-width: 1472px;
+  width: 100%;  max-width: 1472px;
   margin: 0 auto;
   padding: 128px 48px 40px;
 }
 
 .tech_container .headline_wrap {
-  width: 100%;
-  padding: 0 48px 0;
-  position: absolute;
-  top: 82px; left: 0;
+  width: 100%;  padding: 0 48px 0;
+  position: absolute; top: 82px; left: 0;
 }
 
 .tech_specs_wrap {
-  width: 100%;
-  margin: 5vh 0 2vh 0;
+  width: 100%;  margin: 5vh 0 2vh 0;
   display: flex;  justify-content: space-between;
   flex-flow: wrap;
 }
@@ -257,16 +213,12 @@ main {
 
 .specs_value {
   font-family: "Title-Font";
-  font-size: 56px;
-  line-height: 1.16em;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: rgb(255, 255, 255);
+  font-size: 56px;  line-height: 1.16em;
+  font-weight: normal;  font-stretch: normal;
+  letter-spacing: normal;  color: rgb(255, 255, 255);
 }
 
 .specs_value span {font-size: 32px;}
-
 
 .specs_label {
   font-family: "Body-Font-Medium";
@@ -282,75 +234,65 @@ main {
 
 
 /* TECH DETAIL CONTAINER */
-.tech_detail_container {
+#tech_detail_container {
   background: rgb(60, 11, 13);
+  transition: background 0.3s;
 }
 
 .tech_detail_wrap {
-  max-width: 1472px;
-  margin: 0 auto;
-  padding: 128px 48px;
-  color: rgb(255, 255, 255);
+  max-width: 1472px;  min-height: 100px;
+  margin: 0 auto;  color: rgb(255, 255, 255);
   position: relative;
 }
 
-
 /* TECH BUTTON */
-.tech_block_button {
-  position: absolute;
-  top: 35px;  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
-  transition: all 300ms;
-  color: #fff;
-  cursor: pointer;
+#tech_block_button {
+  position: absolute;  top: 35px;  left: 50%; transform: translateX(-50%);
+  margin: 0 auto;  cursor: pointer;
+  transition: top .3s;
 }
 
 .tech_block_button_border {
   width: 40px; height: 40px;
-  padding: 8px;
-  border-radius: 100%;
-  font-size: 0;
-  display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px;  border-radius: 100%;  font-size: 0;
+  display: inline-flex; align-items: center;justify-content: center;
   border: 2px solid rgb(143, 143, 143);
-}
-
-.tech_block_button_border svg {
-  transform: rotate(90deg) translateZ(0);
-  transform-origin: 50%;
-  transition: transform .4s ease;
-  fill: rgb(255, 255, 255);
+  transition: transform .3s ease;
 }
 
 
-/* TECH DETAIL TITLE */
-.tech_detail_list {display: block;}
 
+/* TECH DETAIL LIST */
+#tech_detail_list {
+  opacity: 1;  display: block;
+  padding: 128px 48px;
+  margin: 0 auto;
+}
 
 .tech_detail_title {
-border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+  max-height: 64px;  overflow: hidden;
+  transition: all 0.7s;
 }
 
+.tech_acc {max-height: 1200px;}
+
 .tech_detail_title div {
-  margin: 0 0 20px;
-  padding: 20px 20px 0 0;
+  height: 64px;  
+  padding: 0px 20px 0 0px;
   display: flex;  justify-content: space-between;
   align-items: center;
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 16px;  line-height: 1.5em;
   letter-spacing: 1.5px;
   cursor: pointer;
 }
 
 .accordion_open_button {transform: rotate(-45deg);}
+.accordion_close_button {transform: rotate(0deg);}
 
-.detail_accordion {
-  padding: 16px 0 32px;
-  line-height: 1.5em;
-}
+.detail_accordion {padding: 16px 0 32px;  line-height: 1.5em;}
 
 .detail_accordion li {
   padding: 20px;
@@ -362,12 +304,9 @@ border-top: 1px solid rgb(255, 255, 255);
 
 .detail_accordion li strong {
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 11px;
-  line-height: 1.27em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 11px;  line-height: 1.27em;
+  letter-spacing: 1.5px;  text-transform: uppercase;
   color: rgb(143, 143, 143);
 }
 
@@ -377,22 +316,16 @@ border-top: 1px solid rgb(255, 255, 255);
 
 /* MEDIA GALLERY */
 #media_gallery {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  color: rgb(255, 255, 255);
+  width: 100%;  margin: 0 auto;
+  position: relative;  color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
-.media_gallery_container {
-  width: 100%;
-  position: relative;
-}
+.media_gallery_container {width: 100%;  position: relative;}
 
 .media_gallery_container .headline_wrap {
-  width: 100%;
-  padding: 48px;
-  position: absolute;
-  top: 82px; left: 0;
+  width: 100%;  padding: 48px;
+  position: absolute;  top: 82px; left: 0;
 }
 
 .media_gallery_container .headline_wrap .headline_chapter {margin: 0;}
@@ -400,126 +333,169 @@ border-top: 1px solid rgb(255, 255, 255);
 
 .gallery_wrap {
   max-width: 1472px;
-  margin: 0 auto;
-  padding: 128px 48px;
+  margin: 0 auto;  padding: 128px 48px;
 }
 
 .gallery_header {
   display: flex; align-items: center; justify-content: flex-end;
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 11px;
-  line-height: 1.27em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgb(143, 143, 143);
-  position: relative;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 11px;  line-height: 1.27em;
+  letter-spacing: 1.5px;  text-transform: uppercase;
+  color: rgb(143, 143, 143);  position: relative;
   z-index: 2;
 }
 
 .gallery_header li {
-  padding: 5px 30px;
-  text-align: center;
-  cursor: pointer;
+  padding: 5px 30px;  text-align: center;  cursor: pointer;
 }
 
-.gallery_header li:first-child {
-  padding: 5px 30px;
-  text-align: center;
-  cursor: pointer;
+.gallery_header_button_active {
   color: rgb(218, 41, 28);
   border-bottom: 2px solid rgb(218, 41, 28);
 }
 
-.gallery_slider_wrap {
-  width: 100%;
-  margin: 40px 0 0;
-  overflow-x: hidden;
+.gallery_slider_wrap {width: 100%;  margin: 40px 0 0;}
+
+
+
+/* VIDEO GALLERY */
+#gallery_slider_video {
+  width: 100%; height: 100%; 
+  display: flex;   position: relative;
+  box-sizing: content-box; opacity: 1;
+  animation: galleryopacity 1s ease-in-out;
+  overflow-x: visible;
 }
 
-.gallery_slider_video {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
+@keyframes galleryopacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
-.video_img {
-  width: calc(33.33% - 20px);
-  margin: 0 30px 0 0;
-  position: relative;
-}
-
-.video_img img {
-  /* width: 100%; */
+.gallery_video_wrap {
   display: block;
+  max-width: calc(33.33% - 20px);
+  margin: 0 30px 0 0;
+  flex-shrink: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.video_img span {
-  position: absolute;
-  bottom: 0;
+.gallery_video_wrap div {display: block;}
+
+.gallery_video_wrap div img {
+  display: block;
+  width: 100%;
 }
+
+
+/* PHOTO GALLERY */
+#gallery_slider_photo {
+  width: 100%; height: 100%; 
+  display: flex;   position: relative;
+  box-sizing: content-box; opacity: 1;
+  animation: galleryopacity 1s ease-in-out;
+  overflow-x: visible;
+}
+
+.gallery_photo_wrap {
+  display: block;
+  max-width: calc(33.33% - 20px);
+  margin: 0 30px 0 0;
+  flex-shrink: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.gallery_photo_wrap div {display: block;}
+
+.gallery_photo_wrap div img {
+  display: block;
+  width: 100%;
+}
+
+
+/* GALLERY 공통 */
+.gallery_caption {
+  font-family: "Body-Font-Medium";
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 11px;  line-height: 1.27em;
+  letter-spacing: 1.5px;  text-transform: uppercase;
+  position: absolute;  bottom: 0;  left: 0;
+  padding: 20px;
+  width: 100%;  max-width: 100%;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.7));
+  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;
+}
+
+
+.slide_bullet_wrap {
+  width: 120px; position: absolute; 
+  top: auto; bottom: -56px; left: calc(50% - 60px); 
+  opacity: 1; font-size: 0;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.slide_bullet {
+  width: 24px; height: 24px; margin: 0; cursor: pointer; display: inline-block; position: relative;
+}
+
+.slide_bullet svg {
+  width: 24px; height: 24px; border-radius: 100%;
+  position: absolute; top: calc(50% - 12px); left: calc(50% - 12px); border: 1px solid rgb(255, 255, 255);
+}
+
+.slide_bullet span {
+  width: 4px; height: 4px; border-radius: 100%;
+  position: absolute; top: calc(50% - 2px); left: calc(50% - 2px); background: rgb(255, 255, 255); display: block;
+}
+
+
+.gallery_slide_bt_right {position: absolute; top: auto; bottom: -56px; right: 20px; padding: 0 0 0 48px; opacity: 1; cursor: pointer;}
+.gallery_slide_bt_left {position: absolute; top: auto; bottom: -56px; left: 20px; padding: 0 48px 0 0; opacity: 1; cursor: pointer;}
+/* .bt_defalt {opacity: 0.5;  cursor: default;} */
 
 
 
 
 /* FIND A DEALER */
 
-.dealer_container {
-  width: 100%;
-}
+.dealer_container {width: 100%;}
 
 .dealer_container a {
   width: 100%; height: 650px;
-  display: flex;
-  justify-content: center;
+  display: flex;  justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
+  color: rgb(255, 255, 255);  overflow: hidden;
 }
 
 .dealer_text {
-  flex: 0 0 50%;
-  padding: 48px;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 50%;  padding: 48px;
+  display: flex;  justify-content: center;
   align-items: center;
 }
 
-.dealer_text_wrap {
-  max-width: 400px;
-}
+.dealer_text_wrap {max-width: 400px;}
 
 .dealer_text_wrap h5 {
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 16px;
-  line-height: 1.5em;
-  letter-spacing: 1.5px;
-  margin: 0 0 16px;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 16px;  line-height: 1.5em;
+  letter-spacing: 1.5px;  margin: 0 0 16px;
 }
 
 .dealer_title {
   font-family: "Title-Font";
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  font-size: 44px;
-  line-height: 1.2em;
-  text-transform: uppercase;
+  font-weight: normal;  font-stretch: normal;
+  letter-spacing: normal;  font-size: 44px;
+  line-height: 1.2em;  text-transform: uppercase;
 }
 
-.dealer_media {
-  width: 50%;
-  overflow: hidden;
-}
+.dealer_media {width: 50%; overflow: hidden;}
 
-.dealer_media img {
-  width: 100%;
-  object-fit: cover;
-}
+.dealer_media img {width: 100%; object-fit: cover;}
 
 
 .dealer_container a:hover .dealer_media img {
@@ -530,31 +506,134 @@ border-top: 1px solid rgb(255, 255, 255);
 
 
 
-
-
 /* PARTNERS */
 
 .partners_container {
-  max-width: 1472px;
-  margin: 0 auto;
+  max-width: 1472px;  margin: 0 auto;
   padding: 128px 48px;
 }
 
 .partners_list {
-  margin: 5vh 0 0;
-  display: flex;
-  flex-flow: wrap;
-  color: rgb(255, 255, 255);
+  margin: 5vh 0 0;  display: flex;
+  flex-flow: wrap;  color: rgb(255, 255, 255);
 }
 
 .partners_list li {
   width: 16%;  min-width: 180px;
   font-family: "Body-Font-Medium";
-  font-weight: 500;
-  font-stretch: expanded;
-  font-size: 11px;
-  line-height: 1.27em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-weight: 500;  font-stretch: expanded;
+  font-size: 11px;  line-height: 1.27em;
+  letter-spacing: 1.5px;  text-transform: uppercase;
   padding: 0 15px 3vh 0;
+}
+
+
+
+
+
+
+
+/* MEDIA */
+@media screen and (max-width: 1600px) {
+  .dynamics_video_wrap {max-width: 1104px;}
+
+  .tech_container,
+  .tech_detail_wrap,
+  .partners_container
+   {max-width: 1312px;}
+}
+
+
+@media screen and (max-width: 1280px) {
+  .headline_title {font-size: 26px;}
+
+  .dynamics_video_wrap {max-width: 904px;}
+
+  .dynamics_video,
+  .editorial_text {width: calc(50% - 15px);}
+
+  .editorial_title h2 {font-size: 26px; margin: 0 0 30px;}
+
+  .tech_container,
+  .tech_detail_wrap,
+  .partners_container {max-width: 1056px;}
+
+  .dealer_container a {height: 460px;}
+}
+
+
+/* 타블렛 디스플레이 */
+
+@media screen and (max-width: 960px) {
+.dynamics_video_wrap {flex-flow: column; max-width: 100%;}
+.dynamics_video, .editorial_text {width: 100%;}
+.editorial_text {margin: 20px 0 0;}
+
+.dynamics_background {background: url(../superfast/img/dynamics_car_565.png) no-repeat center center;
+  background-size: cover;}
+.dynamics_video_container {padding: 80px 0;}
+
+.design_background {background: url(../superfast/img/design_car_565.png) no-repeat center center;
+  background-size: cover;}
+
+.interior_background {background: url(../superfast/img/interior_background_480.png) no-repeat center center; background-size: cover}
+
+.tech_container {padding: 95px 48px 40px;}
+.tech_specs_wrap li {width: 50%;}
+
+.dealer_title {font-size: 32px;}
+.dealer_media {height: 100%;}
+.dealer_media img {height: 100%;}
+
+.partners_list li {width: 33%}
+}
+
+
+
+/* 모바일 디스플레이 */
+
+@media screen and (max-width: 600px) {
+  .headline {padding: 80px 24px 0;}
+
+  .dynamics_video_wrap {padding: 0 24px;}
+  .editorial_title h2 {margin: 20px 0;}
+
+  .tech_container .headline_wrap {padding: 0 24px;}
+  .tech_container .chapter_line {width: 50px;}
+  .tech_container {padding: 95px 24px 40px;}
+  #tech_detail_list {padding: 95px 24px; }
+
+  .specs_value {font-size: 50px;}
+
+
+  .media_gallery_container .headline_wrap {
+    width: 100%;  padding: 24px;
+    position: absolute;  top: 24px; left: 0; right: 0;
+  }
+  .gallery_wrap {max-width: 100%; padding: 95px 24px 128px;}
+  .gallery_header {justify-content: space-between; margin: 20px 0 0;}
+  .gallery_header li {display: block; width: 50%;}
+  .gallery_slider_wrap {height: 100%;}
+
+  .gallery_video_wrap, 
+  .gallery_photo_wrap {max-width: 100%; flex-grow: 1;}
+
+  .gallery_slide_bt_right,
+  .gallery_slide_bt_left  {display: none;}
+
+  .slide_bullet_wrap {bottom: -48px}
+  .gallery_caption {padding: 10px;}
+
+
+  .dealer_container a {
+    height: 350px; position:relative; 
+    background-image: radial-gradient(circle at 25% 54%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)); z-index: 1;}
+  .dealer_text {position: absolute; padding:24px; flex: 1 1 100%; width: 100%; align-items: center; justify-content: flex-start; z-index: 3;}
+  .dealer_text_wrap h5 {display: none;}
+  .dealer_media {width: 100%; position: absolute; z-index: -1;opacity: 0.7;}
+
+  .partners_container {padding: 95px 24px;}
+  .partners_list li {width: 50%;}
+  .partners_container .headline_chapter {margin: 0;}
+  .partners_container .chapter_line {width: 50px; margin: 10px 10px 10px 5px;}
 }

@@ -179,14 +179,14 @@
           </li>
         </ul>
       </div>
-      <div class="tech_detail_container">
+      <div id="tech_detail_container">
         <div class="tech_detail_wrap">
-          <div class="tech_block_button">
+          <div id="tech_block_button">
             <div class="tech_block_button_border">
-              <svg viewBox="0 0 12 12" class="icon" style="height: 12px; width: 12px;"><path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"></path></svg>
+              <svg viewBox="0 0 12 12" class="icon" fill="#fff" style="height: 12px; width: 12px;"><path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"></path></svg>
             </div>  
           </div>
-          <ul class="tech_detail_list">
+          <ul id="tech_detail_list" style="display: block;">
             <li class="tech_detail_title">
               <div>Engine
                 <span class="accordion_open_button">
@@ -347,30 +347,146 @@
         </div>
         <div class="gallery_wrap">
           <ul class="gallery_header">
-            <li>Videos</li>
-            <li>Photos</li>
+            <li id="videos_button" onclick="videoGalleryShow()">Videos</li>
+            <li id="photos_button" onclick="photoGalleryShow()">Photos</li>
           </ul>
           <div class="gallery_slider_wrap">
-            <div class="gallery_slider_video">
-              <div class="video_img">
-                <img src="../superfast/img/media_video_1.jpg">
-                <span>Seaside cocktails with the stunning 812 Superfast</span>
+            <!-- VIDEO GALLERY -->
+            <div id="gallery_slider_video">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_1.jpg">
+                  <span class="gallery_caption">Seaside cocktails with the stunning 812 Superfast</span>
+                </div>
               </div>
-              <div class="video_img">
-                <img src="../superfast/img/media_video_2.jpg">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_2.jpg">
+                  <span class="gallery_caption">Ferrari 812 Superfast Premieres in Thailand</span>
+                </div>
               </div>
-              <div class="video_img">
-                <img src="../superfast/img/media_video_3.jpg">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_3.jpg">
+                  <span class="gallery_caption">812 Superfast Reveal MotorShowGeneva 2017</span>
+                </div>
               </div>
-              <div class="video_img">
-                <img src="../superfast/img/media_video_4.jpg">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_4.jpg">
+                  <span class="gallery_caption">812 Superfast - Vehicle Dynamics</span>
+                </div>
               </div>
-              <div class="video_img">
-                <img src="../superfast/img/media_video_5.jpg">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_5.jpg">
+                  <span class="gallery_caption">812 Superfast - Aerodynamics</span>
+                </div>
               </div>
-              <div class="video_img">
-                <img src="../superfast/img/media_video_6.jpg">
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_6.jpg">
+                  <span class="gallery_caption">812 Superfast - Powertrain</span>
+                </div>
               </div>
+              <div class="gallery_video_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_7.jpg">
+                  <span class="gallery_caption">812 Superfast - Official Video</span>
+                </div>
+              </div>
+
+              <div class="slide_bullet_wrap">
+                <span class="slide_bullet">
+                  <svg width="24" height="24">
+                    <circle cx="12" cy="12" r="11" stroke-width="1" fill="none"></circle>
+                  </svg>
+                  <span></span>
+                </span>
+                <span class="slide_bullet">
+                  <span></span>
+                </span>
+                <span class="slide_bullet">
+                  <span></span>
+                </span>
+              </div>
+
+              <div class="gallery_slide_bt_right">
+                <svg fill="#fff" width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+              </div>
+              <div class="gallery_slide_bt_left">
+                <svg fill="#fff" width="8" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z"></path></svg>
+              </div>
+
+            </div>
+
+            <!-- PHOTO GALLERY -->
+            <div id="gallery_slider_photo">
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_1.jpg">
+                  <span class="gallery_caption">Seaside cocktails with the stunning 812 Superfast</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_2.jpg">
+                  <span class="gallery_caption">Ferrari 812 Superfast Premieres in Thailand</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_3.jpg">
+                  <span class="gallery_caption">812 Superfast Reveal MotorShowGeneva 2017</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_4.jpg">
+                  <span class="gallery_caption">812 Superfast - Vehicle Dynamics</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_5.jpg">
+                  <span class="gallery_caption">812 Superfast - Aerodynamics</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_photo_6.jpg">
+                  <span class="gallery_caption">812 Superfast - Powertrain</span>
+                </div>
+              </div>
+              <div class="gallery_photo_wrap">
+                <div>
+                  <img src="../superfast/img/media_video_7.jpg">
+                  <span class="gallery_caption">812 Superfast - Official Video</span>
+                </div>
+              </div>
+
+              <div class="slide_bullet_wrap">
+                <span class="slide_bullet">
+                  <svg width="24" height="24">
+                    <circle cx="12" cy="12" r="11" stroke-width="1" fill="none"></circle>
+                  </svg>
+                  <span></span>
+                </span>
+                <span class="slide_bullet">
+                  <span></span>
+                </span>
+                <span class="slide_bullet">
+                  <span></span>
+                </span>
+              </div>
+
+              <div class="gallery_slide_bt_right">
+                <svg fill="#fff" width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
+              </div>
+              <div class="gallery_slide_bt_left">
+                <svg fill="#fff" width="8" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z"></path></svg>
+              </div>
+
             </div>
           </div>
         </div>
@@ -437,6 +553,283 @@
       </div>
     </section>
   </main>
+
+
+
+  <footer id="footer">
+    <div id="footer_subscribe">
+      <div class="subscribe_container">
+          <a href="#">
+            <span class="subscribe_text body_font_medium margin_right_8">SUBSCRIBE TO THE FERRARI NEWSLETTERS</span>
+            <span class="red_wheel_button">
+              <span class="icon_border_gray">
+                <span class="icon_over_circle">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" stroke="1" ></circle></svg>
+                </span>
+                <svg viewBox="0 0 8 16" class="icon" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;" fill="#fff">
+                  <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path>
+                </svg>  
+              </span>
+            </span>
+          </a>
+      </div>
+    </div>
   
+    <div id="footer_content">
+      <div class="footer_content_container">
+        <div class="footer_nav_section">
+          <div class="footer_nav_title body_font_medium">
+            <a href="#">AUTO</a>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Line Up</a></li>
+              <li><a href="#">Ferrari Car Configurator</a></li>
+              <li><a href="#">Personalization</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Officine Classiche</a></li>
+              <li><a href="#">Ferrari Certified Pre-owned</a></li>
+              <li><a href="#">Ferrari Dealer locator</a></li>
+              <li><a href="#">MyFerrari App</a></li>
+              <li><a href="#">AUS-NZ Urgent Takata Airbag Recall</a></li>
+              <li><a href="#">Techlnfo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_nav_title body_font_medium">
+            <a href="#">SCUDERIA FERRARI</a>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column" name="nav">
+            <ul class="footer_nav_ul">
+              <li><a href="#">SF1000</a></li>
+              <li><a href="#">Sebastian Vettel</a></li>
+              <li><a href="#">Charles Leclerc</a></li>
+              <li><a href="#">Scuderia Ferrari Canvas</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Media Galleries</a></li>
+              <li><a href="#">Races</a></li>
+              <li><a href="#">Scuderia Ferrari History</a></li>
+              <li><a href="#">Ferrari Driver Academy</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Ferrari F1 Club</a></li>
+              <li><a href="#">Scuderia Ferrari Member</a></li>
+              <li><a href="#">Scuderia Ferrari Club Locator</a></li>
+              <li><a href="#">Memorabilia trivia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_nav_title body_font_medium">
+            <a href="#">STORE</a>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Man</a></li>
+              <li><a href="#">Woman</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Ferrari Watches</a></li>
+              <li><a href="#">Ferrari Shoes</a></li>
+              <li><a href="#">Puma Replica Teamwear</a></li>
+              <li><a href="#">Ray-Ban Eyewear</a></li>
+              <li><a href="#">Ferrari Memorabilia</a></li>
+              <li><a href="#">Ferrari Store Locator</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_nav_title body_font_medium">
+            <a href="#">RACES</a>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Competizioni GT</a></li>
+              <li><a href="#">Corse Clienti</a></li>
+              <li><a href="#">Ferrari Challenge</a></li>
+              <li><a href="#">XX Programmes</a></li>
+              <li><a href="#">F1 Clienti</a></li>
+              <li><a href="#">Corso Pilota</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_nav_title body_font_medium">
+            <a href="#">UNIVERSE</a>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">News</a></li>
+              <li><a href="#">The Official Ferrari Magazine</a></li>
+              <li><a href="#">Ferrari Museums</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Ferrari Simulation Center</a></li>
+              <li><a href="#">Ferrari World Abu Dhabi</a></li>
+              <li><a href="#">Ferrari Land Barcelona</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="footer_social">
+      <div class="footer_social_container">
+        <div class="footer_nav_section">
+          <div class="footer_social_title">
+            <div class="social_m_name">
+              <figure><img src="../img/i_facebook.png" alt="Facebook"></figure>
+              <span class="body_font_medium">FACEBOOK</span>
+            </div>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Official</a></li>
+              <li><a href="#">Scuderia Ferrari</a></li>
+              <li><a href="#">Ferrari Races</a></li>
+              <li><a href="#">FDA</a></li>
+              <li><a href="#">Scuderia Ferrari Collection</a></li>
+              <li><a href="#">Musei Ferrari</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_social_title">
+            <div class="social_m_name">
+              <figure><img src="../img/i_instagram.png" alt="Instagram"></figure>
+              <span class="body_font_medium">INSTARGRAM</span>
+            </div>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Official</a></li>
+              <li><a href="#">Scuderia Ferrari</a></li>
+              <li><a href="#">Ferrari Races</a></li>
+              <li><a href="#">Ferrari Driver Academy</a></li>
+              <li><a href="#">Scuderia Ferrari Collection</a></li>
+              <li><a href="#">Musei Ferrari</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_social_title">
+            <div class="social_m_name">
+              <figure><img src="../img/i_twitter.png" alt="Twitter"></figure>
+              <span class="body_font_medium">TWITTER</span>
+            </div>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Official</a></li>
+              <li><a href="#">Scuderia Ferrari</a></li>
+              <li><a href="#">Ferrari Races</a></li>
+              <li><a href="#">Ferrari Driver Academy</a></li>
+              <li><a href="#">Scuderia Ferrari Collection</a></li>
+              <li><a href="#">Musei Ferrari</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_social_title">
+            <div class="social_m_name">
+              <figure><img src="../img/i_youtube.png" alt="Youtube"></figure>
+              <span class="body_font_medium">YOUTUBE</span>
+            </div>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Official</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_nav_section">
+          <div class="footer_social_title">
+            <div class="social_m_name">
+              <figure><img src="../img/i_linkedin.png" alt="Linkedin"></figure>
+              <span class="body_font_medium">LINKEDIN</span>
+            </div>
+            <i class="footer_nav_title_m_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path></svg>
+            </i>
+          </div>
+          <div class="footer_nav_column">
+            <ul class="footer_nav_ul">
+              <li><a href="#">Ferrari Official</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="footer_rights">
+      <div class="footer_rights_container">
+        <figure><img src="../img/footer_ferrari.png"></figure>
+        <div>Ferrari N.V. - Holding company - A company under Dutch law, having its official seat in Amsterdam, the Netherlands and its corporate address at Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy, registered with the Dutch trade register under number 64060977</div>
+        <div><br></div>
+        <div>Ferrari S.p.A. - A company under Italian law, having its registered office at Via Emilia Est No. 1163, Modena, Italy, Companies’ Register of Modena, VAT and Tax number 00159560366 and share capital of Euro 20,260,000</div>
+        <div><br></div>
+        <div>Copyright 2020 - All rights reserved</div>
+      </div>
+    </div>
+  
+    <div id="footer_service">
+      <div class="footer_service_container">
+        <ul class="footer_service_ul">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Corporate</a></li>
+        </ul>
+        <div class="footer_service_country">
+          <a href="#">
+            <span class="body_font_medium">Korea, Republic of</span>
+            <svg width="16" height="8" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M9.547.732L16 8 8 4 0 8 6.453.732A1.996 1.996 0 0 1 8 0c.623 0 1.18.285 1.547.732z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div id="footer_shell">
+      <figure class="footer_shell_container">
+        <a href="#"><img src="../img/footer_shell.png"></a>
+      </figure>
+    </div>
+  </footer>
+
+
+
+
+  <script src="../js/common.js"></script>
+  <script src="../js/superfast.js"></script>
+  
+
 </body>
 </html>
