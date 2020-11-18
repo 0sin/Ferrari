@@ -28,14 +28,48 @@ height: 100vh; position: relative;}
     width: 100%;
     padding: 0 24px 105px;
     box-sizing: border-box;
+    
 }
 .main_conts {
     text-align: center;
-    z-index: 2;
+    z-index: 2;}
+
+
+.main_conts h2 {
+    overflow: hidden;
+
+}
+.main_conts h2 span {
+    animation: matrix_delay 6s ease infinite;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+    opacity: 0;
+    display: inline-block;
+
+            
+}
+.main_conts h4 {
+    animation: opacity_delay 6s ease infinite; 
+    opacity: 0; 
+
+}
+
+
+.main_animation {
+    animation: matrix 1s ease forwards;
+}
+
+.main_animation h4 {
+    animation: opacity 2s ease forwards; 
+}
+
+.main_animation_container{
+    animation: opacity 2s ease forwards; 
 }
 
 #main_banner {
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .Theme_warp{
@@ -54,7 +88,7 @@ height: 100vh; position: relative;}
     left: 0;
 }
 
-.cover_theme_conts {
+/* .cover_theme_conts {
     text-align: center;
     color: white;
     position: absolute;
@@ -62,7 +96,7 @@ height: 100vh; position: relative;}
     left: 0;
 
 
-}
+} */
 
 .landing_video {
     width:1920px;
@@ -71,6 +105,51 @@ height: 100vh; position: relative;}
     left: 50%;
     transform: translate(-50%);
 
+}
+
+@keyframes fade_in_rtl{
+    0% { left : 100%}
+    100% { left : 0}
+}
+
+@keyframes fade_out_rtl{
+    0% { left : 0}
+    100% { left : -100%}
+}
+
+@keyframes fade_in_ltr{
+    0% { left : -100%}
+    100% { left : 0}
+}
+
+@keyframes fade_out_ltr{
+    0% { left : 0}
+    100% { left : 100%}
+}
+
+@keyframes spot_size {
+    0% {
+        border-width: 1px;
+        transform: scale(1, 1);
+
+    }
+    100% {
+        border-width: 2px;
+        transform: scale(2,2);
+    }
+}
+
+@keyframes spot_small_size {
+    0% {
+        border-width: 2px;
+        transform: scale(2,2);
+
+    }
+    100% {
+        
+        border-width: 1px;
+        transform: scale(1, 1);
+    }
 }
 
 @media screen and (max-width:599px){
