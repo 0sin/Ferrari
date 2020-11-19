@@ -12,7 +12,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
+#whole-wrapper {
   display: flex;
   background-attachment: scroll;
   position: fixed;
@@ -53,4 +53,18 @@ body {
   src: url(fonts/gt-america-expanded-medium-webfont.woff2);
   font-weight: bold;
   font-style: normal;
+}
+
+/* 1280 responsive */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+}
+
+/* 960 under responsive */
+@media screen and (max-width: 961px) {
+  #whole-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
