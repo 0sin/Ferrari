@@ -143,3 +143,44 @@
   color: #000;
   cursor: pointer;
 }
+
+/* 1280 responsive-menu list styles */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+  #menu_section {
+    width: 31%;
+  }
+
+  #menu_list {
+    width: 420px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 64px;
+    padding-right: 0;
+  }
+
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #menu_section {
+    width: 100vw;
+  }
+
+  #menu_list {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  .menu_wrap {
+    width: 100%;
+  }
+
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
+  }
+}

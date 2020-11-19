@@ -1,17 +1,17 @@
-.media_wrap {
+.media_section_wrap {
   position: relative;
 }
 
-.media_wrap video {
+.media_section_wrap video {
   position: absolute;
-  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .media_title_wrap {
   position: absolute;
   top: 820px;
-  left: 60px;
+  left: 50px;
 }
 
 .media_title_wrap img {
@@ -21,4 +21,31 @@
 .media_title_wrap h3 {
   color: #fff;
   font-weight: 400;
+}
+
+.responsive_background {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+  #media_section {
+    width: 69%;
+  }
+
+  .responsive_background {
+    display: block;
+  }
+  .responsive_background img {
+    object-fit: fill;
+  }
+
+  .media_section_videos {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #media_section {
+    display: none;
+  }
 }
