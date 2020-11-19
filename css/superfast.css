@@ -178,6 +178,17 @@ strong {font-weight: 500;}
     overflow: hidden;
 }
 
+.main_bg {
+    z-index: -2;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/5f60fa28966ae519cbd62911-ferrari-portofino-m-launch-gateway-desktop.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 .cover_theme_wrap{
 
     width: 100%;
@@ -472,6 +483,24 @@ overflow: hidden ;}
 
 
 
+#aerodynamics{
+    width: 100%;
+    background-color: #320607;
+}
+.aerodynamics_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#canvas_car{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 .specs_list{
     width: 100%;
     max-width: 519px;
@@ -495,6 +524,73 @@ overflow: hidden ;}
     font-size: 32px;
     line-height: 1.23em;
 }
+
+
+
+.hotspot_point {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_spot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    
+    border-radius: 100%;
+    z-index: 3;
+}
+.inner_spot::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    animation: innerSpot 1.5s ease infinite ;
+    background-color: rgb(255, 255, 255) !important;
+    border-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top : -10px;
+    margin-left: -10px;
+
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.point_1 {
+    top:40%;
+    left:30%;
+}
+@keyframes innerSpot {
+    0% {
+        opacity: 0;
+        border-width: 2px;
+        transform: scale(0.5, 0.5);
+        background-color: currentColor; }
+      50% {
+        opacity: 1;
+        transform: scale(1, 1);
+        border-width: 2px;
+        background-color: currentColor; }
+      100% {
+        opacity: 0;
+        border-width: 1px;
+        background-color: transparent;
+        transform: scale(2, 2); } }
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1279px) {
     
 }
