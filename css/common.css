@@ -1,154 +1,132 @@
 /* RESET CSS */
 
-* {margin: 0; padding: 0; box-sizing: content-box;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  ul, li {list-style: none;}
-  
-  a {text-decoration: none;}
-  
-  div, header, nav, footer, section, article, ul, li {margin: 0; padding: 0; box-sizing: border-box;} 
-  
-  
-  
-  
-  /* 폰트 공통 */
-  
+* {margin: 0; padding: 0; box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 
+ul, li {list-style: none;}
 
-  @font-face {
-    font-family:'Body-Font-Medium';
-    /* Body-Font-Medium */
-    src:url(../font/gt-america-expanded-medium-webfont.woff2) format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: fallback;
-    -webkit-font-smoothing:antialiased;
+a {text-decoration: none;}
 
-        /* fallback에 대한 설명 아래 링크에서 확인
-    https://d2.naver.com/helloworld/4969726 */
-    }
-
-  @font-face {
-    font-family: 'Title-Font';
-    src:url(../font/Noe-Display-Regular.woff) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-    -webkit-font-smoothing:antialiased;
-    }
-
-
-  @font-face {
-    font-family:'Body-Font';
-    /* font-family: "Body-Font" ; */
-    src:url(../font/OpenSans-Regular-webfont.woff) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-    -webkit-font-smoothing:antialiased;
-    }
+div, header, nav, footer, section, article, ul, li {margin: 0; padding: 0; box-sizing: border-box;} 
 
 
 
 
+/* FONT-FACE */
 
-
-
-  
-  body {
-    font-family: 'Body-Font', serif;
-    line-height: 1.15;
-    width: 100%;
-  }
-  
-  .body_font_medium {
-    font-family:'Body-Font-Medium';
-    /* font-stretch: expanded; */
-    font-size: 11px;
-    line-height: 1.27em;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+@font-face {
+  font-family: 'Body-Font-Medium';
+  src: url(../font/gt-america-expanded-medium-webfont.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+  /* fallback에 대한 설명 아래 링크에서 확인
+  https://d2.naver.com/helloworld/4969726 */
   }
 
-  h2{
-    font-family: 'Title-Font';
-    font-size: 44px;
-    line-height: 52.8px;
-    font-weight: 400;
-
-    }
-  h4{
-    font-family:'Body-Font-Medium';
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    line-height: 24px;
-    font-weight: 500;
-    font-stretch: 125%;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
+@font-face {
+  font-family: 'Title-Font';
+  src: url(../font/Noe-Display-Regular.woff) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
   }
+
+@font-face {
+  font-family: 'Body-Font';
+  src: url(../font/gt-america-standard-regular-webfont.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  }
+
+
+
+
+
+/* 폰트 공통 */
+
+body {
+  font-family: 'Body-Font', serif;
+  line-height: 1.15;
+  width: 100%;
+  word-break: keep-all;
+}
+
+.body_font_medium {
+  font-family:'Body-Font-Medium';
+  /* font-stretch: expanded; */
+  font-size: 11px;
+  line-height: 1.27em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Title-Font';
+  font-size: 44px;
+  line-height: 52.8px;
+  font-weight: 400;
+  }
+
+h4{
+  font-family:'Body-Font-Medium';
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+
+/* RED WHEEL BUTTON */
+
+.red_wheel_button {display: inline-flex;}
+
+.icon_border_gray {
+  height: 40px; width: 40px;
+  padding: 8px; border-radius: 100%; font-size: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+  border: 2px solid rgb(143, 143, 143);
+}
+
+.icon_over_circle {
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+}
+
+.icon_over_circle svg {
+  position: absolute;
+  top: 50%; left: 50%; width: 100%; height: 100%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.icon_over_circle circle {
+  stroke: rgb(218, 41, 28); stroke-width: 1px; fill: none;
+  stroke-dasharray: 70; stroke-dashoffset: 70;      
+}
+
+.red_wheel_button:hover .icon_over_circle circle {
+  animation: dash 0.3s ease forwards;
+}
+    
+@keyframes dash {
+  from {stroke-dashoffset: 70;}
+  to {stroke-dashoffset: 0;}
+}
+
+
+/* MARGIN, PADDIND */
+.margin_right_8 {margin: 0 8px 0 0;}
+.margin_top_16 {margin: 16px 0 0;}
+
+
+
+
+
   
   
-  
-  
-  /* BUTTON: 수정 필요; 모양만 잡았어요 */
-  .next_btn_wrap {
-      position: relative;
-      width: 20px;
-      height: 20px;
-      padding: 8px;
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 100%;      display: inline-flex;
-  }
-  .next_button {
-      position: absolute;
-      width: 42px;
-      height: 42px;
-      bottom: -3px;
-      right: -3px;
-      left: -3px;
-      top: -3px;
-
-  }
-  .next_arrow svg{
-      padding : 0 7px;
-  }
-  .next_button span {
-    display: block;
-  }
-  .next_button svg {
-      fill: transparent;
-  }
-  .red_circle {
-      width: 42px;
-      height: 42px;
-      position: absolute;
-      left: 0px;
-      top: 1px;
-      stroke-dasharray: 1360;
-      stroke-dashoffset: 1360;
-      transform: rotate(-90deg);
-  }
-
-  @keyframes dash {
-
-    to{
-        stroke-dashoffset: 0;
-    }
-  }
-
-  @keyframes dashout {
-      0% {
-        stroke-dashoffset: 2720;
-      }
-    100%{
-        stroke-dashoffset: 1360;
-    }
-
-  }
-
 /* swipper bullet */
 .main_banner_container {
     width: 100%;
@@ -201,11 +179,33 @@
     position: absolute;
     bottom:0px;
     left: 0px;
-    stroke-dasharray: 1360;
-      stroke-dashoffset: 1360;
+    stroke-dasharray:70;
+      stroke-dashoffset:70;
       transform: rotate(-90deg);
-      animation: dash 3s ease infinite alternate;
+      animation: dash 5.9s linear normal infinite;
+      animation-play-state: paused;
 }
+
+.paused {
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+  stroke-dasharray:70;
+    stroke-dashoffset:70;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 70;
+  }
+  5% {
+    stroke-dashoffset: 70;
+  }
+  100%{
+      stroke-dashoffset:0;
+  }
+}
+
 
 /* header */
 #header {
@@ -457,3 +457,466 @@
 
 }
        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+#footer {
+  background: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+
+/*FOOTER SUBSCRIBE */
+
+#footer_subscribe {
+  background: rgb(48, 48, 48);
+  width: 100%;
+  text-align: left;
+}
+
+.subscribe_container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_container a {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_container a:hover .icon_over_circle circle {
+  animation: dash 0.3s ease forwards;
+}
+
+
+
+/* FOOTER CONTENT */
+
+#footer_content {
+  width: 100%;
+}
+
+.footer_content_container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 0;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  display: flex;
+}
+
+.footer_nav_section {
+  min-width: 20%;
+  flex: 1 1 auto;
+  padding: 0 20px;
+}
+
+.footer_nav_title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+
+.footer_nav_ul {
+  display: flex;
+  flex-flow: column;
+  padding: 0 15px 10px;
+}
+
+.footer_nav_ul li {
+  margin: 10px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer_nav_ul li a {
+  color: rgb(255, 255, 255);
+}
+
+
+/* FOOTER SOCIAL */
+#footer_social {
+  width: 100%;
+}
+
+.footer_social_container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  display: flex;
+}
+
+.footer_social_title {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_m_name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_social_title figure {
+  padding: 20px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer_social_title figure img {
+  width: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+/*FOOTER RIGHTS */
+
+#footer_rights {
+  width: 100%;
+}
+
+.footer_rights_container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 50px 25px;
+  font-size: 11px;
+  line-height: 14px;
+  color: rgb(100, 100, 100);
+}
+
+
+.footer_rights_container figure img {
+  max-width: 40px;
+  max-height: 65px;
+  margin: 0 0 10px;
+}
+
+
+
+
+/* FOOTER SERVICE */
+
+#footer_service {
+  background: rgb(48, 48, 48);
+  width: 100%;
+}
+
+.footer_service_container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer_service_container a {
+  color: rgb(255, 255, 255);
+}
+
+.footer_service_ul {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+}
+
+.footer_service_ul li {padding: 16px}
+
+.footer_service_country {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 40px 0 0;
+  /* order: inherit; */
+}
+
+.footer_service_country a {
+  display: flex;
+  align-items: center;
+}
+
+.footer_service_country svg {
+  margin: 0 0 0 10px;
+}
+
+
+
+
+/* FOOTER SHELL */
+
+#footer_shell {
+  width: 100%;
+}
+
+.footer_shell_container {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer_shell_container img{
+  max-height: 28px;
+  margin: 0 10px;
+}
+
+
+
+
+
+
+/* FOOTER BREAK POINT 960 */
+
+.footer_nav_title_m_icon {display: none;}
+.social_m_name span {display: none;}
+
+
+@media screen and (max-width: 960px) {
+  
+  /* FOOTER CONTENT */
+  .footer_content_container {
+    flex-flow: column;
+  }
+  
+  .footer_nav_section {
+    min-width: 100%;
+  }
+
+  .footer_nav_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer_nav_title a {
+    justify-content: flex-start;
+  }
+
+  .footer_nav_title_m_icon {
+    display: block;
+    padding: 10px;
+    font-size: 0;
+    line-height: 0;
+    transition: transform 300ms;
+    transform: rotete(45deg);
+  }
+
+  .footer_nav_title_m_icon svg {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .footer_nav_column {
+    display: flex;
+    flex-flow: column wrap;
+   
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0px;
+  }
+
+  .footer_nav_ul {
+    text-align: left;
+    min-width: 50%;
+    padding: 0 10px 10px 0;
+  }
+  
+  .acc_open {max-height: 600px;}
+  .button_rotate {transform: rotate(45deg);}
+
+
+  /* FOOTER SOCIAL */
+
+  .footer_social_container {
+    flex-flow: column;
+  }
+  
+  .footer_social_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social_m_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social_m_name span {
+    display: inline-flex;
+    margin: 0 0 0 16px;
+  }
+  
+  .footer_social_title figure {
+    width: 16px;
+    height: 16px;
+    padding: 20px 0;
+  }
+  
+  .footer_social_title figure img {width: 100%;}
+
+
+
+
+  /* FOOTER RIGHTS */
+
+  .footer_rights_container figure img {
+    max-width: 32px;
+    max-height: 52px;
+    margin: 0 0 10px;
+  }
+
+
+
+
+  /* FOOTER SERVICE */
+
+  .footer_service_container {
+    font-size: 11px;
+    padding: 20px 0;
+    flex-flow: column-reverse wrap;
+  }
+  
+  
+  .footer_service_ul {
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 16px;
+  }
+  
+  .footer_service_ul li {
+    min-width: 33%;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .footer_service_country {
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 24px 0 0;
+  }
+  
+  .footer_service_country a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer_service_country svg {
+    margin: 0 0 0 10px;
+  }
+
+  
+
+  
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
