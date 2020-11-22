@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body onscroll="scrollAnimation()">
-
+<body>
+<!-- onscroll="scrollAnimation()" -->
 <header></header>
 
 <main>
@@ -24,14 +24,14 @@
           <div class="news_flex_wrap">
             <div class="news_text_wrap">
               <h2 class="news_title">
-                <span>Wins</span>
-                <span>and</span>
-                <span>titles</span>
-                <span>for</span>
-                <span>ferrari</span>
-                <span>in</span>
-                <span>gigt</span>
-                <span>endurance</span>
+                <span class="news_title_span">1</span>
+                <span class="news_title_span">and</span>
+                <span class="news_title_span">titles</span>
+                <span class="news_title_span">for</span>
+                <span class="news_title_span">ferrari</span>
+                <span class="news_title_span">in</span>
+                <span class="news_title_span">gigt</span>
+                <span class="news_title_span">endurance</span>
               </h2>
               <div class="news_contents">The last race of the Italian GT Endurance Championship season ended with two victories and two titles. The 488 GT3 Evo 2020 no. 71 of AF Corse triumphed in the Pro class while its sister car of Easy Race won the Pro Am class.</div>
               <div class="read_more_wrap">
@@ -60,14 +60,14 @@
           <div class="news_flex_wrap">
             <div class="news_text_wrap">
               <h2 class="news_title">
-                <span>Wins</span>
-                <span>and</span>
-                <span>titles</span>
-                <span>for</span>
-                <span>ferrari</span>
-                <span>in</span>
-                <span>gigt</span>
-                <span>endurance</span>
+                <span class="news_title_span">2</span>
+                <span class="news_title_span">and</span>
+                <span class="news_title_span">titles</span>
+                <span class="news_title_span">for</span>
+                <span class="news_title_span">ferrari</span>
+                <span class="news_title_span">in</span>
+                <span class="news_title_span">gigt</span>
+                <span class="news_title_span">endurance</span>
               </h2>
               <div class="news_contents">The last race of the Italian GT Endurance Championship season ended with two victories and two titles. The 488 GT3 Evo 2020 no. 71 of AF Corse triumphed in the Pro class while its sister car of Easy Race won the Pro Am class.</div>
               <div class="read_more_wrap">
@@ -96,7 +96,7 @@
           <div class="news_flex_wrap">
             <div class="news_text_wrap">
               <h2 class="news_title">
-                <span>Wins</span>
+                <span>3</span>
                 <span>and</span>
                 <span>titles</span>
                 <span>for</span>
@@ -132,7 +132,7 @@
           <div class="news_flex_wrap">
             <div class="news_text_wrap">
               <h2 class="news_title">
-                <span>Wins</span>
+                <span>4</span>
                 <span>and</span>
                 <span>titles</span>
                 <span>for</span>
@@ -173,10 +173,31 @@
         <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z"></path></svg>
       </div>
     </div>
+
     <div class="view_all_news">
-      <div>
-        
+      <div class="news_index_wrap">
+        <span class="news_index" onclick="newsIndexChange(0)">
+          <svg width="24" height="24">
+            <circle cx="12" cy="12" r="11" stroke-width="1" fill="none" style="stroke-dashoffset: 3px;"></circle>
+          </svg>
+        </span>
+        <span class="news_index" onclick="newsIndexChange(1)">
+          <svg width="24" height="24">
+            <circle cx="12" cy="12" r="11" stroke-width="1" fill="none" style="stroke-dashoffset: 3px;"></circle>
+          </svg>
+        </span>
+        <span class="news_index" onclick="newsIndexChange(2)">
+          <svg width="24" height="24">
+            <circle cx="12" cy="12" r="11" stroke-width="1" fill="none" style="stroke-dashoffset: 3px;"></circle>
+          </svg>
+        </span>
+        <span class="news_index" onclick="newsIndexChange(3)">
+          <svg width="24" height="24">
+            <circle cx="12" cy="12" r="11" stroke-width="1" fill="none" style="stroke-dashoffset: 3px;"></circle>
+          </svg>
+        </span>
       </div>
+      <div class="news_index_line"></div>
       <div class="body_font_medium">view all news</div>
     </div>
   </section>
