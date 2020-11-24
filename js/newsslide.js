@@ -154,7 +154,7 @@ function newsIndexChange(newsIndexNumber) {
 
 
       //FADE OUT
-      newsSlide[newsSlideNumber + i].style = "animation: news_fade_out_rtl 0.8s forwards;";
+      newsSlide[newsSlideNumber + i].style = "animation: news_fade_out_ltr 0.8s forwards;";
       newsImg[newsSlideNumber + i].style = "animation: imgOpaFadeOut newsSlideNumber + i.4s ease 0s alternate ;";
       newsContents[newsSlideNumber + i].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
       newsButton[newsSlideNumber + i].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
@@ -162,7 +162,7 @@ function newsIndexChange(newsIndexNumber) {
 
 
       //FADE IN
-      newsSlide[newsIndexNumber].style = "animation: news_fade_in_rtl 1.2s forwards";
+      newsSlide[newsIndexNumber].style = "animation: news_fade_in_ltr 1.2s forwards";
       newsImg[newsIndexNumber].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
       newsContents[newsIndexNumber].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
       newsButton[newsIndexNumber].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
@@ -179,7 +179,7 @@ function newsIndexChange(newsIndexNumber) {
 
 
       //FADE OUT
-      newsSlide[newsSlideNumber].style = "animation: news_fade_out_ltr 0.8s forwards;";
+      newsSlide[newsSlideNumber].style = "animation: news_fade_out_rtl 0.8s forwards;";
       newsImg[newsSlideNumber].style = "animation: imgOpaFadeOut newsSlideNumber + i.4s ease 0s alternate ;";
       newsContents[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
       newsButton[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
@@ -187,7 +187,7 @@ function newsIndexChange(newsIndexNumber) {
 
 
       //FADE IN
-      newsSlide[newsIndexNumber].style = "animation: news_fade_in_ltr 1.2s forwards";
+      newsSlide[newsIndexNumber].style = "animation: news_fade_in_rtl 1.2s forwards";
       newsImg[newsIndexNumber].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
       newsContents[newsIndexNumber].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
       newsButton[newsIndexNumber].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
