@@ -12,17 +12,15 @@ var newsTitle = document.querySelectorAll('.news_title');
 
 
 // 첫 페이지 실행 함수
-function firstPage() {
-  newsImg[0].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
-  newsContents[0].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
-  newsButton[0].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-  newsTitle[0].classList.add('matrix_style');
-  newsIndexButton();
-}
+// function firstPage() {
+//   newsImg[0].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
+//   newsContents[0].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
+//   newsButton[0].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
+//   newsTitle[0].classList.add('matrix_style');
+//   newsIndexButton();
+// }
 
-firstPage();
-
-
+// firstPage();
 
 // NEXT PREV
 function newsNext() {
@@ -214,15 +212,15 @@ function newsIndexButton(buttonNumber) {
 
 // AUTOPLAY
 
-var newsLoopState = 1;
-var newsSlideLoop = setInterval(newsNext, 7000);
+// var newsLoopState = 1;
+// var newsSlideLoop = setInterval(newsNext, 7000);
 
-function newsSlideRestart() {
-  if (newsLoopState == 1) {
-    clearInterval(newsSlideLoop);
-    newsSlideLoop = setInterval(newsNext, 7000);
-  }
-}
+// function newsSlideRestart() {
+//   if (newsLoopState == 1) {
+//     clearInterval(newsSlideLoop);
+//     newsSlideLoop = setInterval(newsNext, 7000);
+//   }
+// }
 
 // function stopPlaySlide() {
 //   if (newsLoopState == 1) {
