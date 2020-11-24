@@ -1,0 +1,160 @@
+
+  /* text 애니메이션 */
+  /* 딜레이는 직접 html 에 animation-delay: 0.1s ;  0.2s 등등 추가해서 사용 */
+  /* _delay 애니는 나타나고 사라지는 것 */
+
+
+    /* animation: matrix 1s ease forwards;  */
+    /* animation: matrix_delay 6s ease infinite;  */
+    /* animation: matrix_out 1s ease forwards;  */
+
+    @keyframes matrix {
+        0% {
+          opacity: 0;
+          transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+        }
+        100% {
+          opacity: 1;
+           transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+      }
+    
+    
+    
+      @keyframes matrix_delay {
+        0% {
+          opacity: 0;
+          transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+        }
+        10% {
+          opacity: 1;
+           transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        90% {
+            opacity: 1;
+           transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        100% {
+            opacity: 0;
+          transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+        }
+      }
+
+
+
+      @keyframes matrix_out {
+        0% {
+            opacity: 1;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        100% {
+           opacity: 0;
+          transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+        }
+      }
+
+
+      /* fade in fade out */
+      /* animation: opacity 2s ease forwards;  */
+        /* animation: opacity_delay 6s ease infinite;  */
+        @keyframes opacity {
+            0% { opacity: 0;}
+            50% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+    
+      @keyframes opacity_delay {
+          0% { opacity: 0;}
+          10% { opacity: 0;}
+          30% { opacity: 1;}
+          90% { opacity: 1;}
+          100% { opacity: 0;}
+      }
+      
+
+
+
+
+
+    
+/* NEWS SLIDE ANIMATION */
+
+/* SLIDE FADE IN OUT */
+@keyframes news_fade_out_rtl {
+  0% {left: 0; opacity: 1;}
+  100% {left: -100%; opacity: 0;}
+  }
+@keyframes news_fade_in_rtl {
+  0% {left: 100%; opacity: 0; }
+  100% {left: 0; opacity: 1;}
+  }
+
+@keyframes news_fade_out_ltr {
+  0% {left: 0; opacity: 1;}
+  100% {left: 100%; opacity: 0;}
+  }
+@keyframes news_fade_in_ltr {
+  0% {left: -100%; opacity: 0;}
+  100% {left: 0; opacity: 1;}
+  }
+
+
+/* NEWS IMG FADE IN OUT */
+@keyframes imgOpaFadeIn {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes imgOpaFadeOut {
+  0% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+
+/* NEWS TEXT FADE IN OUT */
+@keyframes newsTextFadeIn {
+  0% {opacity: 0; transform: translateY(30px);}
+  30% {opacity: 1; transform: translateY(0px);}
+  80% {opacity: 1; transform: translateY(0px);}
+  100% {opacity: 0; transform: translateY(30px);}
+}
+
+@keyframes newsTextFadeOut {
+  0% {opacity: 1; transform: translateY(0px);}
+  100% {opacity: 0; transform: translateY(100px);}
+}
+
+
+/* TITLE Matrix */
+@keyframes newsTitleFadeIn {
+  0% {opacity: 0; transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);}
+  100% {opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);}
+}
+
+
+
+@keyframes news_matrix_delay {
+  0% {
+    opacity: 0;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  }
+  10% {
+    opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  90% {
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  100% {
+      opacity: 0;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  }
+}
+
+.matrix_style {animation: news_matrix_delay 6s ease 1.2s alternate forwards;}
+
+
+
+
