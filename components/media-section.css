@@ -2,12 +2,6 @@
   position: relative;
 }
 
-.media_section_wrap video {
-  position: absolute;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .media_title_wrap {
   position: absolute;
   top: 820px;
@@ -26,6 +20,30 @@
 .responsive_background {
   display: none;
 }
+
+.media_section_videos {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.videos_video {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+/* 
+.videos_video {
+  overflow: hidden;
+} */
 
 @media screen and (max-width: 1280px) and (min-width: 962px) {
   #media_section {
