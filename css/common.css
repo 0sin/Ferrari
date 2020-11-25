@@ -52,6 +52,7 @@ body {
   line-height: 1.15;
   width: 100%;
   word-break: keep-all;
+  background: rgb(24, 24, 24);
 }
 
 .body_font_medium {
@@ -375,8 +376,6 @@ h4{
     }
 
 }
-       
-
 
 
 
@@ -642,7 +641,6 @@ h4{
   
   .footer_service_country svg {margin: 0 0 0 10px;}
 
- 
 }
 
 

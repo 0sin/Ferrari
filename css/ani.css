@@ -158,3 +158,11 @@
 
 
 
+
+/* DOUBLE SECTION ANIMATION */
+
+@keyframes bg_ltr {
+  0% {background-color: none; left: -100%;}
+  100% {background-color: rgb(64, 64, 64); left: 0;}
+  }
+

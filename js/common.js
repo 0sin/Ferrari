@@ -86,7 +86,7 @@ function headerShow() {
     //스크롤이 위로 진행, 현재 스크롤 값이 원위치가 아니면 검정색 헤더
     // console.log("윗방향");
     header.style="top:0px; transition: 0.4s;";
-    headerBackground.style="height: calc(100% + 20px) ;background-color: rgba(0,0,0,1);"
+    headerBackground.style="height: calc(100% + 20px) ;background-color: rgb(24, 24, 24);"
   }
 
   else if (headerScrollY <= 20) {
@@ -95,7 +95,6 @@ function headerShow() {
     header.style="top:0px;";
     headerBackground.style="height: calc(100% + 20px); background-color: none;"
   }
-
 }
 
 
