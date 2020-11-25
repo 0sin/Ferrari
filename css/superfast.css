@@ -52,6 +52,14 @@ strong {font-weight: 500;}
 
 .headline_title span {display: inline-block; opacity: 0;}
 
+.headline_wrap p {
+  font-family: "Body-Font";  font-weight: normal;
+  font-stretch: normal;  letter-spacing: normal;
+  font-size: 16px;  line-height: 1.5em;
+  max-width: 500px;  color: rgb(255, 255, 255);
+}
+
+
 .headline_desc {
   font-family: "Body-Font";  font-weight: normal;
   font-stretch: normal;  letter-spacing: normal;
@@ -73,7 +81,785 @@ strong {font-weight: 500;}
 /* 희경 시작 ~ 2 AERODYNAMICS 까지 */
 
 
+.sf_main_header { 
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  overflow: hidden;
+}
 
+.sf_main_header ul {
+  display: flex;
+  width: 100%;
+}
+
+
+.sf_header_underline::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: white;
+
+}
+
+.car_header {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 40px;
+  left: 0;
+  padding: 20px ;
+  box-sizing: border-box;
+  z-index: 99999;
+  /* overflow: hidden; */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.7));
+}
+.car_header_logo_wrap {
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+
+
+}
+.car_header_logo_wrap img{
+  height: 80%;
+}
+.car_header_right{
+  display: flex;
+}
+.car_header_nav{
+
+  padding-right: 5px;
+  display: flex;
+  justify-content: end;
+}
+.car_header_nav li {
+  padding: 10px;
+  box-sizing: border-box;
+  font-family:'Body-Font-Medium';
+
+}
+.car_header_nav li a{
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  font-weight: 500;
+  font-stretch: 125%;
+  color: white;
+}
+.car_header_share_wrap {
+  position: relative;
+}
+.car_header_btn {
+  width: 40px;
+  height: 40px;
+  border: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.icon_wrap {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_circle, .icon_share svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.icon_circle{
+  width: 38.5px;
+  height: 38.5px;
+  border-radius: 100%;
+  border: 2px solid rgb(155, 155, 155);
+}
+.icon_share {
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 2px;
+}
+
+
+
+
+
+
+
+
+.share_popup{
+  position: absolute;
+  top:0px;
+  right:0px;
+  color: white;
+}
+.share_title_btn{
+  width: 200px;
+  display: none;
+  flex-wrap: wrap;
+ 
+}
+
+.share_title_btn h4{
+  padding-top: 10px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.icon_wrap{
+  position: relative;
+}
+.share_icon_circle{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: calc(100% - 1px );
+  left:4px;
+  
+
+
+}
+.share_icon_circle svg {
+  position: absolute;
+  top: 50%;
+  left: 50% ;
+}
+
+.icon_x {
+  width: 12px;
+  height: 12px;
+  stroke: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  
+  transform: translate(calc(-50% + 2px) , calc(50% + 2px));
+}
+.share_ul  {
+  z-index: 2;
+  display: inline-block;
+}
+
+.share_ul li button{
+  font-family:'Body-Font-Medium';
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+   padding: 5px 0;
+   color: white;
+   /* color: white; */
+   font-size: 11px;
+   font-weight : 500;
+   font-stretch: expanded;
+   line-height: 1.27em;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   cursor: pointer;
+   margin-top: 10px;
+   text-align: right;
+   z-index: 2;
+}
+
+.share_bg{
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  right:  0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle at 88% 28%, #000000, black 30%, rgba(0, 0, 0, 0));
+}
+.share_wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.share_wrap ul {
+  z-index: 2;
+}
+.icon_wrap  {
+  position: relative;
+}
+.share_close {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-110% , -70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_bg {
+  z-index: -2;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.main_bg {
+  z-index: -2;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/5f60fa28966ae519cbd62911-ferrari-portofino-m-launch-gateway-desktop.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.cover_theme_wrap{
+
+  width: 100%;
+  height:100vh;
+
+  bottom: 0;
+  left: 0;
+}
+
+.landing_video{
+  width:1920px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.bg_cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 4;
+}
+/* follow btn */
+
+#mouseImage {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  /* top: 200%;
+  left: 200%; */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+}
+
+.circle {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.text {
+  font-size: 24px;
+  font-family: 'Title-Font';
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  fill: white;
+}
+
+
+
+
+
+
+.sf_main_wrap{width: 100%;
+  height: calc(100vh - 40px); position: relative;
+overflow: hidden ;}
+
+
+.sf_main_conts {
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px 48px 144.5px;
+  box-sizing: border-box;
+}
+.sf_main_conts {
+  text-align: center;
+  z-index: 2;
+}
+
+.sf_main_conts h2 {
+  overflow: hidden;
+}
+.sf_main_conts h2 span{
+  opacity: 0;
+  transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  display: inline-block;
+  animation: matrix 1s ease forwards;
+}
+.intro_img_container{
+  padding-bottom:35% ;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.intro_container{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../img/5d36cd517e98e13abbbed074-ferrari_812superfast_2017_intro_d.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+}
+.intro_img_container::before{
+  width: 100%;
+  padding-bottom:35%;
+
+  box-sizing: border-box;
+  display: block;
+  z-index: 3;
+  content: "";
+  position: absolute;
+
+  box-sizing: border-box;
+
+  display: block;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 30%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 30%);
+}
+.intro_img_container img{
+  width: 100%;
+}
+
+
+.intro_conts_wrap {
+  width: 100%;
+  /* height: 632px; */
+  padding: 100px 48px 128px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(0deg, #320607 70%, rgba(50, 6, 7, 0));
+}
+
+.intro_conts_wrap h2{
+  width: 100%;
+  max-width: 1000px;
+
+}
+.intro_conts_wrap p{
+  width: 100%;
+  max-width: 1000px;
+  font-family: 'Body-Font';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.scroll_indecator_wrap {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  z-index: 5;
+}
+.scroll_indecator {
+  width: 1px;
+  height: 96px;
+  background-color: rgb(48, 48, 48);
+  position: relative;
+  z-index: 5;
+}
+
+.scroll_indecator::before{
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  animation: ScrollIndicator 1.5s ease-out 1s infinite;
+}
+
+@keyframes ScrollIndicator{
+  0% {
+    height: 0;
+    transform: translateY(0); }
+  30% {
+    height: 100%;
+    transform: translateY(0); }
+  60% {
+    height: 100%;
+    transform: translateY(-100%); }
+  100% {
+    height: 100%;
+    transform: translateY(-100%); } }
+
+.editorial_container{
+  width: 100%;
+  padding: 100px 0 ;
+  background-color: rgb(50, 6, 7);
+  color: white;
+}
+.editorial_conts {
+  width: 100%;
+  max-width: 1264px;
+  padding: 0  48px 48px ;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.editorial_group{
+  width: calc(50% - 65px);
+  display: flex;
+  justify-content: space-between;
+}
+.editorial_group_group{
+  /* width: calc(50% - 25px); */
+  flex: 1 1 50%;
+  display: block;
+}
+.editorial_group_group:nth-child(2){
+  margin-left: 25px;
+}
+.editorial_group_group_conts li {
+  font-family:'Body-Font-Medium';
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  font-weight: 500;
+  font-stretch: 125%;
+  margin-top: 20px;
+}
+
+.editorial_group_group_conts .editorial_group_title{
+  font-size: 16px;
+  color: rgb(143, 143, 143);
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+
+.editorial_text_wrap{
+  width: calc(50% - 65px);
+}
+.editorial_text{
+  margin-bottom: 50px;
+}
+.editorial_text p{
+  font-family: 'Body-Font';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.editorial_btn{
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid rgba(225, 225, 225, 0.4);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family:'Body-Font-Medium';
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  font-weight: 500;
+  font-stretch: 125%;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.editorial_btn:hover{
+  border-color: rgba(225, 225, 225, 1);
+  transition: 0.25s;
+}
+
+
+
+
+
+
+
+#aerodynamics{
+  width: 100%;
+  background-color: #320607;
+  z-index: 4;
+}
+.aerodynamics_container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+.engin_bg_img{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/5d36d1141d95730996e64b6b-ferrari_812superfast_2017_engine_m.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.car_bg_img{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.car_bg_img_change{
+  width: 60%;
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+
+}
+
+/* #canvas_car{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+
+.specs_list{
+  width: 100%;
+  max-width: 519px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specs_list li {
+  width: 50%;
+}
+.specs_list h2{
+  font-size: 56px;
+  line-height: 65px;
+}
+.specs_list li h4{
+  color: #8f8f8f;
+  margin: 0;
+}
+
+.specs_unit {
+  font-size: 32px;
+  line-height: 1.23em;
+}
+
+
+
+.hotspot_point {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+  /* overflow: hidden; */
+  
+}
+.inner_spot {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 100%;
+  transition: all 0.1s;
+  z-index: 6;
+}
+.inner_spot::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  animation: innerSpot 1.5s ease infinite ;
+  background-color: rgb(255, 255, 255) !important;
+  border-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top : -10px;
+  margin-left: -10px;
+
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.point_1 {
+  top:60%;
+  left:20%;
+  transition: 1s;
+}
+
+.point_2 {
+  top:70%;
+  left:50%;
+  transition: 1s;
+}
+
+.point_3 {
+  top:30%;
+  left:75%;
+  transition: 1s;
+}
+@keyframes innerSpot {
+  0% {
+      opacity: 0;
+      border-width: 2px;
+      transform: scale(0.5, 0.5);
+      background-color: currentColor; }
+    50% {
+      opacity: 1;
+      transform: scale(1, 1);
+      border-width: 2px;
+      background-color: currentColor; }
+    100% {
+      opacity: 0;
+      border-width: 1px;
+      background-color: transparent;
+      transform: scale(2, 2); } }
+
+
+
+
+
+.HotspotPoint_arrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+
+
+
+.spot_inside_conts {
+  font-size: 11px;
+  line-height: 13px;
+  width: 300px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  left: 150%;
+  top: 0;
+  transform: translate(0% , 0%);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+  text-transform: uppercase;
+  display: none;
+}
+
+.HotspotPoint_click_exit{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+
+
+
+.spot_click_inside_conts {
+  font-size: 11px;
+  line-height: 13px;
+  width: 300px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  left: 150%;
+  top: 0;
+  transform: translate(0% , 0%);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+  text-transform: uppercase;
+  display: none;
+}
+
+
+.aerodynamic_explain {
+  width: 40%;
+  height: 100%;
+  background-color: #3C0B0D;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  padding: 120px 96px 32px 48px ;
+  z-index: 7;
+  transition: 1s;
+}
+.aerodynamic_explain p { margin-top: 42px; line-height: 24px;}
 
 
 
@@ -582,6 +1368,106 @@ strong {font-weight: 500;}
 /* 타블렛 디스플레이 */
 
 @media screen and (max-width: 960px) {
+
+  .sf_main_conts {
+    justify-content: center;
+    align-items: center;
+}
+#mouseImage {
+    display: none;
+}
+
+.intro_img_container {
+    padding-bottom: 45%;
+}
+.intro_img_container::before{
+    padding-bottom:45%;
+}
+.intro_container {
+    background-size: 120%;
+    background-position: 50% 0%;
+}
+.car_header_nav li:first-child {
+    display: none;
+}
+.icon_border_gray .share_icon {
+  position: absolute;
+  top: 50%; left: 50%; width: 100%; height: 100%;
+  transform: translate(-500%, -50%)!important ; transform: rotate(0deg) ;
+}
+
+.editorial_container {
+    padding: 80px 0;
+}
+.editorial_conts {
+    display: block;
+}
+.editorial_group {
+    display: block;
+}
+
+.editorial_group{
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.editorial_group_group_conts li {
+    display: inline-block;
+    width: 48%;
+}
+.editorial_group_group_conts .editorial_group_title{
+    width: 100%;
+}
+
+.editorial_group_group:last-child {
+    margin: 50px 0 0;
+}
+
+.editorial_text_wrap{
+    width: 100%;
+}
+.editorial_text{
+    margin: 20px 0 30px;
+}
+
+
+
+
+
+/*추가*/
+
+.specs_list{
+    max-width: 10000px;
+
+}
+
+.specs_list h2{
+    font-size: 32px;
+    line-height: 37px;
+}
+.specs_list li h4{
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dynamics_video_wrap {flex-flow: column; max-width: 100%;}
 .dynamics_video, .editorial_text {width: 100%;}
 .editorial_text {margin: 20px 0 0;}
@@ -610,6 +1496,50 @@ strong {font-weight: 500;}
 /* 모바일 디스플레이 */
 
 @media screen and (max-width: 600px) {
+
+
+
+
+  .intro_container {
+    background-size: 120%;}
+.intro_conts_wrap {
+    padding: 80px 24px 95px
+}
+/* .car_header_logo_wrap img{
+    height: 33px;
+} */
+.car_header_logo_wrap{
+    width: 50%;
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+}
+.car_header_logo_wrap img {
+    height: 60%;
+}
+
+.car_bg_img_change {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .headline {padding: 80px 24px 0;}
 
   .dynamics_video_wrap {padding: 0 24px;}

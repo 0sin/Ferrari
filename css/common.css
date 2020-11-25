@@ -349,6 +349,117 @@ h4{
 
 
 
+      /* 옆의 박스 (버튼 ) */
+
+      .discover{
+        background-color: white;
+        border: none;
+        transition: 0.5s;
+        border-right: 2px solid red;
+        padding: 20px 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      
+      }
+      .discover_conts {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31.2px;
+        padding-right: 20px;
+      }
+      .discover_handle {
+        width: 3px;
+        height: 15px;
+        border-radius: 0 , 0, 50%, 50%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -3px;
+      }
+      
+      .discover_btn_wrap{
+        position: relative;
+        margin-left: 60px;
+      }
+      
+      .spinner {
+        display: inline-block;
+      
+        background:gray;
+        border-radius: 50%;
+        height:40px;
+        width: 40px;
+        position: relative;
+        transform: rotate(90deg);
+      
+      }
+      .discover:hover .spinner {
+      
+        animation: rotate 1s linear infinite;
+      }
+      
+      
+      .discover_icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .spinner:before,
+      .spinner:after {
+        content: '';
+        position: absolute;
+      }
+      
+      .spinner:before {
+        border-radius: 50%;
+        background:
+          linear-gradient(0deg,   hsla(0, 0%, 100%, 1  ) 50%, hsla(0, 0%, 100%, 0.9) 100%)   0%   0%,
+          linear-gradient(90deg,  hsla(0, 0%, 100%, 0.9)  0%, hsla(0, 0%, 100%, 0.6) 100%) 100%   0%,
+          linear-gradient(180deg, hsla(0, 0%, 100%, 0.6)  0%, hsla(0, 0%, 100%, 0.3) 100%) 100% 100%,
+          linear-gradient(360deg, hsla(0, 0%, 100%, 0.3)  0%, hsla(0, 0%, 100%, 0  ) 100%)   0% 100%
+        ;
+        background-repeat: no-repeat;
+        background-size: 50% 50%;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+      }
+      
+      .spinner:after {
+        background: white;
+        border: lightgrey;
+        border-radius: 50%;
+        top: 3%;
+        bottom: 3%;
+        left: 3%;
+        right: 3%;
+      }
+      
+      
+      
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg);  }
+      }
+      
+      @keyframes opacity_basic {
+        from { opacity: 0; }
+        to   { opacity: 1;}
+      }
+      @keyframes opacity_revers{
+        from { opacity: 1; }
+        to   { opacity: 0;}
+      }
 
 
 
@@ -648,6 +759,13 @@ h4{
 
 
 
+@media screen and (max-width:599px){
+  .spot_wrap { display: none;}
+  .discover { width: 80%; justify-content: space-between; right:  50%; transform: translate(50% );}
+  .discover_conts { font-size: 20px; line-height: 26px;}
+  .discover_btn_wrap {margin-left: 0;}
+
+}
 
 
 
