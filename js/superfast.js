@@ -1,3 +1,524 @@
+//희경 js 
+
+//main follow
+
+  var HeaderFollow = document.getElementById('sf_main');
+function mouseHeaderFollow(x) {
+  
+  document.getElementById("mouseImage").style="visibility: visible;";
+
+var positionLeft = x.clientX;
+var positionTop = x.clientY;
+document.getElementById("mouseImage").style.left =
+ positionLeft - 30 + "px";
+document.getElementById("mouseImage").style.top =
+ positionTop - 30 + "px";
+}
+
+HeaderFollow.addEventListener('mousemove',mouseHeaderFollow );
+
+function mouseHeaderOut () {
+
+  document.getElementById("mouseImage").style="visibility: hidden;";
+
+
+}
+
+HeaderFollow.addEventListener('mouseout',  mouseHeaderOut );
+
+
+
+
+
+
+//header scroll
+
+   window.onscroll = function(){
+     currentY = window.pageYOffset;
+
+     if ( currentY > 40 ) {
+        document.getElementsByClassName('car_header')[0].style="position:fixed; top:0;"
+     } else {
+      document.getElementsByClassName('car_header')[0].style="position: absolute; top: 40px;"
+     }
+
+   }
+
+
+   // share Btn 충돌일어남..
+
+//    var BtnShareclick =  document.getElementsByClassName('share_btn_click')
+//    var BtnShareOut =  document.getElementsByClassName('share_btn_out')
+// function shareBtn() {
+
+//   document.getElementsByClassName('share_bg')[0].style="opacity:1;";
+//   document.getElementById('share_btn').style="display:flex;";
+//   document.getElementsByClassName('car_header_right')[0].style="display:none;";
+// }
+
+// BtnShareclick.addEventListener('click',shareBtn);
+
+// function shareBtnOut() {
+
+// document.getElementsByClassName('share_bg')[0].style="opacity:0;";
+// document.getElementById('share_btn').style="display:none;";
+// document.getElementsByClassName('car_header_right')[0].style="display:flex;";
+// }
+
+// BtnShareOut.addEventListener('click',shareBtnOut);
+
+//car img js
+
+  var divHi = document.getElementsByClassName('hotspot_point');
+
+  var divSize1 = divHi[0].getBoundingClientRect();
+  var divSize2 = divHi[1].getBoundingClientRect();
+  var divSize3 = divHi[2].getBoundingClientRect();
+
+
+  var divLeft1 = divSize1.left;
+  var divLeft2 = divSize2.left;
+  var divLeft3 = divSize3.left;
+
+  var divTop1 = divSize1.top;
+  var divTop2 = divSize2.top;
+  var divTop3 = divSize3.top;
+
+  var insideHi = document.getElementsByClassName("inner_spot");
+
+
+  
+  
+
+  var insideLeft1 = insideHi[0].clientWidth;
+  var insideLeft2 = insideHi[1].clientWidth;
+  var insideLeft3 = insideHi[2].clientWidth;
+
+  var insideTop1 = insideHi[0].clientHeight;
+  var insideTop2 = insideHi[1].clientHeight;
+  var insideTop3 = insideHi[2].clientHeight;
+
+  var hotspotArrow = document.getElementsByClassName('HotspotPoint_arrow');
+  var insdeConts = document.getElementsByClassName('spot_inside_conts');
+
+  var explain = document.getElementsByClassName('aerodynamic_explain');
+
+  var exitExplain = document.getElementsByClassName('HotspotPoint_click_exit');
+  var exitInsdeConts = document.getElementsByClassName('spot_click_inside_conts');
+
+
+  var pointOne = document.getElementsByClassName('point_1')[0];
+  var pointTwo = document.getElementsByClassName('point_2')[0];
+  var pointThree = document.getElementsByClassName('point_3')[0];
+
+
+  var carImg = document.getElementsByClassName('car_bg_img_change')[0];
+
+
+
+  var discover = document.getElementsByClassName('discover')[0];
+  var carHeadlineTitle = document.querySelectorAll('.car_headline_title_span');
+
+
+
+
+
+
+  function mouseFollow(x) {
+    insideHi[0].style="width:40px; height:40px; background-color: white;"
+
+    divSize1 =divHi[0].getBoundingClientRect();
+    divLeft1 = divSize1.left;
+    divTop1 = divSize1.top;
+    insideLeft1 = insideHi[0].clientWidth;
+    insideTop1 = insideHi[0].clientHeight;
+    
+    var positionLeft = x.clientX;
+    var positionTop = x.clientY ;
+
+    insideHi[0].style.left =
+      positionLeft - divLeft1 - (insideLeft1 / 2)  + "px";
+
+    insideHi[0].style.top =
+      positionTop - divTop1 - (insideTop1 / 2)  + "px";
+      
+     
+  }
+
+  
+
+
+ function mouseOut () {
+   
+    insideLeft1 = insideHi[0].clientWidth;
+    insideTop1 = insideHi[0].clientHeight;
+
+
+    insideHi[0].style.left ="30px";
+    insideHi[0].style.top = "30px";
+  
+  }
+
+
+  function mouseFollowText() {
+    hotspotArrow[0].style.opacity = "1";
+     insdeConts[0].style="opacity : 1; display : flex";
+  }
+  function mouseOutText () {
+    insideHi[0].style="width:20px; height:20px; background-color: transparent;"
+
+    hotspotArrow[0].style.opacity = "0";
+    insdeConts[0].style="opacity : 0; display : none";
+  }
+
+
+  divHi[0].addEventListener('mousemove', mouseFollow);
+  divHi[0].addEventListener('mouseout', mouseOut );
+
+  divHi[0].addEventListener('mousemove', mouseFollowText);
+  divHi[0].addEventListener('mouseout', mouseOutText );
+
+
+
+  function mouseFollowTwo(x) {
+    insideHi[1].style="width:40px; height:40px; background-color: white;"
+
+    divSize2 =divHi[1].getBoundingClientRect();
+    divLeft2 = divSize2.left;
+    divTop2 = divSize2.top;
+    insideLeft2 = insideHi[1].clientWidth;
+    insideTop2 = insideHi[1].clientHeight;
+
+    var positionLeft = x.clientX;
+    var positionTop = x.clientY ;
+
+    insideHi[1].style.left =
+      positionLeft - divLeft2 - (insideLeft2 / 2)  + "px";
+
+    insideHi[1].style.top =
+      positionTop - divTop2 - (insideTop2 / 2)  + "px";
+
+  }
+
+  
+
+
+  function mouseOutTwo () {
+  
+
+    insideLeft2 = insideHi[1].clientWidth;
+    insideTop2 = insideHi[1].clientHeight;
+
+
+    insideHi[1].style.left ="30px";
+    insideHi[1].style.top = "30px";
+
+  
+  }
+
+  function mouseFollowTextTwo() {
+    hotspotArrow[1].style.opacity = "1";
+     insdeConts[1].style="opacity : 1; display : flex";
+  }
+  function mouseOutTextTwo () {
+    insideHi[1].style="width:20px; height:20px; background-color: transparent;"
+    hotspotArrow[1].style.opacity = "0";
+    insdeConts[1].style="opacity : 0; display : none";
+  }
+  divHi[1].addEventListener('mousemove', mouseFollowTwo);
+  divHi[1].addEventListener('mouseout', mouseOutTwo);
+
+  divHi[1].addEventListener('mousemove', mouseFollowTextTwo);
+  divHi[1].addEventListener('mouseout', mouseOutTextTwo);
+
+
+
+
+  function mouseFollowThree(x) {
+    insideHi[2].style="width:40px; height:40px; background-color: white;"
+    divSize3 =divHi[2].getBoundingClientRect();
+    divLeft3 = divSize3.left;
+    divTop3 = divSize3.top;
+    insideLeft3 = insideHi[2].clientWidth;
+    insideTop3 = insideHi[2].clientHeight;
+
+    var positionLeft = x.clientX;
+    var positionTop = x.clientY ;
+
+    insideHi[2].style.left =
+      positionLeft - divLeft3 - (insideLeft3 / 2)  + "px";
+
+    insideHi[2].style.top =
+      positionTop - divTop3 - (insideTop3 / 2)  + "px";
+    
+ 
+  }
+
+ 
+
+  function mouseOutThree () {
+
+
+
+    insideLeft3 = insideHi[2].clientWidth;
+    insideTop3 = insideHi[2].clientHeight;
+
+
+    insideHi[2].style.left ="30px";
+    insideHi[2].style.top = "30px";
+
+ 
+  }
+
+  function mouseFollowTextThree() {
+    hotspotArrow[2].style.opacity = "1";
+     insdeConts[2].style="opacity : 1; display : flex";
+  }
+  function mouseOutTextThree () {
+    insideHi[2].style="width:20px; height:20px; background-color: transparent;"
+    hotspotArrow[2].style.opacity = "0";
+    insdeConts[2].style="opacity : 0; display : none";
+  }
+
+
+  divHi[2].addEventListener('mousemove', mouseFollowThree);
+  divHi[2].addEventListener('mouseout', mouseOutThree  );
+
+  divHi[2].addEventListener('mousemove', mouseFollowTextThree);
+  divHi[2].addEventListener('mouseout', mouseOutTextThree  );
+
+
+
+
+  
+
+
+
+
+  var spotOpenstate=0;  
+
+function spotOpen() {
+
+  if ( spotOpenstate == 0 ) {
+
+   
+    pointOne.style="top:60%; left:10%";
+    pointTwo.style="top:65%; left:80%";
+    pointThree.style="top:10%; left:90%";
+    carImg.style="width: 140%; transform: translate(-30%, -60%);"
+
+
+    insideHi[0].style="width:40px; height:40px; background-color: white;";
+    explain[0].style="right:0";
+
+
+    exitExplain[0].style.opacity = "1";
+    exitInsdeConts[0].style="opacity : 1; display : flex";
+
+    for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
+      console.log('hi');
+    }
+    discover.style="opacity:0;"
+
+
+
+    divHi[0].removeEventListener('mousemove', mouseFollowText);
+    divHi[0].removeEventListener('mouseout', mouseOutText );
+
+    spotOpenstate = 1;
+  
+
+
+  } else {
+    pointOne.style="top:60%; left:20%";   
+    pointTwo.style="top:70%; left:50%";
+    pointThree.style="top:30%; left:75%";
+    carImg.style="width: 60%; transform: translate(-50%, -50%);"
+
+    insideHi[0].style="width:20px; height:20px; background-color: white;";
+    explain[0].style="right:-100%; ";
+
+    exitExplain[0].style.opacity = "0";
+    exitInsdeConts[0].style="opacity : 0; display : none";
+
+    for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
+      console.log('hi');
+    }
+    discover.style="opacity:1;"
+
+    divHi[0].addEventListener('mousemove', mouseFollowText);
+    divHi[0].addEventListener('mouseout', mouseOutText );
+    
+    spotOpenstate = 0;
+ 
+  }
+
+}
+
+
+function spotOpenTwo() {
+
+  if ( spotOpenstate == 0 ) {
+
+    pointOne.style="top:55%; left:-10%";
+    pointTwo.style="top:70%; left:30%";
+    pointThree.style="top:10%; left:90%";
+    carImg.style="width: 140%; transform: translate(-70%, -60%);"
+
+    
+    insideHi[1].style="width:40px; height:40px; background-color: white;";
+    explain[1].style="right:0";
+
+    exitExplain[1].style.opacity = "1";
+    exitInsdeConts[1].style="opacity : 1; display : flex";
+
+    for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
+      console.log('hi');
+    }
+    discover.style="opacity:0;"
+
+   
+  divHi[1].removeEventListener('mousemove', mouseFollowTextTwo);
+  divHi[1].removeEventListener('mouseout', mouseOutTextTwo);
+
+    spotOpenstate = 1;
+  
+
+
+  } else {
+    pointOne.style="top:60%; left:20%";   
+    pointTwo.style="top:70%; left:50%";
+    pointThree.style="top:30%; left:75%";
+    carImg.style="width: 60%; transform: translate(-50%, -50%);"
+
+    insideHi[1].style="width:20px; height:20px; background-color: white;";
+    explain[1].style="right:-100%; ";
+
+    exitExplain[1].style.opacity = "0";
+    exitInsdeConts[1].style="opacity : 0; display : none";
+
+    for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
+      console.log('hi');
+    }
+    discover.style="opacity:1;"
+
+    divHi[1].addEventListener('mousemove', mouseFollowTextTwo);
+    divHi[1].addEventListener('mouseout', mouseOutTextTwo );
+    
+    spotOpenstate = 0;
+ 
+  }
+
+}
+
+function spotOpenThree() {
+
+if ( spotOpenstate == 0 ) {
+
+
+  pointOne.style="top:65%; left:-40%";
+    pointTwo.style="top:120%; left:30%";
+    pointThree.style="top:30%; left:40%";
+    carImg.style="width: 140%; transform: translate(-95%, -40%);"
+
+
+  insideHi[2].style="width:40px; height:40px; background-color: white;";
+    explain[2].style="right:0";
+
+  exitExplain[2].style.opacity = "1";
+  exitInsdeConts[2].style="opacity : 1; display : flex";
+
+  for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
+      console.log('hi');
+    }
+    discover.style="opacity:0;"
+
+
+  divHi[2].removeEventListener('mousemove', mouseFollowTextThree);
+  divHi[2].removeEventListener('mouseout', mouseOutTextThree );
+
+  spotOpenstate = 1;
+
+
+
+} else {
+
+  pointOne.style="top:60%; left:20%";   
+    pointTwo.style="top:70%; left:50%";
+    pointThree.style="top:30%; left:75%";
+    carImg.style="width: 60%; transform: translate(-50%, -50%);"
+
+
+  insideHi[2].style="width:20px; height:20px; background-color: white;";
+  explain[2].style="right:-100%; ";
+
+  exitExplain[2].style.opacity = "0";
+  exitInsdeConts[2].style="opacity : 0; display : none";
+
+  for ( i = 0 ; i < carHeadlineTitle.length; i++){
+      carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
+      console.log('hi');
+    }
+    discover.style="opacity:1;"
+
+  divHi[2].addEventListener('mousemove', mouseFollowTextThree);
+  divHi[2].addEventListener('mouseout', mouseOutTextThree );
+  
+  spotOpenstate = 0;
+
+}
+
+}
+
+divHi[0].addEventListener('click', spotOpen);
+divHi[1].addEventListener('click', spotOpenTwo);
+divHi[2].addEventListener('click', spotOpenThree);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TECH LIST ALL CLOSE BUTTON
 
 var techCloseButton = document.getElementById('tech_block_button');
