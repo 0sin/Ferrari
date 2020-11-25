@@ -93,40 +93,20 @@ setTimeout(function(){styleThree.webkitAnimationPlayState = 'paused';},6000);
 
 
 
-
-
-// .main_animation h2 span {
-//     animation: matrix 1s ease forwards;
-// }
-
-// .main_animation h4 {
-//     animation: opacity 2s ease forwards; 
-// }
-
-// .main_animation_container{
-//     animation: opacity 2s ease forwards; 
-// }
-
-
-
-
-
-
-
 // DOUBLE SECTION 스크롤 이벤트 
 document.addEventListener('scroll', landingScrollShow);
 
 function landingScrollShow () {
     var landingScrollY = window.scrollY;
     var landingHeight = window.innerHeight;
-    console.log(landingScrollY); // 아래로 내려가면 계속 증가
-    console.log(landingHeight); // 화면값은 고정값
+    // console.log(landingScrollY); // 아래로 내려가면 계속 증가
+    // console.log(landingHeight); // 화면값은 고정값
     
     // 더블섹션 포지션
     var doubleSectionPosition = document.getElementById('double_content').offsetTop;
     var doubleOffset = landingScrollY + landingHeight - doubleSectionPosition 
-    console.log(doubleSectionPosition); //섹션있는 위치
-    console.log(doubleOffset); // 0이 되면 더블섹션 시작
+    // console.log(doubleSectionPosition); //섹션있는 위치
+    // console.log(doubleOffset); // 0이 되면 더블섹션 시작
 
     // 요소 변수 선언
     

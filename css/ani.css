@@ -166,3 +166,17 @@
   100% {background-color: rgb(64, 64, 64); left: 0;}
   }
 
+
+/* SUPERFAST ANIMATION*/
+
+@keyframes header_chapter_ltr {
+  0% {width: 0%;}
+  10% {opacity: 1;}
+  100% {opacity: 1; width: 100%;}
+}
+
+
+@keyframes img_show_dtu {
+  0% {top: 30px; opacity: 0}
+  100% {top: 0px; opacity: 1}
+}
