@@ -52,48 +52,64 @@
 
 
 // 영신 헤더 수정
-document.addEventListener('scroll', headerShow);
+document.addEventListener('scroll', headerTopShow);
+document.addEventListener('scroll', headerBlackShow);
+
 
 
 // 헤더 변수 선언
 var prewScrollPos = 0;
 var currentScrollPos = 0;
-var header = document.getElementById('header');
-var headerBackground = document.getElementById('header_wrap');
+var headerBlack = document.getElementById('header_black')
+var headerTop = document.getElementById('header_top')
 
 
-// 스크롤 반응 헤더 함수
-function headerShow() {
 
-  // 스크롤 방향 도출
+// 투명한 헤더 나오고 사라지는 함수
+
+function headerTopShow() {
+  var headerTopScrollY = window.scrollY;
+
+    if (headerTopScrollY <= 10) {
+      // console.log("원위치");
+      headerTop.style="top: 0px;"
+    }
+
+    else if (headerTopScrollY > 10) {
+      headerTop.style="top: -72px; transition: 0.4s;"
+    }
+
+}
+
+
+
+// 스크롤 내렸다가 다시 올렸을때 검정색 헤더 나타나는 함수
+
+function headerBlackShow() {
+
   prewScrollPos = currentScrollPos;
   currentScrollPos = window.pageYOffset;
+
+  var blackHeaderScrollY = window.scrollY;
+  // console.log(blackHeaderScrollY);
+
   var scrollMove = currentScrollPos - prewScrollPos;
   // console.log(scrollMove);
 
-  // 현재 스크롤값 도출
-  var headerScrollY = window.scrollY;
-  // console.log(headerScrollY);
-
-
-  if(scrollMove > 0 && headerScrollY > 20) { 
-    //스크롤이 아래로 진행, 현재 스크롤 값이 원위치가 아니면 헤더 사라짐 
+  if(scrollMove > 0 && blackHeaderScrollY > 10) {
     // console.log("아랫방향");
-    header.style="top:-72px; transition: 0.4s;";
+    headerBlack.style=" top:-72px; transition: 0.4s;";
+
   }
 
-  else if (scrollMove < 0 && headerScrollY > 20) { 
-    //스크롤이 위로 진행, 현재 스크롤 값이 원위치가 아니면 검정색 헤더
+  else if (scrollMove < 0 && blackHeaderScrollY > 10) {
     // console.log("윗방향");
-    header.style="top:0px; transition: 0.4s;";
-    headerBackground.style="height: calc(100% + 20px) ;background-color: rgba(0,0,0,1);"
+    headerBlack.style="top:0px; transition: 0.4s;";
+    // document.getElementById('header_wrap').style="height: calc(100% + 20px); background-color: rgba(0,0,0,1);"
   }
-
-  else if (headerScrollY <= 20) {
-    //현재 스크롤값이 원위치이면 기존 투명한 헤더
+  else if (blackHeaderScrollY <= 0) {
     // console.log("원위치")
-    header.style="top:0px;";
-    headerBackground.style="height: calc(100% + 20px); background-color: none;"
+    headerBlack.style=" top:-72px;";
   }
 
 }

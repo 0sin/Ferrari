@@ -207,13 +207,12 @@ h4{
 }
 
 
-
-/* HEADER */
+/* header */
 #header {
     width: 100%;
     position: fixed;
     z-index: 100000;
-    transition: 0.4s;
+    /* top: -72px; */
 }
 .header_wrap {
     font-family: 'Body-Font-Medium';
@@ -294,6 +293,85 @@ h4{
 
 
 
+  /* second header */
+
+  /* header */
+#header_top {
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    display: none;
+}
+.header2_wrap {
+    font-family: 'Body-Font-Medium';
+    width: 100%;
+    height: 24px;
+    padding: 24px 0 ;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.header2_wrap::after{
+    width: 100%;
+    height: calc(100% + 20px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.8));
+}
+
+.header2_conts {
+    width: 100%;
+    padding-left: 12px;
+    list-style: none;
+}
+.header2_conts ul {
+    display: flex;
+}
+.header2_item {
+    margin: 0 24px ;
+
+}
+
+
+.m_header2_item {
+    margin: 0 24px ;
+    display: none;
+}
+
+
+
+.header2_logo_wrap {
+    height: 24px;
+    font-size: 8px;
+}
+.header2_logo_wrap svg {
+    max-width: 132px;
+    height: 24px;
+    color: white;
+}
+ .header2_button {
+    font-family:'Body-Font-Medium';
+     border: none;
+     background-color: rgba(0, 0, 0, 0);
+     padding: 5px 0;
+     color: white;
+     /* color: white; */
+     font-size: 11px;
+     font-weight : 500;
+     font-stretch: expanded;
+     line-height: 1.27em;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     cursor: pointer;
+  }
+  .Header2__endcol__jBBfXtuB {
+      flex: 1 1 100%;
+  }
+
   /* text 애니메이션 */
     /* animation: matrix 1s ease forwards;  */
     /* animation: matrix_delay 6s ease infinite;  */
@@ -355,12 +433,16 @@ h4{
   @media screen and (max-width :1599px) {
 
     .header_item { margin: 0 12px ;}
-}
+    .header2_item { margin: 0 12px ;}
 
+
+}
 @media screen and (max-width:1279px) {
      .m_header_item { display: block;}
         .header_item {display: none;}
 
+        .m_header2_item { display: block;}
+        .header2_item {display: none;}
 }
 
 @media screen and (max-width:959px){
