@@ -542,7 +542,8 @@ techCloseButton.addEventListener('click', function(){
     techBackground.style = "background: rgb(60, 11, 13);";
     }
     
-});
+}
+);
 
 
 
@@ -645,8 +646,8 @@ function superfastScrollShow () {
     // 화면 전체 스크롤 포지션
     var superfastScrollY = window.scrollY;
     var superfastHeight = window.innerHeight;
-    console.log(superfastScrollY); // 아래로 내려가면 계속 증가
-    console.log(superfastHeight); // 화면값은 고정값
+    //console.log(superfastScrollY); // 아래로 내려가면 계속 증가
+    //console.log(superfastHeight); // 화면값은 고정값
     
 
 
@@ -659,6 +660,58 @@ function superfastScrollShow () {
 
 
     // 각 섹션 포지션
+
+    // 0. sf_main 섹션
+    var sfMainPosition = document.getElementById('sf_main').offsetTop;
+    var sfMainOffset = superfastScrollY + superfastHeight - sfMainPosition;
+    
+    if (sfMainOffset > 80) {
+      document.querySelector('.intro_container').style = "animation: opacity 1.5s ease-in forwards;"
+    }
+    if (sfMainOffset > 2000) {
+      document.querySelectorAll('.editorial_group_group')[0].style = "animation: img_show_dtu 0.8s ease-in forwards;";
+      document.querySelectorAll('.editorial_group_group')[1].style = "animation: img_show_dtu 0.8s ease-in forwards;";
+      document.querySelectorAll('.editorial_text')[0].style = "animation: img_show_dtu 0.8s ease-in forwards; width: 100%;";
+      document.querySelector('.editorial_btn').style = "animation: img_show_dtu 0.8s ease-in forwards;";
+    }
+
+
+    // 1. engine 섹션
+    var enginePosition = document.getElementById('engine').offsetTop;
+    var engineOffset = superfastScrollY + superfastHeight - enginePosition;
+    
+    if (engineOffset > 250) {
+      document.querySelector('.engin_bg_img').style = "animation: opacity 1.2s ease-in forwards;"
+
+      chapterLineShow(0)
+      headlineShow(0);
+      headlinedesc[0].style = "animation: opacity 1.7s ease-in forwards;";
+    }
+  
+
+
+    // 2. aerodynamics 섹션
+    var aeroPosition = document.getElementById('aerodynamics').offsetTop;
+    var aeroOffset = superfastScrollY + superfastHeight - aeroPosition;
+    console.log(aeroPosition); //섹션있는 위치
+    console.log(aeroOffset); // 0이 되면 더블섹션 시작
+    
+    if (aeroOffset > 250) {
+      document.querySelector('.aerodynamics_background').style = "animation: opacity 3s ease-in forwards;"
+
+      chapterLineShow(1)
+      headlineShow(1);
+    }
+
+    if (aeroOffset > 1150) {
+      dynamicsVideo[0].style = "animation: img_show_dtu 0.8s ease-in forwards;";
+      editorialDescription[0].style = "animation: opacity 1s ease-in forwards;";
+      for (i=0; i<2; i++) {
+        editorialTitle[i].style = "animation: matrix 1s ease-in forwards; animation-delay: "+ (0.07 * i) + "s;";}
+    }
+
+
+
     // 3. dynamics 섹션
     var dynamicsPosition = document.getElementById('dynamics').offsetTop;
     var dynamicsOffset = superfastScrollY + superfastHeight - dynamicsPosition 
@@ -667,13 +720,14 @@ function superfastScrollShow () {
     if (dynamicsOffset > 250) {
       document.querySelector('.dynamics_background').style = "animation: opacity 1.2s ease-in forwards;"
 
-      chapterLineShow(0)
-      headlineShow(0);
+      chapterLineShow(2)
+      headlineShow(2);
     }
+
     if (dynamicsOffset > 1150) {
       dynamicsVideo[1].style = "animation: img_show_dtu 0.8s ease-in forwards;";
       editorialDescription[1].style = "animation: opacity 1s ease-in forwards;";
-      for (i=2; i<editorialTitle.length; i++) {
+      for (i=0; i<6; i++) {
         editorialTitle[i].style = "animation: matrix 1s ease-in forwards; animation-delay: "+ (0.07 * i) + "s;";}
     }
 
@@ -684,8 +738,8 @@ function superfastScrollShow () {
     if (designOffset > 250) {
       document.querySelector('.design_background').style = "animation: opacity 1.2s ease-in forwards;"
 
-      chapterLineShow(1)
-      headlineShow(1);
+      chapterLineShow(3)
+      headlineShow(3);
     }
 
     // 5. interior 섹션
@@ -695,9 +749,9 @@ function superfastScrollShow () {
     if (interiorOffset > 250) {
       document.querySelector('.interior_background').style = "animation: opacity 1.2s ease-in forwards;";
 
-      chapterLineShow(2)
-      headlineShow(2);
-      headlinedesc[0].style = "animation: opacity 1s ease-in forwards;";
+      chapterLineShow(4)
+      headlineShow(4);
+      headlinedesc[1].style = "animation: opacity 1s ease-in forwards;";
     }
 
 
@@ -705,18 +759,16 @@ function superfastScrollShow () {
     var techPosition = document.getElementById('tech_specs').offsetTop;
     var techOffset = superfastScrollY + superfastHeight - techPosition 
 
-    if (techOffset > 150) {chapterLineShow(3)}
+    if (techOffset > 150) {chapterLineShow(5)}
 
 
     // 7. media_gallery 섹션
     var mediaPosition = document.getElementById('media_gallery').offsetTop;
     var mediaOffset = superfastScrollY + superfastHeight - mediaPosition;
     var dealerTitle = document.getElementsByClassName('dealer_title_span');
-    console.log(mediaPosition); //섹션있는 위치
-    console.log(mediaOffset); // 0이 되면 더블섹션 시작
 
-    if (mediaOffset > 150) {chapterLineShow(4)}
-    if (mediaOffset > 500) {
+    if (mediaOffset > 150) {chapterLineShow(6)}
+    if (mediaOffset > 700) {
       document.querySelector('.dealer_text_wrap h5').style = "animation: opacity 1s ease-in forwards;"
       for (i=0; i<dealerTitle.length; i++) {
         dealerTitle[i].style = "animation: matrix 1s ease-in forwards; animation-delay: "+ (0.03 * i) + "s;";}
