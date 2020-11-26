@@ -39,7 +39,9 @@
   }
 }
 
-.video_wrap {
+.auto_video_wrap,
+.racing_video_wrap,
+.universe_video_wrap {
   position: absolute;
   top: 0;
   left: 0;
