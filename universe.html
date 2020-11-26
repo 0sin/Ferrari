@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferrari | Universe</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="js/index.js"></script>
   </head>
 
   <div id="whole-wrapper">
@@ -79,10 +80,16 @@
           <div id="menu_list">
             <div class="menu_list_wrap">
               <ul class="universe_menu_list menu_list_big_font">
-                <a><li>News</li></a>
-                <a><li>The Official Ferrari Magazine</li></a>
+                <a onmouseover="mediaChange(0)"
+                  ><li class="list_item">News</li></a
+                >
+                <a onmouseover="mediaChange(1)"
+                  ><li class="list_item">The Official Ferrari Magazine</li></a
+                >
                 <div class="menu_list_box">
-                  <a><li>Ferrari Museums</li></a>
+                  <a onmouseover="mediaChange(2)"
+                    ><li class="list_item">Ferrari Museums</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -94,10 +101,18 @@
                     ></path>
                   </svg>
                 </div>
-                <a><li>History</li></a>
-                <a><li>Ferrari Simulation Center</li></a>
-                <a><li>Ferrari World Abu Dhabi</li></a>
-                <a><li>Ferrari Land Barcelona</li></a>
+                <a onmouseover="mediaChange(3)"
+                  ><li class="list_item">History</li></a
+                >
+                <a onmouseover="mediaChange(4)"
+                  ><li class="list_item">Ferrari Simulation Center</li></a
+                >
+                <a onmouseover="mediaChange(5)"
+                  ><li class="list_item">Ferrari World Abu Dhabi</li></a
+                >
+                <a onmouseover="mediaChange(6)"
+                  ><li class="list_item">Ferrari Land Barcelona</li></a
+                >
               </ul>
             </div>
           </div>
@@ -112,25 +127,70 @@
           </article>
 
           <div class="media_section_videos">
-            <article>
-              <div>
-                <video id="video_1" autoplay muted loop></video>
-                <div class="media_title_wrap">
-                  <img src="" alt="" />
-                  <h3>Live for the moment</h3>
-                </div>
-              </div>
-            </article>
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5ca4d3ba5d32fb0b9e2ac5cb-universe-gtw.jpg"
+                alt=""
+              />
+            </div>
 
-            <article>
-              <div>
-                <video id="video_2" autoplay muted loop></video>
-                <div class="media_title_wrap">
-                  <img src="" />
-                  <h3>Live for the moment</h3>
-                </div>
-              </div>
-            </article>
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5d2c39647e98e13abbbecfe1-ferrari-magazine-2019.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5f0598f3a82e885a1f6cc1ee-ferrari-museums-menu-header-gamma.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>Ferrari Maranello Museum</li>
+                <li>Enzo Ferrari Modena Museum</li>
+                <li>Factory Tour</li>
+                <li>Personalised Experiences</li>
+                <li>Exclusive Events</li>
+                <li>Tickets and info</li>
+              </ul>
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5ca628775d32fb0b9e2ac5fb-mito-gtw.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5ca5c38d5d32fb0b9e2ac5db-simulation-center-gtw.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5ca5f8315d32fb0b9e2ac5e6-abu-dhabi-gtw.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Universe img/5ca6276e5d32fb0b9e2ac5f8-red-force-bcn-gtw.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>

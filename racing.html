@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferrari | Racing</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="js/index.js"></script>
   </head>
 
   <div id="whole-wrapper">
@@ -81,7 +82,9 @@
             <div class="menu_list_wrap">
               <ul class="racing_menu_list menu_list_big_font">
                 <div class="menu_list_box">
-                  <a><li>Formula 1</li></a>
+                  <a onmouseover="mediaChange(0)"
+                    ><li class="list_item">Formula 1</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -94,7 +97,9 @@
                   </svg>
                 </div>
                 <div class="menu_list_box">
-                  <a><li>Ferrari Driver Academy</li></a>
+                  <a onmouseover="mediaChange(1)"
+                    ><li class="list_item">Ferrari Driver Academy</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -107,7 +112,9 @@
                   </svg>
                 </div>
                 <div class="menu_list_box">
-                  <a><li>Ferrari Esports</li></a>
+                  <a onmouseover="mediaChange(2)"
+                    ><li class="list_item">Ferrari Esports</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -120,7 +127,9 @@
                   </svg>
                 </div>
                 <div class="menu_list_box">
-                  <a><li>Competizioni GT</li></a>
+                  <a onmouseover="mediaChange(3)"
+                    ><li class="list_item">Competizioni GT</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -133,7 +142,9 @@
                   </svg>
                 </div>
                 <div class="menu_list_box">
-                  <a><li>Corse Clienti</li></a>
+                  <a onmouseover="mediaChange(4)"
+                    ><li class="list_item">Corse Clienti</li></a
+                  >
                   <svg
                     width="8"
                     height="16"
@@ -155,23 +166,101 @@
           <article class="responsive_background">
             <div>
               <img
-                src="img/5ca4c3605d32fb0b9e2ac5c3-racing-gateway.jpg"
-                alt=""
-                style="width: 1170px"
+                src="img/Racing img/5ca4c3605d32fb0b9e2ac5c3-racing-gateway.jpg"
+                style="width: 1170px; height: 1080px"
               />
             </div>
           </article>
 
           <div class="media_section_videos">
-            <article>
-              <div>
-                <video id="video_1" autoplay muted loop></video>
-                <div class="media_title_wrap">
-                  <img src="" alt="" />
-                  <h3>Live for the moment</h3>
-                </div>
-              </div>
-            </article>
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Racing img/5e5e80400346ee0aec9c9661.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>SF1000</li>
+                <li>Team</li>
+                <li>News</li>
+                <li>Races</li>
+                <li>Partners</li>
+                <li>Hospitality</li>
+                <li>Media Galleries</li>
+                <li>History</li>
+                <li>Memorabilia trivia</li>
+              </ul>
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Racing img/5e5e26c00346ee0aec9c7626-ferrari-driver-academy-fda-2020-superheader-img-2.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>Mission</li>
+                <li>Drivers</li>
+                <li>Media Galleries</li>
+                <li>News</li>
+              </ul>
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Racing img/5f1ff75802af45694e7c6b00.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>Ferrari Esports FDA Team</li>
+                <li>Ferrari Hublot Esports Series</li>
+              </ul>
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Racing img/5fa11baa1b8ac037e24bca43-ferrari-488-gte-2020-header-cgt-menu.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>News</li>
+                <li>GT Series</li>
+                <li>Official Drivers</li>
+                <li>Cars</li>
+                <li>Club Competizioni GT</li>
+                <li>Media Galleries</li>
+                <li>Partners</li>
+              </ul>
+            </div>
+
+            <div class="video_wrap">
+              <img
+                class="videos_video"
+                src="img/Racing img/5ca627c75d32fb0b9e2ac5f9-corse clienti.jpg"
+                alt=""
+              />
+              <ul class="inside_menu_wrap">
+                <li>Home</li>
+                <li>News</li>
+                <li>Calender</li>
+                <li>Ferrari Challenge</li>
+                <li>XX Programmes</li>
+                <li>F1 Clienti</li>
+                <li>Ferrari Challenge drivers</li>
+                <li>Corso Pilota</li>
+                <li>Cars</li>
+                <li>Media galleries</li>
+                <li>Live Streaming</li>
+                <li>Press</li>
+                <li>Partners</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
