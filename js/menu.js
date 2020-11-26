@@ -30,7 +30,7 @@ function racingMediaChange(racingListNumber) {
 var universeVideoItem = document.getElementsByClassName("universe_video_wrap");
 var universeListItem = document.getElementsByClassName("universe_list_item");
 
-function racingMediaChange(universeListNumber) {
+function universeMediaChange(universeListNumber) {
   for (i = 0; i < universeListItem.length; i++) {
     universeVideoItem[i].style = "display:none;";
     universeVideoItem[universeListNumber].style = "display:block;";
