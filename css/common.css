@@ -545,7 +545,7 @@ h4{
   padding: 0 20px;
 }
 
-.footer_nav_title a {
+.footer_nav_title a, .footer_social_title a {
   display: flex;
   align-items: center;  justify-content: center;
   padding: 20px 0;  color: rgb(255, 255, 255);
@@ -562,6 +562,10 @@ h4{
 }
 
 .footer_nav_ul li a {color: rgb(255, 255, 255);}
+
+
+
+
 
 
 /* FOOTER SOCIAL */
@@ -658,8 +662,19 @@ h4{
 
 /* FOOTER BREAK POINT 960 */
 
-.footer_nav_title_m_icon {display: none;}
+.footer_nav_title_m_icon, .footer_social_title_m_icon {display: none;}
 .social_m_name span {display: none;}
+
+
+
+/* 아래 acc_close는 그 아래 미디어쿼리와 순서 바뀌면 오류납니다. */
+
+.acc_close {max-height: 0px; transition: all 0.5s ease-in-out;}
+
+@media screen and (min-width: 961px) {
+  .footer_nav_column, .footer_social_column {max-height: 100%;}
+}
+
 
 
 @media screen and (max-width: 960px) {
@@ -669,31 +684,32 @@ h4{
   
   .footer_nav_section {min-width: 100%;}
 
-  .footer_nav_title {
+  .footer_nav_title, .footer_social_title {
     display: flex; align-items: center; justify-content: space-between;}
   
-  .footer_nav_title a {justify-content: flex-start;}
+  .footer_nav_title a, .footer_social_title a {
+    justify-content: flex-start;
+    pointer-events: none;
+  }
 
-  .footer_nav_title_m_icon {
+  .footer_nav_title_m_icon, .footer_social_title_m_icon {
     display: block;  padding: 10px;
     font-size: 0;  line-height: 0;
     transition: transform 300ms;  transform: rotete(45deg);
   }
 
-  .footer_nav_title_m_icon svg {fill: rgb(255, 255, 255);}
+  .footer_nav_title_m_icon svg, .footer_social_title_m_icon svg {fill: rgb(255, 255, 255);}
   
-  .footer_nav_column {
+  .footer_nav_column, .footer_social_column {
     display: flex;  flex-flow: column wrap;
-    overflow: hidden;  transition: max-height 0.3s;
-    max-height: 0px;
+    overflow: hidden;  transition: all 0.3s;
   }
 
   .footer_nav_ul {
     text-align: left; min-width: 50%; padding: 0 10px 10px 0;
   }
   
-  .acc_open {max-height: 600px;}
-  .button_rotate {transform: rotate(45deg);}
+
 
 
 
@@ -766,36 +782,3 @@ h4{
   .discover_btn_wrap {margin-left: 0;}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
