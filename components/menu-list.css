@@ -1,11 +1,16 @@
-/* Keyframes */
+#auto_menu_section,
+#racing_menu_section,
+#universe_menu_section {
+  width: 36%;
+  height: 100vh;
+}
 
 #auto_menu_list,
 #racing_menu_list,
 #universe_menu_list {
   position: relative;
   width: 95%;
-  height: 50%;
+  height: 75%;
   padding-left: 96px;
   padding-right: 48px;
   margin-right: 48px;
@@ -14,32 +19,38 @@
   overflow-y: hidden scroll;
 }
 
-#auto_menu_list::-webkit-scrollbar,
-#racing_menu_list::-webkit-scrollbar,
-#universe_menu_list::-webkit-scrollbar {
+#auto_menu_list::-webkit-scrollbar {
   width: 1px;
 }
 
-#auto_menu_list:hover::-webkit-scrollbar,
-#racing_menu_list:hover::-webkit-scrollbar,
-#universe_menu_list:hover::-webkit-scrollbar {
+#auto_menu_list:hover::-webkit-scrollbar {
   width: 6px;
 }
 
-#auto_menu_list::-webkit-scrollbar-thumb,
-#racing_menu_list::-webkit-scrollbar-thumb,
-#universe_menu_list::-webkit-scrollbar-thumb {
+#auto_menu_list::-webkit-scrollbar-thumb {
   background-color: black;
 }
 
-#auto_menu_list::-webkit-scrollbar-track,
-#racing_menu_list::-webkit-scrollbar-track,
-#universe_menu_list::-webkit-scrollbar-track {
+#auto_menu_list::-webkit-scrollbar-track {
   background-color: #eeeded;
 }
 
-.menu_list_wrap {
-  animation: fadeIn 1s ease-in;
+@keyframes matrix {
+  0% {
+    opacity: 0;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  }
+  100% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.matrix_menu_li {
+  color: black;
+  animation: matrix 1s ease forwards;
+  transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  opacity: 0;
 }
 
 .menu_list_wrap li {
@@ -52,13 +63,18 @@
   font-size: 32px;
 }
 
-.auto_menu_list li:hover,
-.auto_menu_list_sub li:hover {
+.menu_list li:hover,
+.menu_list_sub li:hover {
   color: #000;
   cursor: pointer;
 }
 
-.auto_menu_list_sub {
+.menu_list a li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.menu_list_sub {
   font-size: 24px;
 }
 
@@ -80,20 +96,6 @@
   cursor: default;
 }
 
-/* Racing Menu Styles */
-
-.racing_menu_list li:hover {
-  color: #000;
-  cursor: pointer;
-}
-
-/* Universe Menu Styles */
-
-.universe_menu_list li:hover {
-  color: #000;
-  cursor: pointer;
-}
-
 /* 1280 responsive-menu list styles */
 
 @media screen and (max-width: 1280px) and (min-width: 962px) {
@@ -105,17 +107,23 @@
   #auto_menu_section,
   #racing_menu_section,
   #universe_menu_section {
-    width: 31%;
+    width: 35%;
   }
 
-  #auto_menu_list,
-  #racing_menu_list,
-  #universe_menu_list {
+  #auto_menu_list {
     width: 420px;
     margin-top: 10px;
     margin-right: 10px;
     padding-left: 64px;
-    padding-right: 0;
+    padding-right: 32px;
+  }
+
+  #racing_menu_list,
+  #universe_menu_list {
+    width: 420px;
+    margin-top: 10px;
+    padding-left: 64px;
+    padding-right: 32px;
   }
 
   .menu_link_title {
@@ -142,7 +150,8 @@
   #auto_menu_section,
   #racing_menu_section,
   #universe_menu_section {
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
   }
 
   #auto_menu_list,
@@ -150,6 +159,7 @@
   #universe_menu_list {
     width: 100%;
     padding: 0 32px;
+    overflow-y: scroll;
   }
 
   .menu_link_title {
@@ -158,6 +168,7 @@
     align-items: center;
     width: 315px;
     margin-bottom: 35px;
+    cursor: pointer;
   }
 
   .menu_link_title h2 {
@@ -183,5 +194,11 @@
     align-items: center;
     width: 100%;
     margin-bottom: 35px;
+  }
+
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
+    width: 100%;
   }
 }
