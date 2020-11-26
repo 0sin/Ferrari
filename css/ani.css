@@ -126,34 +126,18 @@
 }
 
 
-/* TITLE Matrix */
-@keyframes newsTitleFadeIn {
-  0% {opacity: 0; transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);}
-  100% {opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);}
+/* NEWS TITLE MATRIX*/
+@keyframes newsTitleFadeOut {
+  0% {opacity: 0;}
+  100% {opacity: 0}
 }
-
-
 
 @keyframes news_matrix_delay {
-  0% {
-    opacity: 0;
-    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
-  }
-  10% {
-    opacity: 1;
-      transform: matrix(1, 0, 0, 1, 0, 0);
-  }
-  90% {
-      opacity: 1;
-      transform: matrix(1, 0, 0, 1, 0, 0);
-  }
-  100% {
-      opacity: 0;
-    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
-  }
+  0% {opacity: 0; transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);}
+  25% {opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);}
+  85% {opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);}
+  100% {opacity: 0; transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);}
 }
-
-.matrix_style {animation: news_matrix_delay 6s ease 1.2s alternate forwards;}
 
 
 
