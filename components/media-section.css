@@ -1,0 +1,102 @@
+.media_section_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.media_title_wrap {
+  position: absolute;
+  top: 820px;
+  left: 50px;
+}
+
+.media_title_wrap img {
+  margin-bottom: 13px;
+}
+
+.media_title_wrap h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.responsive_background {
+  display: none;
+}
+
+.media_section_videos {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.video_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  display: none;
+  animation: fadeInAnimation ease-in 0.2s;
+}
+
+.videos_video {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.inside_menu_wrap {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  z-index: 5;
+}
+
+.inside_menu_wrap li {
+  color: #fff;
+  font-family: "Noe Display Regular";
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+/* 
+.videos_video {
+  overflow: hidden;
+} */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+  #auto_media_section,
+  #racing_media_section,
+  #universe_media_section {
+    width: 69%;
+  }
+
+  .responsive_background {
+    display: block;
+  }
+  .responsive_background img {
+    object-fit: fill;
+  }
+
+  .media_section_videos {
+    display: none;
+  }
+
+  .inside_menu_wrap li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #media_section {
+    display: none;
+  }
+}

@@ -1,0 +1,146 @@
+/* Keyframes */
+
+
+#auto_menu_list,
+#racing_menu_list,
+#universe_menu_list {
+  position: relative;
+  width: 452px;
+  height: 800px;
+  padding-left: 96px;
+  padding-right: 48px;
+  margin-right: 48px;
+  list-style-type: disc;
+  overflow-x: hidden;
+  overflow-y: hidden scroll;
+}
+
+#auto_menu_list::-webkit-scrollbar,
+#racing_menu_list::-webkit-scrollbar,
+#universe_menu_list::-webkit-scrollbar {
+  width: 1px;
+}
+
+#auto_menu_list::-webkit-scrollbar,
+#racing_menu_list::-webkit-scrollbar,
+#universe_menu_list::-webkit-scrollbar  {
+  width: 6px;
+}
+
+#auto_menu_list::-webkit-scrollbar-thumb,
+#racing_menu_list::-webkit-scrollbar-thumb,
+#universe_menu_list::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+#auto_menu_list::-webkit-scrollbar-track,
+#racing_menu_list::-webkit-scrollbar-track,
+#universe_menu_list::-webkit-scrollbar-track {
+  background-color: #eeeded;
+}
+
+
+.menu_list_wrap {
+  animation: fadeIn 1s ease-in;
+}
+
+.menu_list_wrap li {
+  font-family: "Noe Display Regular";
+  padding: 16px 0;
+  color: #8f8f8f;
+}
+
+.menu_list_big_font {
+  font-size: 32px;
+}
+
+.auto_menu_list li:hover,
+.auto_menu_list_sub li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.auto_menu_list_sub {
+  font-size: 24px;
+}
+
+.menu_list_wrap_divider {
+  display: block;
+  width: 70px;
+  border-top: 2px solid #8f8f8f;
+  margin: 30px 0;
+}
+
+.menu_list_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_list_box li:hover {
+  color: #000;
+  cursor: default;
+}
+
+/* Racing Menu Styles */
+
+.racing_menu_list li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* Universe Menu Styles */
+
+.universe_menu_list li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* 1280 responsive-menu list styles */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
+    width: 31%;
+  }
+
+  #auto_menu_list,
+  #racing_menu_list,
+  #universe_menu_list  {
+    width: 420px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 64px;
+    padding-right: 0;
+  }
+
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
+    width: 100vw;
+  }
+
+  #auto_menu_list,
+  #racing_menu_list,
+  #universe_menu_list {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  .menu_wrap {
+    width: 100%;
+  }
+
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
+  }
+}

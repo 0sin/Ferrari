@@ -1,0 +1,74 @@
+/* Components */
+
+@import "../components/menu-header.css";
+@import "../components/menu-list.css";
+@import "../components/media-section.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#auto-wrapper, #racing-wrapper, #universe-wrapper, #responsive-wrapper {
+  width: 100%;
+  display: none;
+  background-attachment: scroll;
+  position: fixed;
+  z-index: 999999999999999;
+  background-color: white;
+}
+
+/* Font Face */
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../font/OpenSans-Regular-webfont.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Semi-Bold";
+  src: url(../font/OpenSans-Semibold-webfont.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noe Display Regular";
+  src: url(../font/Noe-Display-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Regular";
+  src: url(../font/gt-america-standard-regular-webfont.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Medium";
+  src: url(../font/gt-america-expanded-medium-webfont.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 1280 responsive */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+
+}
+
+/* 960 under responsive */
+@media screen and (max-width: 961px) {
+  #auto-wrapper, #racing-wrapper, #universe-wrapper {
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
