@@ -1,7 +1,6 @@
 #auto_header_title,
 #racing_header_title,
-#universe_header_title 
-{
+#universe_header_title {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +13,6 @@
   margin-top: 70px;
   padding: 0 96px;
 }
-
 
 .menu_title {
   height: 41px;
@@ -49,28 +47,22 @@
     align-items: center;
     border-bottom: 1px solid #eeeded;
   }
+
   .menu_floating {
     padding-left: 64px;
     padding-right: 0px;
   }
 
   #responsive_menu_wrap {
+    width: 100%;
     padding: 78px 64px 64px;
   }
 
   .home_link_button {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .menu_link_title {
-    width: 315px;
-    height: 68px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 32px;
   }
 
   .menu_link_title h2 {
@@ -96,6 +88,7 @@
     font-size: 20px;
   }
 }
+
 /* 1280 responsive Auto menu styles */
 
 @media screen and (max-width: 961px) {
@@ -132,6 +125,7 @@
   }
 }
 
+/* under 961 responsive menu styles */
 
 @media screen and (max-width: 961px) {
   #header_title {
@@ -157,19 +151,5 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 30px;
-  }
-
-  .menu_link_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 315px;
-    margin-bottom: 35px;
-  }
-
-  .menu_link_title h2 {
-    font-family: "Noe Display Regular";
-    font-size: 50px;
-    font-weight: 400;
   }
 }
