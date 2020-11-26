@@ -58,7 +58,7 @@ height: 100vh; position: relative;}
 .main_conts h4 {
 /*     animation: opacity_delay 6s ease infinite;  */
     opacity: 0; 
-
+    margin-bottom: 8px;
 }
 
 
