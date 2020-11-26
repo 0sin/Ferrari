@@ -118,44 +118,91 @@ function headerShow() {
 
 
 // FOOTER ACCORDION
-var clickTitle = document.getElementsByClassName('footer_nav_title');
-var accOpen = document.getElementsByClassName('footer_nav_column');
-var buttonChange = document.getElementsByClassName('footer_nav_title_m_icon');
+var footerNavList = document.getElementsByClassName('footer_nav_title');
+var footerNavColumn = document.getElementsByClassName('footer_nav_column');
+var navButtonChange = document.getElementsByClassName('footer_nav_title_m_icon');
+
+var openState = [0, 0, 0, 0, 0]; //닫힘 상태 = 0
 
 
+function footerAccOpen(clickNumber) {
+  
+  if (openState[clickNumber] == 0) { //닫혔으면,
 
-for(var i=0; i<clickTitle.length; i++ ) {
-  clickTitle[i].addEventListener('click', function(event){
+    for (i=0; i<footerNavList.length; i++) {
+      //클릭시 전부 닫힘
+      // footerNavColumn[i].style = "max-height: 0px;"
+      // 위처럼 스타일 값으로 주게 되면 사이즈 다시 원래로 돌아왔을때 푸터가 깨지는 현상이 나타나서 아래처럼 css클래스 넣었다 뺐다로 해야해요...ㅜㅜ
 
-    for(var j=0; j<accOpen.length; j++) {
-      // 클릭시 전부 닫힘, 버튼 원상복구
-      accOpen[j].classList.remove('acc_open');
-      buttonChange[j].classList.remove('button_rotate')
-
-      // 클릭시 오픈, 버튼 버튼 회전      
-      event.target.nextElementSibling.classList.add('acc_open');
-      event.target.childNodes[3].classList.add('button_rotate');
-      //console.log(buttonChange[j].classList.style);
+      footerNavColumn[i].classList.add('acc_close');
+      navButtonChange[i].style = "transform: rotate(0deg);";
+      
+      openState[i] = 0; 
     }
-  });
+    
+    //클릭한 애만 열림
+    footerNavColumn[clickNumber].classList.remove('acc_close');
+    navButtonChange[clickNumber].style = "transform: rotate(45deg);";
+    
+    openState[clickNumber] = 1; //열림 표시 
+  }
+  
+  else { //열렸으면
+    footerNavColumn[clickNumber].classList.add('acc_close');
+    navButtonChange[clickNumber].style = "transform: rotate(0deg);";
+
+    openState[clickNumber] = 0; //닫힘 효시
+  }
+
 }
+
 
 
 // FOOTER SOCIAL ACCORDION
-var clickSocial = document.getElementsByClassName('footer_social_title');
+var footerSocialList = document.getElementsByClassName('footer_social_title');
+var footerSocialColumn = document.getElementsByClassName('footer_social_column');
+var socialButtonChange = document.getElementsByClassName('footer_social_title_m_icon');
 
+var socialOpenState = [0, 0, 0, 0, 0]; //닫힘 상태 = 0
 
-for(var i=0; i<clickSocial.length; i++ ) {
-  clickSocial[i].addEventListener('click', function(event){
+function footerSocialOpen(clickNumber) {
+  
+  if (socialOpenState[clickNumber] == 0) { //닫혔으면,
 
-    for(var j=0; j<accOpen.length; j++) {
-      // 클릭시 전부 닫힘, 버튼 원상복구
-      accOpen[j].classList.remove('acc_open');
-      buttonChange[j].classList.remove('button_rotate')
+    for (i=0; i<footerSocialList.length; i++) {
+      //클릭시 전부 닫힘
+      footerSocialColumn[i].classList.add('acc_close');
+      socialButtonChange[i].style = "transform: rotate(0deg);";
 
-      // 클릭시 오픈, 버튼 버튼 회전      
-      event.target.nextElementSibling.classList.add('acc_open');
-      event.target.childNodes[3].classList.add('button_rotate');
+      socialOpenState[i] = 0; 
     }
-  });
+    
+    //클릭한 애만 열림
+    footerSocialColumn[clickNumber].classList.remove('acc_close');
+    socialButtonChange[clickNumber].style = "transform: rotate(45deg);";
+    
+    socialOpenState[clickNumber] = 1; //열림 표시 
+  }
+  
+  else { //열렸으면
+    footerSocialColumn[clickNumber].classList.add('acc_close');
+    socialButtonChange[clickNumber].style = "transform: rotate(0deg);";
+
+    socialOpenState[clickNumber] = 0; //닫힘 효시
+  }
+
 }
+
+
+
+// 반응형으로 되었을때 모든 아코디언 닫힘
+function addAccClose() {
+  for (i=0; i<footerNavList.length; i++) {
+    footerNavColumn[i].classList.add('acc_close');
+  }
+  for (i=0; i<footerSocialList.length; i++) {
+    footerSocialColumn[i].classList.add('acc_close');
+  }
+}
+
+addAccClose();
