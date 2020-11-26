@@ -6,9 +6,8 @@ var newsSlide = document.getElementsByClassName('news_contents_wrap');
 var newsImg = document.getElementsByClassName('imgOpacity');
 var newsContents = document.querySelectorAll('.news_text_wrap .news_contents');
 var newsButton = document.querySelectorAll('.news_text_wrap .read_more_wrap');
-
 var newsTitle = document.querySelectorAll('.news_title');
-// console.log(newsTitle[0].querySelectorAll('.news_title_span'));
+
 
 
 // 첫 페이지 실행 함수
@@ -16,11 +15,17 @@ function newsFirstPage() {
   newsImg[0].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
   newsContents[0].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
   newsButton[0].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-  newsTitle[0].classList.add('matrix_style');
+  
+  for (var i=0; i<newsTitle[0].children.length; i++) {
+    newsTitle[0].children[i].style = "animation: news_matrix_delay 6.8s ease-in 1s forwards; animation-delay: "+ (0.03 * i) + "s;";
+  }
+
   newsIndexButton();
 }
 
 newsFirstPage();
+
+
 
 
 
@@ -34,7 +39,10 @@ function newsNext() {
   newsImg[newsSlideNumber].style = "animation: imgOpaFadeOut 0.4s ease 0s alternate ;";
   newsContents[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
   newsButton[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-  newsTitle[newsSlideNumber].classList.remove('matrix_style');
+
+  for (var i=0; i<newsTitle[newsSlideNumber].children.length; i++) {
+    newsTitle[newsSlideNumber].children[i].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+  }
 
 
   //다음 슬라이드가 왼쪽에서 오른쪽 화면으로 fade in
@@ -43,10 +51,10 @@ function newsNext() {
   newsContents[newsSlideNumber+1].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
   newsButton[newsSlideNumber+1].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
 
-  newsTitle[newsSlideNumber+1].classList.add('matrix_style');
-  // for (i=0; i<8; i++) {
-  // newsTitle[newsSlideNumber+1].querySelectorAll('.news_title_span')[i].style="animation: matrix_delay 6s ease 1.2s alternate forwards;"
-  // }
+  for (var i=0; i<newsTitle[newsSlideNumber+1].children.length; i++) {
+    newsTitle[newsSlideNumber+1].children[i].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * i) + "s;";
+  }
+
 
 
   newsSlideNumber++;
@@ -56,15 +64,18 @@ function newsNext() {
 
   }
 
-  else { //마지막 슬라이드 일때
 
+  else { //마지막 슬라이드 일때
 
    //현재 슬라이드가 오른쪽으로 fade out
   newsSlide[newsSlideNumber].style = "animation: news_fade_out_ltr 0.8s forwards";
   newsImg[newsSlideNumber].style = "animation: imgOpaFadeOut 0.4s ease 0s alternate forwards;";
   newsContents[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
   newsButton[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-  newsTitle[newsSlideNumber].classList.remove('matrix_style');
+
+  for (var i=0; i<newsTitle[newsSlideNumber].children.length; i++) {
+    newsTitle[newsSlideNumber].children[i].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+  }
 
 
   //0번 슬라이드를 화면으로 fade in
@@ -72,7 +83,10 @@ function newsNext() {
   newsImg[0].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
   newsContents[0].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
   newsButton[0].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-  newsTitle[0].classList.add('matrix_style');
+
+  for (var i=0; i<newsTitle[0].children.length; i++) {
+    newsTitle[0].children[i].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * i) + "s;";
+  }
 
   
   newsSlideNumber=0;
@@ -82,6 +96,7 @@ function newsNext() {
   }
 
 }
+
 
 
 
@@ -95,7 +110,10 @@ function newsPrev() {
     newsImg[newsSlideNumber].style = "animation: imgOpaFadeOut 0.4s ease 0s alternate forwards;";
     newsContents[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
     newsButton[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-    newsTitle[newsSlideNumber].classList.remove('matrix_style');
+
+    for (var i=0; i<newsTitle[newsSlideNumber].children.length; i++) {
+      newsTitle[newsSlideNumber].children[i].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+    }
 
 
     //슬라이드 왼쪽에서 오른쪽으로 fade in
@@ -103,8 +121,10 @@ function newsPrev() {
     newsImg[newsSlideNumber-1].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
     newsContents[newsSlideNumber-1].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
     newsButton[newsSlideNumber-1].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-    newsTitle[newsSlideNumber-1].classList.add('matrix_style');
 
+    for (var i=0; i<newsTitle[newsSlideNumber-1].children.length; i++) {
+      newsTitle[newsSlideNumber-1].children[i].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * i) + "s;";
+    }
     
     newsSlideNumber--;
 
@@ -121,16 +141,20 @@ function newsPrev() {
     newsImg[0].style = "animation: imgOpaFadeOut 0.4s ease 0s alternate ;";
     newsContents[0].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
     newsButton[0].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-    newsTitle[0].classList.remove('matrix_style');
 
+    for (var i=0; i<newsTitle[0].children.length; i++) {
+      newsTitle[0].children[i].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+    }
 
     //새로운 슬라이드 오른쪽에서 왼쪽으로 fade in
     newsSlide[newsSlide.length-1].style = "animation: news_fade_in_rtl 1.2s forwards";
     newsImg[newsSlide.length-1].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
     newsContents[newsSlide.length-1].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
     newsButton[newsSlide.length-1].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-    newsTitle[newsSlide.length-1].classList.add('matrix_style');
 
+    for (var i=0; i<newsTitle[newsSlide.length-1].children.length; i++) {
+      newsTitle[newsSlide.length-1].children[i].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * i) + "s;";
+    }
 
     newsSlideNumber = newsSlide.length-1;
 
@@ -152,24 +176,28 @@ function newsIndexChange(newsIndexNumber) {
   if (newsDirection > 0) { //양수면 왼쪽으로 전진
     for(i=0; i<newsDistance; i++) {
 
-
       //FADE OUT
       newsSlide[newsSlideNumber + i].style = "animation: news_fade_out_ltr 0.8s forwards;";
       newsImg[newsSlideNumber + i].style = "animation: imgOpaFadeOut newsSlideNumber + i.4s ease 0s alternate ;";
       newsContents[newsSlideNumber + i].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
       newsButton[newsSlideNumber + i].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-      newsTitle[newsSlideNumber + i].classList.remove('matrix_style');
 
+      for (var x=0; x<newsTitle[newsSlideNumber + i].children.length; x++) {
+        newsTitle[newsSlideNumber + i].children[x].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+      }
 
       //FADE IN
       newsSlide[newsIndexNumber].style = "animation: news_fade_in_ltr 1.2s forwards";
       newsImg[newsIndexNumber].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
       newsContents[newsIndexNumber].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
       newsButton[newsIndexNumber].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-      newsTitle[newsIndexNumber].classList.add('matrix_style');
 
+      for (var x=0; x<newsTitle[newsIndexNumber].children.length; x++) {
+        newsTitle[newsIndexNumber].children[x].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * x) + "s;";
+      }
 
       newsSlideNumber = newsIndexNumber;
+
       newsIndexButton();
       newsSlideRestart();
     }
@@ -183,16 +211,21 @@ function newsIndexChange(newsIndexNumber) {
       newsImg[newsSlideNumber].style = "animation: imgOpaFadeOut newsSlideNumber + i.4s ease 0s alternate ;";
       newsContents[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
       newsButton[newsSlideNumber].style = "animation: newsTextFadeOut 6s ease 1.2s alternate forwards;";
-      newsTitle[newsSlideNumber].classList.remove('matrix_style');
 
+      for (var i=0; i<newsTitle[newsSlideNumber].children.length; i++) {
+        newsTitle[newsSlideNumber].children[i].style = "animation: newsTitleFadeOut 6s ease-in 1.2s forwards;";
+      }
 
+      
       //FADE IN
       newsSlide[newsIndexNumber].style = "animation: news_fade_in_rtl 1.2s forwards";
       newsImg[newsIndexNumber].style = "animation: imgOpaFadeIn 6s ease 1.2s alternate forwards;";
       newsContents[newsIndexNumber].style = "animation: newsTextFadeIn 6s ease 1.2s alternate forwards;";
       newsButton[newsIndexNumber].style = "animation: newsTextFadeIn 5.2s ease 1.5s alternate forwards;";
-      newsTitle[newsIndexNumber].classList.add('matrix_style');
       
+      for (var x=0; x<newsTitle[newsIndexNumber].children.length; x++) {
+        newsTitle[newsIndexNumber].children[x].style = "animation: news_matrix_delay 6s ease-in 1.2s forwards; animation-delay: "+ (0.07 * x) + "s;";
+      }
 
       newsSlideNumber = newsIndexNumber;
       newsIndexButton();
@@ -224,6 +257,11 @@ function newsSlideRestart() {
     newsSlideLoop = setInterval(newsNext, 7000);
   }
 }
+
+
+
+
+
 
 
 
