@@ -106,6 +106,10 @@ strong {font-weight: 500;}
 
 }
 
+.sf_header .header_logo_wrap svg {
+  max-width: 100px; height: 100%; 
+}
+
 .car_header {
   width: 100%;
   display: flex;
@@ -362,7 +366,6 @@ strong {font-weight: 500;}
   position: absolute;
   width: 220px;
   height: 60px;
-    z-index: 60;
   /* top: 200%;
   left: 200%; */
   cursor: pointer;
@@ -442,7 +445,7 @@ overflow: hidden ;}
   position: relative;
   width: 100%;
   background-size: cover;
-  background-image: url(../img/5d36cd517e98e13abbbed074-ferrari_812superfast_2017_intro_d.jpg);
+  background-image: url(../superfast/img/main_bg.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
@@ -565,6 +568,8 @@ overflow: hidden ;}
   /* width: calc(50% - 25px); */
   flex: 1 1 50%;
   display: block;
+  position: relative;
+  opacity: 0;
 }
 .editorial_group_group:nth-child(2){
   margin-left: 25px;
@@ -590,7 +595,7 @@ overflow: hidden ;}
 .editorial_text_wrap{
   width: calc(50% - 65px);
 }
-.editorial_text{
+.editorial_text {
   margin-bottom: 50px;
 }
 .editorial_text p{
@@ -617,6 +622,7 @@ overflow: hidden ;}
   font-stretch: 125%;
   margin-top: 20px;
   text-transform: uppercase;
+  position: relative; opacity: 0;
 }
 .editorial_btn:hover{
   border-color: rgba(225, 225, 225, 1);
@@ -627,6 +633,25 @@ overflow: hidden ;}
 
 
 
+
+
+#engine{
+  width: 100%;
+  background-color: #320607;
+  z-index: 4;
+   overflow: hidden;
+}
+.engine_container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.engine_container .headline_wrap {
+  width: 100%;  padding: 0 48px 0;
+  position: absolute; top: 82px; left: 0;
+  z-index: 10;
+}
 
 
 #aerodynamics{
@@ -645,12 +670,12 @@ overflow: hidden ;}
 .engin_bg_img{
   width: 100%;
   height: 100vh;
-  background-image: url(../img/5d36d1141d95730996e64b6b-ferrari_812superfast_2017_engine_m.jpg);
+  background-image: url(../superfast/img/engin_bg.png);
   background-position: 50% 50%;
   background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
+  opacity: 0;
 }
 
 .car_bg_img{
@@ -683,29 +708,6 @@ overflow: hidden ;}
 } */
 
 
-.specs_list{
-  width: 100%;
-  max-width: 519px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.specs_list li {
-  width: 50%;
-}
-.specs_list h2{
-  font-size: 56px;
-  line-height: 65px;
-}
-.specs_list li h4{
-  color: #8f8f8f;
-  margin: 0;
-}
-
-.specs_unit {
-  font-size: 32px;
-  line-height: 1.23em;
-}
 
 
 
@@ -887,8 +889,6 @@ overflow: hidden ;}
 
 
 /* 영신 3 DYNAMICS ~ 끝 까지 */
-
-#arodynamics {width: 100%;  margin: 0 auto;}
 
 .dynamics_video_container {
   width: 100%;  padding: 100px 0;
@@ -1434,36 +1434,6 @@ overflow: hidden ;}
 .editorial_text{
     margin: 20px 0 30px;
 }
-
-
-
-
-
-/*추가*/
-
-.specs_list{
-    max-width: 10000px;
-
-}
-
-.specs_list h2{
-    font-size: 32px;
-    line-height: 37px;
-}
-.specs_list li h4{
-    font-size: 11px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
