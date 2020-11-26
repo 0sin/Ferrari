@@ -170,13 +170,15 @@ height: 100vh; position: relative;}
 
 /*main banner reset*/
 
-#main_view { width: 100%;
-  position: absolute; left: 50%; bottom: 30px;
+
+#main_view { width: 100%; height: auto;
+  position: absolute; left: 50%; bottom: 50px;
   transform: translate(-50%,-50%); z-index: 100;
-  display: flex; 
-  justify-content: center; align-items: center;
-  padding: 0 0 32px;}
-  .main_index_wrap {font-size: 0; white-space: nowrap;}
+
+
+ }
+  .main_index_wrap {  font-size: 0; white-space: nowrap;  position: absolute; left: 50%; bottom: 30px;
+    transform: translate(-50%,-50%); z-index: 100; }
   .main_index {
     width: 24px; height: 24px;
     margin: 0; border-radius: 100%;
@@ -184,7 +186,7 @@ height: 100vh; position: relative;}
     cursor: pointer; margin: 0px 8px;
   }
   .main_index_wrap {
-    width: 22px; height: 22px;
+
     margin: 0; border-radius: 100%;
     display: inline-block; position: absolute;
     top: 50%; left: 50%; 
