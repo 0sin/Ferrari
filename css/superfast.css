@@ -269,6 +269,7 @@ strong {font-weight: 500;}
 
 .share_bg{
   z-index: -1;
+  display: none;
   opacity: 0;
   transition: 0.4s;
   position: absolute;
@@ -359,7 +360,7 @@ strong {font-weight: 500;}
   display: flex;
   align-items: center;
   position: absolute;
-  width: 250px;
+  width: 220px;
   height: 60px;
   /* top: 200%;
   left: 200%; */
@@ -383,10 +384,11 @@ strong {font-weight: 500;}
   color: white;
 }
 
-.icon {
+.icon_play {
   position: absolute;
-  top: 22px;
-  left: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   fill: white;
 }
 
