@@ -90,3 +90,17 @@ for (i=0; i<menuCloseButton.length; i++) {
   }); 
 }
 
+
+var menuBackButton = document.getElementsByClassName("menu_back");
+
+for (i = 0; i < menuBackButton.length; i++) {
+  menuBackButton[i].addEventListener("click", function () {
+    for (x = 0; x < menuBackButton.length; x++) {
+      document.getElementById("auto-wrapper").style = "display: none";
+      document.getElementById("racing-wrapper").style = "display: none;";
+      document.getElementById("universe-wrapper").style = "display: none;";
+      document.getElementById("responsive-wrapper").style = "display: block;";
+    }
+  });
+}
+
