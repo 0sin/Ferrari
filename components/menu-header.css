@@ -1,72 +1,173 @@
-#auto_header_title,
-#racing_header_title,
-#universe_header_title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 96px;
-  border-bottom: 1px solid #eeeded;
+#auto_menu_section,
+#racing_menu_section,
+#universe_menu_section {
+  width: 36%;
+  height: 100vh;
 }
 
-.menu_floating {
-  margin-top: 70px;
-  padding: 0 96px;
+#auto_menu_list,
+#racing_menu_list,
+#universe_menu_list {
+  position: relative;
+  width: 95%;
+  height: 75%;
+  padding-left: 96px;
+  padding-right: 48px;
+  margin-right: 48px;
+  list-style-type: disc;
+  overflow-x: hidden;
+  overflow-y: hidden scroll;
 }
 
-.menu_title {
-  height: 41px;
-  width: 60px;
-  border-bottom: 1px solid #eeeded;
+#auto_menu_list::-webkit-scrollbar {
+  width: 1px;
 }
 
-.menu_title h2 {
-  font-family: "Body-Font-Medium";
-  font-size: 16px;
+#auto_menu_list:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+#auto_menu_list::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+#auto_menu_list::-webkit-scrollbar-track {
+  background-color: #eeeded;
+}
+
+@keyframes matrix {
+  0% {
+    opacity: 0;
+    transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  }
+  100% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.matrix_menu_li {
+  color: black;
+  animation: matrix 1s ease forwards;
+  transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
+  opacity: 0;
+}
+
+.menu_list_wrap li {
+  font-family: "Noe Display Regular";
+  padding: 16px 0;
   color: #8f8f8f;
 }
 
-.responsive_button_wrap {
-  display: none;
+.menu_list_big_font {
+  font-size: 32px;
 }
 
-/* 1280 responsive-menu styles */
+.menu_list li:hover,
+.menu_list_sub li:hover {
+  color: #000;
+  cursor: pointer;
+}
 
-@media screen and (max-width: 1280px) and (min-width: 961px) {
-  #auto_header_title,
-  #racing_header_title,
-  #universe_header_title {
+.menu_list a li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.menu_list_sub {
+  font-size: 24px;
+}
+
+.menu_list_wrap_divider {
+  display: block;
+  width: 70px;
+  border-top: 2px solid #8f8f8f;
+  margin: 30px 0;
+}
+
+.menu_list_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_list_box li:hover {
+  color: #000;
+  cursor: default;
+}
+
+/* 1280 responsive-menu list styles */
+
+@media screen and (max-width: 1280px) and (min-width: 962px) {
+  #responsive-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
+    width: 35%;
+  }
+
+  #auto_menu_list {
+    width: 420px;
+    margin-top: 10px;
+    margin-right: 10px;
     padding-left: 64px;
+    padding-right: 32px;
   }
 
-  #responsive_header {
-    position: fixed;
-    width: 100%;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #eeeded;
-  }
-
-  .menu_floating {
+  #racing_menu_list,
+  #universe_menu_list {
+    width: 420px;
+    margin-top: 10px;
     padding-left: 64px;
-    padding-right: 0px;
+    padding-right: 32px;
   }
 
-  #responsive_menu_wrap {
-    width: 100%;
-    padding: 78px 64px 64px;
-  }
-
-  .home_link_button {
-    width: 100%;
+  .menu_link_title {
+    width: 315px;
+    height: 68px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 32px;
   }
 
-  .menu_link_title:hover {
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #responsive-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #auto_menu_list,
+  #racing_menu_list,
+  #universe_menu_list {
+    width: 100%;
+    padding: 0 32px;
+    overflow-y: scroll;
+  }
+
+  .menu_link_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    margin-bottom: 35px;
     cursor: pointer;
   }
 
@@ -76,85 +177,28 @@
     font-weight: 400;
   }
 
-  .red_wheel_button_wrap {
-    display: none;
+  .menu_wrap {
+    width: 100%;
   }
 
-  .responsive_button {
-    margin-right: 5px;
-  }
-
-  .responsive_button_wrap {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .responsive_button_title {
-    font-size: 20px;
+  .menu_list_wrap li {
+    padding: 8px 0;
+    color: #000;
   }
 }
 
-/* 1280 responsive Auto menu styles */
-
-@media screen and (max-width: 961px) {
-  #auto_header_title,
-  #racing_header_title,
-  #universe_header_title {
+@media screen and (max-width: 601px) {
+  .menu_link_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+    margin-bottom: 35px;
   }
 
-  .menu_floating {
-    padding-left: 32px;
-    padding-right: 0px;
-  }
-
-  .red_wheel_button_wrap {
-    display: none;
-  }
-
-  .responsive_button {
-    margin-right: 5px;
-  }
-
-  .responsive_button_wrap {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .responsive_button_title {
-    font-size: 20px;
-  }
-}
-
-/* under 961 responsive menu styles */
-
-@media screen and (max-width: 961px) {
-  #header_title {
-    padding-left: 64px;
-  }
-
-  #responsive_header {
-    position: fixed;
+  #auto_menu_section,
+  #racing_menu_section,
+  #universe_menu_section {
     width: 100%;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #eeeded;
-  }
-
-  #responsive_menu_wrap {
-    padding: 78px 32px 64px;
-  }
-
-  .home_link_button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 30px;
   }
 }
