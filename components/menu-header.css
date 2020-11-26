@@ -49,14 +49,13 @@
     align-items: center;
     border-bottom: 1px solid #eeeded;
   }
-
   .menu_floating {
     padding-left: 64px;
     padding-right: 0px;
   }
 
   #responsive_menu_wrap {
-    padding: 78px 32px 64px;
+    padding: 78px 64px 64px;
   }
 
   .home_link_button {
