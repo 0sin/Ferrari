@@ -53,7 +53,7 @@
           <li><a href="#">CONFIGURATOR</a></li>
           <li><a href="#">ENQUIRE</a></li>
         </ul>
-        <div id="share_btn_click"  class="car_header_share_wrap">
+        <div onclick="shareBtn()"  id="share_btn_click"  class="car_header_share_wrap">
           <button url="" target="_self" class="car_header_btn">
 
             <span class="red_wheel_button">
@@ -61,7 +61,7 @@
                 <span class="icon_over_circle">
                   <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" stroke="1" fill="none" ></circle></svg>
                 </span>
-                <svg viewBox="0 0 12 14" class="icon" width="12" height="14" style="height: 14px; width: 12px;"><path d="M3.37 8.457a2 2 0 1 1-.124-3.022l4.783-2.761a2 2 0 1 1 .652 1.163l-4.728 2.73a2.007 2.007 0 0 1 .029.704L8.81 10.06a2 2 0 1 1-.747 1.108L3.37 8.457z"></path></svg>
+                <svg viewBox="0 0 12 14" class="icon" width="12" height="14" fill="white" style="height: 14px; width: 12px;"><path d="M3.37 8.457a2 2 0 1 1-.124-3.022l4.783-2.761a2 2 0 1 1 .652 1.163l-4.728 2.73a2.007 2.007 0 0 1 .029.704L8.81 10.06a2 2 0 1 1-.747 1.108L3.37 8.457z"></path></svg>
               </span>
             </span>
 
@@ -71,32 +71,32 @@
       </div>    
       </a>
       <!-- 충돌일어남 ㅜㅠㅠ 수정해야함 -->
-      <!-- <div class="share_popup">
+      <div class="share_popup">
         <div class="share_bg"> </div>
         <div class="share_wrap">
-          <div  id="share_btn" class="share_title_btn">
+          <div   id="share_btn" class="share_title_btn">
             <h4>Close</h4>
 
               
-              <span id="share_btn_out" class="red_wheel_button">
+              <span onclick="shareBtnOut()" id="share_btn_out" class="red_wheel_button">
                 <span class="icon_border_gray">
                   <span class="icon_over_circle">
                     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" stroke="1" fill="none" ></circle></svg>
                   </span>
-                  <svg viewBox="0 0 12 12" class="icon" style="height: 12px; width: 12px;"><path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"></path></svg>
+                  <svg viewBox="0 0 12 12" fill="white" class="icon" style="height: 12px; width: 12px;"><path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z"></path></svg>
                 </span>
               </span>
   
             <ul class="share_ul">
-            <li><button class="header_button">FACEBOOK</button></li>
-            <li><button class="header_button">TWITTER</button></li>
-            <li><button class="header_button">LINKEDIN</button></li>
-            <li><button class="header_button">URL</button></li>
+            <li><button >FACEBOOK</button></li>
+            <li><button>TWITTER</button></li>
+            <li><button>LINKEDIN</button></li>
+            <li><button>URL</button></li>
           </ul> 
           </div>  
           
         </div>
-      </div> -->
+      </div> 
     </div>
 
 
@@ -109,7 +109,7 @@
         <div class="cover_theme_wrap"> 
           <video class="landing_video " autoplay muted loop>
                   <source src="../video/812 Superfast.mp4" type="video/mp4">
-                      '당신의 브라우저는 비디오 화일 재생을 지원하지 않습니다.'   
+                      '당신의 브라우저는 비디오 재생을 지원하지 않습니다.'   
           </video>
 
       </div>
@@ -133,7 +133,7 @@
       <div class="circle">
         <svg
           viewBox="0 0 8 16"
-          class="icon"
+          class="icon_play"
           width="8"
           height="16"
           xmlns="http://www.w3.org/2000/svg"
@@ -1186,6 +1186,7 @@
 
 
   <script src="../js/superfast.js"></script>
+  <script src="../js/shareBtn.js"></script>
 
 
 
