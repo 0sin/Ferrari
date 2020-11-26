@@ -58,10 +58,15 @@
   font-style: normal;
 }
 
-/* 1280 responsive */
+/* menu show, menu close keyframe animation */
 
-@media screen and (max-width: 1280px) and (min-width: 962px) {
-
+@keyframes menuShow {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
 }
 
 /* 960 under responsive */
