@@ -137,6 +137,11 @@
 
 /* Racing Menu Styles */
 
+.racing_menu_list li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
 /* Universe Menu Styles */
 
 .universe_menu_list li:hover {
