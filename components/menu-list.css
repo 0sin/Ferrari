@@ -1,6 +1,5 @@
 /* Keyframes */
 
-
 #auto_menu_list,
 #racing_menu_list,
 #universe_menu_list {
@@ -23,7 +22,7 @@
 
 #auto_menu_list::-webkit-scrollbar,
 #racing_menu_list::-webkit-scrollbar,
-#universe_menu_list::-webkit-scrollbar  {
+#universe_menu_list::-webkit-scrollbar {
   width: 6px;
 }
 
@@ -38,7 +37,6 @@
 #universe_menu_list::-webkit-scrollbar-track {
   background-color: #eeeded;
 }
-
 
 .menu_list_wrap {
   animation: fadeIn 1s ease-in;
@@ -99,6 +97,11 @@
 /* 1280 responsive-menu list styles */
 
 @media screen and (max-width: 1280px) and (min-width: 962px) {
+  #responsive-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
   #auto_menu_section,
   #racing_menu_section,
   #universe_menu_section {
@@ -107,12 +110,21 @@
 
   #auto_menu_list,
   #racing_menu_list,
-  #universe_menu_list  {
+  #universe_menu_list {
     width: 420px;
     margin-top: 10px;
     margin-right: 10px;
     padding-left: 64px;
     padding-right: 0;
+  }
+
+  .menu_link_title {
+    width: 315px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
   }
 
   .menu_list_wrap li {
@@ -122,6 +134,11 @@
 }
 
 @media screen and (max-width: 961px) {
+  #responsive-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
   #auto_menu_section,
   #racing_menu_section,
   #universe_menu_section {
@@ -135,6 +152,20 @@
     padding: 0 32px;
   }
 
+  .menu_link_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    margin-bottom: 35px;
+  }
+
+  .menu_link_title h2 {
+    font-family: "Noe Display Regular";
+    font-size: 50px;
+    font-weight: 400;
+  }
+
   .menu_wrap {
     width: 100%;
   }
@@ -142,5 +173,15 @@
   .menu_list_wrap li {
     padding: 8px 0;
     color: #000;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .menu_link_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
