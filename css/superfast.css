@@ -17,6 +17,7 @@ strong {font-weight: 500;}
 }
 
 .headline_chapter {
+  transition: opacity 1s;
   font-family: "Body-Font-Medium";
   font-weight: 500;  font-stretch: expanded;
   font-size: 11px;  line-height: 1.27em;
@@ -41,6 +42,7 @@ strong {font-weight: 500;}
 }
 
 .headline_title {
+  overflow: hidden;
   font-family: "Title-Font";
   font-weight: normal;  font-stretch: normal;
   letter-spacing: normal;  font-size: 32px;
@@ -361,6 +363,7 @@ strong {font-weight: 500;}
 /* follow btn */
 
 #mouseImage {
+  z-index: 60;
   display: flex;
   align-items: center;
   position: absolute;
@@ -923,6 +926,7 @@ overflow: hidden ;}
 }
 
 .editorial_title h2 {
+  overflow: hidden;
   margin: 0 0 30px;
   font-family: "Title-Font";
   font-size: 32px;  line-height: 1.23em;
