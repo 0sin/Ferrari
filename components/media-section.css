@@ -1,3 +1,9 @@
+#auto_media_section,
+#racing_media_section,
+#universe_media_section {
+  width: 64%;
+}
+
 .media_section_wrap {
   position: relative;
   width: 100%;
@@ -21,14 +27,12 @@
 
 .media_section_videos {
   position: relative;
-  width: 100vw;
-  height: 100vh;
 }
 
 /* animation for auto, racing, universe menu */
 @keyframes fadeInAnimation {
   0% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -41,9 +45,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 65%;
+  width: 100%;
   display: none;
-  animation: fadeInAnimation ease-in 0.2s;
+  animation: fadeInAnimation ease-in 0.4s;
 }
 
 .videos_video {
@@ -71,12 +75,15 @@
   #auto_media_section,
   #racing_media_section,
   #universe_media_section {
-    width: 69%;
+    width: 100%;
   }
 
   .responsive_background {
     display: block;
+    width: 70%;
+    height: 100vh;
   }
+
   .responsive_background img {
     object-fit: fill;
   }
@@ -91,7 +98,9 @@
 }
 
 @media screen and (max-width: 961px) {
-  #media_section {
+  #auto_media_section,
+  #racing_media_section,
+  #universe_media_section {
     display: none;
   }
 }
