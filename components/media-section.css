@@ -6,12 +6,8 @@
 
 .media_title_wrap {
   position: absolute;
-  top: 820px;
+  bottom: 50px;
   left: 50px;
-}
-
-.media_title_wrap img {
-  margin-bottom: 13px;
 }
 
 .media_title_wrap h3 {
