@@ -21,7 +21,8 @@
 }
 
 .menu_title h2 {
-  font-family: "GT America Regular";
+  font-family: "Body-Font-Medium";
+  font-size: 16px;
   color: #8f8f8f;
 }
 
@@ -63,6 +64,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .menu_link_title:hover {
+    cursor: pointer;
   }
 
   .menu_link_title h2 {
