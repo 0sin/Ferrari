@@ -172,7 +172,7 @@ height: 100vh; position: relative;}
 
 #main_view { width: 100%;
   position: absolute; left: 50%; bottom: 30px;
-  transform: translateX(-50%); z-index: 100;
+  transform: translate(-50%,-50%); z-index: 100;
   display: flex; 
   justify-content: center; align-items: center;
   padding: 0 0 32px;}
