@@ -163,7 +163,7 @@ h4{
     animation: opacity_delay 6s ease infinite;
     opacity: 0;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 35px auto 0;
 }
 .subscribe_container a {
