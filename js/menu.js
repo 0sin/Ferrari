@@ -62,7 +62,7 @@ function universeShow() {
 }
 
 function responsiveMenuShow() {
-  document.getElementById('responsive-wrapper').style = "display: flex;";
+  document.getElementById('responsive-wrapper').style = "display: block;";
   document.getElementById('main_wrap').style = "display: none;";
   document.getElementById('footer').style = "display: none;";
 }
