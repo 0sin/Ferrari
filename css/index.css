@@ -45,7 +45,7 @@ height: 100vh; position: relative;}
 
 .main_conts h2 {
     overflow: hidden;
-
+    text-transform: uppercase;
 }
 .main_conts h2 span {
     animation: matrix_delay 6s ease infinite;
