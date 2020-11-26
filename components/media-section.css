@@ -29,6 +29,7 @@
   height: 100vh;
 }
 
+/* animation for auto, racing, universe menu */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0.3;
@@ -67,10 +68,6 @@
   font-size: 24px;
   margin-bottom: 15px;
 }
-/* 
-.videos_video {
-  overflow: hidden;
-} */
 
 @media screen and (max-width: 1280px) and (min-width: 962px) {
   #auto_media_section,
