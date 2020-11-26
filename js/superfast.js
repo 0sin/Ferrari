@@ -45,27 +45,6 @@ HeaderFollow.addEventListener('mouseout',  mouseHeaderOut );
    }
 
 
-   // share Btn 충돌일어남..
-
-//    var BtnShareclick =  document.getElementsByClassName('share_btn_click')
-//    var BtnShareOut =  document.getElementsByClassName('share_btn_out')
-// function shareBtn() {
-
-//   document.getElementsByClassName('share_bg')[0].style="opacity:1;";
-//   document.getElementById('share_btn').style="display:flex;";
-//   document.getElementsByClassName('car_header_right')[0].style="display:none;";
-// }
-
-// BtnShareclick.addEventListener('click',shareBtn);
-
-// function shareBtnOut() {
-
-// document.getElementsByClassName('share_bg')[0].style="opacity:0;";
-// document.getElementById('share_btn').style="display:none;";
-// document.getElementsByClassName('car_header_right')[0].style="display:flex;";
-// }
-
-// BtnShareOut.addEventListener('click',shareBtnOut);
 
 //car img js
 
@@ -119,7 +98,7 @@ HeaderFollow.addEventListener('mouseout',  mouseHeaderOut );
   var discover = document.getElementsByClassName('discover')[0];
   var carHeadlineTitle = document.querySelectorAll('.car_headline_title_span');
 
-
+   var carSubHeadline = document.getElementsByClassName('headline_chapter')[1];
 
 
 
@@ -314,12 +293,14 @@ function spotOpen() {
 
     exitExplain[0].style.opacity = "1";
     exitInsdeConts[0].style="opacity : 1; display : flex";
+    
 
     for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:0;"
+    discover.style="opacity:0;";
+    carSubHeadline.style="opacity : 0";
 
 
 
@@ -344,9 +325,10 @@ function spotOpen() {
 
     for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:1;"
+    discover.style="opacity:1;";
+    carSubHeadline.style="opacity : 1";
 
     divHi[0].addEventListener('mousemove', mouseFollowText);
     divHi[0].addEventListener('mouseout', mouseOutText );
@@ -376,9 +358,10 @@ function spotOpenTwo() {
 
     for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:0;"
+    discover.style="opacity:0;";
+    carSubHeadline.style="opacity : 0";
 
    
   divHi[1].removeEventListener('mousemove', mouseFollowTextTwo);
@@ -402,9 +385,10 @@ function spotOpenTwo() {
 
     for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:1;"
+    discover.style="opacity:1;";
+    carSubHeadline.style="opacity : 1";
 
     divHi[1].addEventListener('mousemove', mouseFollowTextTwo);
     divHi[1].addEventListener('mouseout', mouseOutTextTwo );
@@ -434,9 +418,10 @@ if ( spotOpenstate == 0 ) {
 
   for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style=" animation : matrix_out 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s; ";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:0;"
+    discover.style="opacity:0;";
+    carSubHeadline.style="opacity : 0";
 
 
   divHi[2].removeEventListener('mousemove', mouseFollowTextThree);
@@ -462,9 +447,10 @@ if ( spotOpenstate == 0 ) {
 
   for ( i = 0 ; i < carHeadlineTitle.length; i++){
       carHeadlineTitle[i].style="animation : matrix 0.5s ease-in forwards; animation-delay: " + (0.1 * i) + "s;";
-      console.log('hi');
+      // console.log('hi');
     }
-    discover.style="opacity:1;"
+    discover.style="opacity:1;";
+    carSubHeadline.style="opacity : 1";
 
   divHi[2].addEventListener('mousemove', mouseFollowTextThree);
   divHi[2].addEventListener('mouseout', mouseOutTextThree );
@@ -693,8 +679,8 @@ function superfastScrollShow () {
     // 2. aerodynamics 섹션
     var aeroPosition = document.getElementById('aerodynamics').offsetTop;
     var aeroOffset = superfastScrollY + superfastHeight - aeroPosition;
-    console.log(aeroPosition); //섹션있는 위치
-    console.log(aeroOffset); // 0이 되면 더블섹션 시작
+    // console.log(aeroPosition); //섹션있는 위치
+    // console.log(aeroOffset); // 0이 되면 더블섹션 시작
     
     if (aeroOffset > 250) {
       document.querySelector('.aerodynamics_background').style = "animation: opacity 3s ease-in forwards;"
