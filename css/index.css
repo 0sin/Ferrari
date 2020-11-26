@@ -237,13 +237,9 @@ height: 100vh; position: relative;}
 
 .news_title {
   font-size: 32px;  line-height: 1.23em;
-  text-transform: uppercase;  opacity: 0;
-}
+  text-transform: uppercase;}
 
-.news_title_span {
-  display: inline-block;  overflow: hidden;
-  /* opacity: 0; */
-}
+.news_title span {display: inline-block; opacity: 0;}
 
 .news_contents {
   max-width: 320px;  padding: 24px 0 48px 0;
