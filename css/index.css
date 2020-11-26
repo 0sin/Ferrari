@@ -48,7 +48,7 @@ height: 100vh; position: relative;}
     text-transform: uppercase;
 }
 .main_conts h2 span {
-    animation: matrix_delay 6s ease infinite;
+/*     animation: matrix_delay 6s ease infinite; */
     transform: matrix(0.99756, 0.06975, -0.06975, 0.99756, 0, 25);
     opacity: 0;
     display: inline-block;
@@ -56,7 +56,7 @@ height: 100vh; position: relative;}
             
 }
 .main_conts h4 {
-    animation: opacity_delay 6s ease infinite; 
+/*     animation: opacity_delay 6s ease infinite;  */
     opacity: 0; 
 
 }
