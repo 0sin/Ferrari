@@ -12,27 +12,23 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-#auto-wrapper, #racing-wrapper, #universe-wrapper, #responsive-wrapper {
+#auto-wrapper,
+#racing-wrapper,
+#universe-wrapper {
   width: 100%;
   display: none;
-  background-attachment: scroll;
   position: fixed;
-  z-index: 999999999999999;
+  z-index: 99999999999999;
   background-color: white;
 }
 
-#auto_menu_section,
-#racing_menu_section,
-#universe_menu_section {
-  width: 37%;
+#responsive-wrapper {
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  background-color: white;
 }
-
-#auto_media_section,
-#racing_media_section,
-#universe_media_section {
-  width: 63%;
-}
-
 
 /* Font Face */
 
@@ -84,7 +80,9 @@
 
 /* 960 under responsive */
 @media screen and (max-width: 961px) {
-  #auto-wrapper, #racing-wrapper, #universe-wrapper {
+  #auto-wrapper,
+  #racing-wrapper,
+  #universe-wrapper {
     display: none;
     flex-direction: column;
     overflow: hidden;
