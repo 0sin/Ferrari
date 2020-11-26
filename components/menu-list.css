@@ -20,9 +20,9 @@
   width: 1px;
 }
 
-#auto_menu_list::-webkit-scrollbar,
-#racing_menu_list::-webkit-scrollbar,
-#universe_menu_list::-webkit-scrollbar {
+#auto_menu_list:hover::-webkit-scrollbar,
+#racing_menu_list:hover::-webkit-scrollbar,
+#universe_menu_list:hover::-webkit-scrollbar {
   width: 6px;
 }
 
