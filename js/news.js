@@ -15,7 +15,7 @@ function filterOpen(){
 
 
 
-// 시간 표기 /이탈리아 기준 낮엔 빨간색 밤엔 파란색
+// 시간 표기 /이탈리아 기준
 function presentTime() { 
 
     var presentTime = new Date();
@@ -59,7 +59,9 @@ function presentTime() {
             document.getElementsByClassName('date')[i].style="color:rgb(218,41,28);"; 
 
         } else {          
-            document.getElementsByClassName('date')[i].style="color:gray;";         
+            // document.getElementsByClassName('date')[i].style="color:gray;"; 
+            document.getElementsByClassName('date')[i].style="color:rgb(218,41,28);"; 
+
         }
     }   
 
@@ -72,7 +74,9 @@ function presentTime() {
             document.getElementsByClassName('topdate')[i].style="color:white;"; 
 
         } else {          
-            document.getElementsByClassName('topdate')[i].style="color:gray;";         
+            // document.getElementsByClassName('topdate')[i].style="color:gray;";         
+            document.getElementsByClassName('topdate')[i].style="color:white;";         
+
         }
     }   
 
