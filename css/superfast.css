@@ -362,6 +362,7 @@ strong {font-weight: 500;}
   position: absolute;
   width: 220px;
   height: 60px;
+    z-index: 60;
   /* top: 200%;
   left: 200%; */
   cursor: pointer;
