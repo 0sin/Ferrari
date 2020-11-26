@@ -44,25 +44,25 @@ function racingMediaChange(universeListNumber) {
 // MENU SHOW
 
 function autoShow() {
-  document.getElementById('auto-wrapper').style = "display: flex;";
+  document.getElementById('auto-wrapper').style = "display: flex; animation: menuShow .2s ease-in";
   document.getElementById('main_wrap').style = "display: none;";
   document.getElementById('footer').style = "display: none;";
 }
 
 function racingShow() {
-  document.getElementById('racing-wrapper').style = "display: flex;";
+  document.getElementById('racing-wrapper').style = "display: flex; animation: menuShow .2s ease-in";
   document.getElementById('main_wrap').style = "display: none;";
   document.getElementById('footer').style = "display: none;";
 }
 
 function universeShow() {
-  document.getElementById('universe-wrapper').style = "display: flex;";
+  document.getElementById('universe-wrapper').style = "display: flex; animation: menuShow .2s ease-in";
   document.getElementById('main_wrap').style = "display: none;";
   document.getElementById('footer').style = "display: none;";
 }
 
 function responsiveMenuShow() {
-  document.getElementById('responsive-wrapper').style = "display: block;";
+  document.getElementById('responsive-wrapper').style = "display: block; animation: menuShow .2s ease-in";
   document.getElementById('main_wrap').style = "display: none;";
   document.getElementById('footer').style = "display: none;";
 }
