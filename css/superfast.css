@@ -632,6 +632,7 @@ overflow: hidden ;}
   width: 100%;
   background-color: #320607;
   z-index: 4;
+   overflow: hidden;
 }
 .aerodynamics_container{
   width: 100%;
