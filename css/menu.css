@@ -21,6 +21,19 @@
   background-color: white;
 }
 
+#auto_menu_section,
+#racing_menu_section,
+#universe_menu_section {
+  width: 37%;
+}
+
+#auto_media_section,
+#racing_media_section,
+#universe_media_section {
+  width: 63%;
+}
+
+
 /* Font Face */
 
 @font-face {
