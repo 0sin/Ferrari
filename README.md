@@ -1,4 +1,7 @@
 # Ferrari Website [1조]
+![ferrarimain](https://user-images.githubusercontent.com/69961808/108724856-218f7e00-7569-11eb-8e47-249a1583232d.png)
+![ferrarisub](https://user-images.githubusercontent.com/69961808/108724913-310ec700-7569-11eb-8b37-ea0293d520a7.png)
+
 
 ## 1. Ferrari 프로젝트 소개
 
@@ -133,12 +136,10 @@ function 안에 mouse.clientX, outRect.left  등 변수를 재 정의해서 화�
 
 ## +NEWS SLIDE SHOW
 
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__7.23.53.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__7.23.53.png)
-
-### ✦ 슬라이드 요소 정리
-
 ![slide](https://user-images.githubusercontent.com/69961808/108672177-f71bd180-7524-11eb-9165-4e400897fbbd.png)
 
+
+### ✦ 슬라이드 요소 정리
 1. Prev/Next Button
 2. Index Button
 3. Title Matrix Animation
@@ -148,83 +149,7 @@ function 안에 mouse.clientX, outRect.left  등 변수를 재 정의해서 화�
 
 ## +812 Superfast 상세페이지 스크롤 이벤트
 
-각 섹션의 offsetTop 값을 구해서 반응형에서도 작동되게끔 스크롤 이벤트 작성.
-
-Ferrari 사이트의 스크롤 이벤트는 빠르고 자연스럽게 진행되는 것이 특징.
-
-그러나 반응이 너무 빠른 감이 있어 스크롤 이벤트의 트리거 수치를 더 느리게 수정함.  
 
 ## +MENU style / button
 
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.06.24.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.06.24.png)
 
-✔️ 미디어 show function
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.11.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.11.png)
-
-✔️ 메뉴 show function
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.25.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.25.png)
-
-✔️ 메뉴 open / close 버튼 
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.39.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__4.30.39.png)
-
-🤮🤮🤮🤮🤮🤮
-
-## +Filter menu
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/6.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/6.png)
-
-- 필터 메뉴 오픈시 matrix 작용
-
-카테고리 선택시 해당 카테고리 뉴스만 모아주는 기능 구현 실패
-
-## +바로가기 버튼
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/5.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/5.png)
-
-- 화면 우측에 페이지 최상단으로 가는 ↑버튼
--> **window.scrollTo(0,0) 메소드** 적용해 구현
-- 화면 우측에 푸터를 스크롤이 현재 위치한 곳에서 보여주는 + 버튼 fix 페이지 특성상 페이지가 길어지기 때문에 꼭 필요한 기능
-->레이어 팝업 기능으로 시도해봤지만 실패 푸터를 하단에 위치시켜 숨기고 버튼을 누르면 **scrollTo 기능으로 하단 푸터로 이동하며 나타나는 것으로 대체** 스크롤로 푸터 위치에 도달시에는 버튼이 사라지고 올라가면 버튼이 다시 나타나도록 구현
-
-## +Scroll fade in
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158376.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158376.png)
-
-- 하단으로 스크롤시 가려져있던 뉴스 자동 로딩
--> offsettop값 구해서 자동 실행되도록 구현 위쪽부터 또 왼쪽 뉴스부터 순차적으로 나타나게 하기 위해 뉴스 순서별로 애니메이션 시간차를 두었음
-
-## +sns 공유버튼
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158734.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158734.png)
-
-SNS공유 버튼 클릭시 각 뉴스 콘텐츠마다 메뉴 오픈/클로즈 독립 작용
--> 넷플릭스 아코디언 기능 이용해 구현
-
-오픈/클로즈를 하나의 div로 묶어서 트리거를 하나인 것처럼 속임 또 페라리는 뉴스마다 창이 각각 오픈상태를 유지하지만 굳이 필요없는 기능이라 한쪽에서 열리면 다른쪽은 닫히도록 구현
-
-## +getDate()
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158989.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/KakaoTalk_20201126_223158989.png)
-
-Ferrari 사이트는 DB와 연동해 뉴스마다 실제작성 시간-현재시간의 차이를 보여주고 있어 구현 불가
-
-**getDate() 메소드 사용해 현재 시간 표기로 대치** for반복문 사용해서 같은 이름의 여러 클래스에 동시에 넣어줌
-
-- 디자인 또한 본래의 사이트와 비슷하게 구성
-
-## 4. 프로젝트 후 느낀점
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__1.37.29.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__1.37.29.png)
-
-요소가 많은 큰 프로젝트일 수록 **기초공사를 탄탄하게** 하는 것이 중요하다!
-
-특히 여러 사람이 보는 코드일 경우 이후 작업자를 위해 Class 이름을 상세하게 지어 **누가 봐도 어떤 내용인지 알 수 있게 하는 것**이 좋다.
-
-이는 후반 작업과 유지보수에도 유리하다.
-
-![Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__2.42.29.png](Ferrari%20Website%20%5B1%E1%84%8C%E1%85%A9%5D%204a4b9253c26c442195e142b65fe4e4cd/_2020-11-27__2.42.29.png)
-
-특히, 위처럼 막연한 Class 이름은 나중에 스타일에서 충돌을 일으킬 수 있으니 주의한다.
